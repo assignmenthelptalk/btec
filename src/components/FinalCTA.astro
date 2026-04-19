@@ -1,0 +1,88 @@
+---
+interface Button {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  heading: string;
+  subtext: string;
+  button: Button;
+}
+
+const { heading, subtext, button } = Astro.props;
+---
+
+<section class="final-cta" id="contact">
+  <div class="container">
+    <div class="final-cta__inner">
+      <h2 class="final-cta__heading">{heading}</h2>
+      <p class="final-cta__subtext">{subtext}</p>
+      <a href={button.href} class="final-cta__btn">{button.label}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .final-cta {
+    background-color: var(--color-accent);
+    padding: 5rem 0;
+  }
+
+  .final-cta__inner {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .final-cta__heading {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    color: var(--color-white);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .final-cta__subtext {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.7;
+    max-width: 540px;
+  }
+
+  .final-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 1rem 2.5rem;
+    background-color: var(--color-white);
+    color: var(--color-accent-dark);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    border-radius: 0.375rem;
+    border: 2px solid transparent;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+
+  .final-cta__btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  @media (max-width: 540px) {
+    .final-cta {
+      padding: 3.5rem 0;
+    }
+
+    .final-cta__btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

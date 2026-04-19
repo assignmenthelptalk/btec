@@ -1,0 +1,61 @@
+---
+interface Props {
+  heading: string;
+  text: string;
+}
+
+const { heading, text } = Astro.props;
+---
+
+<section class="mission">
+  <div class="container">
+    <div class="mission__inner">
+      <div class="mission__icon" aria-hidden="true">🌟</div>
+      <h2 class="mission__heading">{heading}</h2>
+      <p class="mission__text">{text}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mission {
+    background-color: var(--color-bg-dark);
+    padding: 5rem 0;
+  }
+
+  .mission__inner {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .mission__icon {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .mission__heading {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .mission__text {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.8;
+    max-width: 640px;
+  }
+
+  @media (max-width: 540px) {
+    .mission {
+      padding: 3.5rem 0;
+    }
+  }
+</style>

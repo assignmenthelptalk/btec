@@ -1,0 +1,261 @@
+---
+interface Badge {
+  icon: string;
+  text: string;
+}
+
+interface CtaButton {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  headingLine1: string;
+  headingHighlight: string;
+  headingLine3: string;
+  subtext: string;
+  primaryCta: CtaButton;
+  secondaryCta: CtaButton;
+  badges: Badge[];
+}
+
+const {
+  headingLine1,
+  headingHighlight,
+  headingLine3,
+  subtext,
+  primaryCta,
+  secondaryCta,
+  badges,
+} = Astro.props;
+---
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="hero__heading">
+        <span class="hero__heading-line">{headingLine1}</span>
+        <span class="hero__heading-highlight">{headingHighlight}</span>
+        <span class="hero__heading-line">{headingLine3}</span>
+      </h1>
+      <p class="hero__subtext">{subtext}</p>
+      <div class="hero__ctas">
+        <a href={primaryCta.href} class="btn btn--primary">{primaryCta.label}</a>
+        <a href={secondaryCta.href} class="btn btn--ghost">{secondaryCta.label} →</a>
+      </div>
+      <div class="hero__badges">
+        {badges.map((badge) => (
+          <span class="badge">
+            <span class="badge__icon">{badge.icon}</span>
+            <span class="badge__text">{badge.text}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__card hero__card--1">
+        <span class="hero__card-icon">🎓</span>
+        <strong>Distinction Grade</strong>
+        <span>ATHE Level 5 CX</span>
+      </div>
+      <div class="hero__card hero__card--2">
+        <span class="hero__card-icon">⭐</span>
+        <strong>4.9/5 Rating</strong>
+        <span>5,000+ students</span>
+      </div>
+      <div class="hero__blob" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background-color: var(--color-bg-white);
+    padding: 5rem 0 4rem;
+    overflow: hidden;
+  }
+
+  .hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero__heading {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.12;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.05em;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero__heading-line {
+    display: block;
+  }
+
+  .hero__heading-highlight {
+    display: block;
+    color: var(--color-accent);
+  }
+
+  .hero__subtext {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    max-width: 520px;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .hero__ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    align-items: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 2rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    border: 2px solid transparent;
+    white-space: nowrap;
+  }
+
+  .btn--primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-color: var(--color-accent);
+  }
+
+  .btn--primary:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+  }
+
+  .btn--ghost {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-border-light);
+    font-weight: 500;
+  }
+
+  .btn--ghost:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .hero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    background-color: var(--color-accent-light);
+    color: var(--color-primary);
+    padding: 0.375rem 0.875rem;
+    border-radius: 2rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+  }
+
+  .badge__icon {
+    color: var(--color-accent-dark);
+    font-weight: 800;
+  }
+
+  /* Visual / decorative right column */
+  .hero__visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .hero__blob {
+    position: absolute;
+    inset: -10% -5%;
+    background: radial-gradient(ellipse at 60% 40%, var(--color-accent-light) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero__card {
+    position: relative;
+    z-index: 1;
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border-light);
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    box-shadow: 0 4px 24px rgba(27, 43, 75, 0.08);
+    min-width: 200px;
+  }
+
+  .hero__card strong {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .hero__card span:last-child {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .hero__card-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero__card--2 {
+    align-self: flex-end;
+  }
+
+  @media (max-width: 900px) {
+    .hero__inner {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .hero__visual {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding: 3rem 0 2.5rem;
+    }
+
+    .hero__ctas {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

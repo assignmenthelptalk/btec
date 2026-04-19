@@ -1,0 +1,135 @@
+---
+interface FooterLink {
+  label: string;
+  href: string;
+}
+
+interface FooterColumn {
+  heading: string;
+  links: FooterLink[];
+}
+
+interface Props {
+  logoText: string;
+  description: string;
+  columns: FooterColumn[];
+  copyright: string;
+}
+
+const { logoText, description, columns, copyright } = Astro.props;
+---
+
+<footer class="footer">
+  <div class="container footer__main">
+    <div class="footer__brand">
+      <span class="footer__logo">{logoText}</span>
+      <p class="footer__desc">{description}</p>
+    </div>
+    {columns.map((col) => (
+      <div class="footer__col">
+        <h3 class="footer__col-heading">{col.heading}</h3>
+        <ul class="footer__links">
+          {col.links.map((link) => (
+            <li>
+              <a href={link.href} class="footer__link">{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+  <div class="footer__bar">
+    <div class="container footer__bar-inner">
+      <span>{copyright}</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--color-bg-dark);
+    color: var(--color-white);
+  }
+
+  .footer__main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer__logo {
+    display: block;
+    font-size: 1.375rem;
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: 0.875rem;
+    letter-spacing: -0.02em;
+  }
+
+  .footer__desc {
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+    max-width: 320px;
+  }
+
+  .footer__col-heading {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 1rem;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .footer__link {
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.15s;
+    line-height: 1.4;
+  }
+
+  .footer__link:hover {
+    color: var(--color-accent);
+  }
+
+  .footer__bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer__bar-inner {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  @media (max-width: 900px) {
+    .footer__main {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .footer__brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .footer__main {
+      grid-template-columns: 1fr;
+    }
+
+    .footer__brand {
+      grid-column: auto;
+    }
+  }
+</style>

@@ -1,0 +1,77 @@
+---
+interface Stat {
+  icon: string;
+  value: string;
+  label: string;
+}
+
+interface Props {
+  stats: Stat[];
+}
+
+const { stats } = Astro.props;
+---
+
+<section class="stats" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats__grid">
+      {stats.map((stat) => (
+        <div class="stats__item">
+          <span class="stats__icon" aria-hidden="true">{stat.icon}</span>
+          <span class="stats__value">{stat.value}</span>
+          <span class="stats__label">{stat.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats {
+    background-color: var(--color-gold);
+    padding: 2.5rem 0;
+  }
+
+  .stats__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .stats__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  .stats__icon {
+    font-size: 1.75rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .stats__value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .stats__label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-primary-dark);
+    opacity: 0.85;
+  }
+
+  @media (max-width: 640px) {
+    .stats__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+</style>

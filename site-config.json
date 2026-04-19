@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "siteTitle": "BTEC Assignment Help | Pass, Merit & Distinction Support",
+    "siteDescription": "Professional BTEC assignment help for Level 2–5 students. Pearson-aligned experts, plagiarism-free work, guaranteed grades. Trusted by 8,000+ students.",
+    "siteUrl": "https://btec-assignment-help.co.uk",
+    "faviconPath": "/favicon.ico",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+  },
+  "colors": {
+    "primary": "#0D2B6B",
+    "primaryDark": "#091E4A",
+    "accent": "#F97316",
+    "accentDark": "#EA6C0A",
+    "accentLight": "#FFF0E6",
+    "gold": "#F59E0B",
+    "goldDark": "#D97706",
+    "textBase": "#1A1A2E",
+    "textMuted": "#6B7280",
+    "bgWhite": "#FFFFFF",
+    "bgLight": "#F3F4F6",
+    "bgDark": "#0D2B6B",
+    "borderLight": "#E5E7EB",
+    "starColor": "#F59E0B",
+    "white": "#FFFFFF"
+  },
+  "typography": {
+    "fontFamily": "'Inter', sans-serif"
+  },
+  "header": {
+    "logoText": "BTEC Help",
+    "logoHref": "/",
+    "navLinks": [
+      { "label": "Services", "href": "#services" },
+      { "label": "About", "href": "#about" },
+      { "label": "How It Works", "href": "#how-it-works" },
+      { "label": "FAQ", "href": "#faq" }
+    ],
+    "ctaButton": {
+      "label": "Get Help Now",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "headingLine1": "Expert",
+    "headingHighlight": "BTEC Assignment Help",
+    "headingLine3": "For Every Level",
+    "subtext": "Struggling with Pearson BTEC assignments? Our specialist writers deliver criterion-referenced, unit-specific work from Level 2 through HND — on time, every time.",
+    "primaryCta": {
+      "label": "Get Your Assignment Done",
+      "href": "#contact"
+    },
+    "secondaryCta": {
+      "label": "See how it works",
+      "href": "#how-it-works"
+    },
+    "badges": [
+      { "icon": "✓", "text": "100% Plagiarism Free" },
+      { "icon": "✓", "text": "On-Time Delivery" },
+      { "icon": "✓", "text": "Expert BTEC Writers" },
+      { "icon": "✓", "text": "Free Revisions" },
+      { "icon": "✓", "text": "Confidential & Secure" }
+    ]
+  },
+  "stats": [
+    { "icon": "🎓", "value": "8,000+", "label": "Assignments Completed" },
+    { "icon": "⭐", "value": "4.8/5",  "label": "Average Rating" },
+    { "icon": "📅", "value": "97%",    "label": "On-Time Delivery" },
+    { "icon": "🏆", "value": "15+",    "label": "Years Experience" }
+  ],
+  "about": {
+    "sectionId": "about",
+    "heading": "Why Students Trust Our BTEC Assignment Help",
+    "paragraphs": [
+      "We specialise exclusively in Pearson BTEC qualifications, with a dedicated team of writers who have direct experience with BTEC unit criteria, Pass/Merit/Distinction descriptors, and Pearson's internal and external assessment requirements.",
+      "From Level 2 First Certificate through to Level 5 HND, our writers understand how BTEC grading works in practice — criterion-referenced assessment, mandatory unit rules, and the distinction between internal portfolio tasks and external examinations."
+    ],
+    "highlights": [
+      "BTEC-specialist writers",
+      "Unit-by-unit criterion alignment",
+      "Harvard referencing as standard",
+      "Turnitin originality report included"
+    ],
+    "imagePlaceholderAlt": "BTEC Assignment Help illustration"
+  },
+  "qualifications": {
+    "sectionId": "services",
+    "heading": "BTEC Qualifications We Cover",
+    "subheading": "Expert support across all Pearson BTEC pathways — Level 2 National to Level 5 HND.",
+    "cards": [
+      {
+        "icon": "🎓",
+        "title": "BTEC Assignment Help",
+        "description": "Expert guidance for all Pearson BTEC qualifications — Level 2 to HND. Criterion-referenced writing, LO mapping, and Harvard referencing support across all subjects.",
+        "href": "/btec-assignment-help/"
+      },
+      {
+        "icon": "📗",
+        "title": "BTEC National Assignment Help",
+        "description": "Level 3 National (equivalent to A-Levels) unit assignment help for all subject areas. Pass, Merit, and Distinction grading strategies for coursework-only and mixed assessment.",
+        "href": "/btec-national-assignment-help/"
+      },
+      {
+        "icon": "📙",
+        "title": "BTEC HNC Assignment Help",
+        "description": "Level 4 HNC guidance — first-year university equivalent. Higher-level analytical writing, independent research support, and Harvard referencing for all HNC subjects.",
+        "href": "/btec-hnc-assignment-help/"
+      },
+      {
+        "icon": "📕",
+        "title": "BTEC HND Assignment Help",
+        "description": "Level 5 HND guidance — second-year university equivalent. Complex unit assignment help, research project support, and Distinction-level critical analysis.",
+        "href": "/btec-hnd-assignment-help/"
+      },
+      {
+        "icon": "📊",
+        "title": "BTEC Business Assignment Help",
+        "description": "Specialist support for BTEC Business at Level 3 National, Level 4 HNC, and Level 5 HND. Business frameworks, case study analysis, and professional report writing.",
+        "href": "/btec-business-assignment-help/"
+      }
+    ]
+  },
+  "features": {
+    "heading": "What's Included in Every Order",
+    "cards": [
+      {
+        "icon": "📝",
+        "title": "Custom Written Content",
+        "description": "Every piece is written from scratch to your brief, unit criteria, and word count."
+      },
+      {
+        "icon": "🔍",
+        "title": "Plagiarism Report",
+        "description": "Turnitin originality report included with every submission."
+      },
+      {
+        "icon": "📚",
+        "title": "Full Harvard Referencing",
+        "description": "Properly formatted reference list and in-text citations per Pearson BTEC requirements."
+      },
+      {
+        "icon": "✏️",
+        "title": "Unlimited Revisions",
+        "description": "Not satisfied? We revise until the work meets your expectations."
+      },
+      {
+        "icon": "🔒",
+        "title": "Strict Confidentiality",
+        "description": "Your identity and order details are never shared with third parties."
+      },
+      {
+        "icon": "⚡",
+        "title": "Express Delivery",
+        "description": "Need it fast? We offer 24-hour turnaround for urgent assignments."
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "heading": "Why Choose Us Over Others",
+    "items": [
+      {
+        "icon": "🎯",
+        "title": "BTEC Specialists",
+        "description": "Unlike generic services, we focus solely on Pearson BTEC and vocational qualifications."
+      },
+      {
+        "icon": "👨‍🏫",
+        "title": "Qualified Writers",
+        "description": "All writers hold BTEC HND, degree-level, or equivalent academic credentials in their subject area."
+      },
+      {
+        "icon": "💬",
+        "title": "Direct Communication",
+        "description": "Message your writer directly via our platform throughout the project."
+      },
+      {
+        "icon": "💰",
+        "title": "Transparent Pricing",
+        "description": "Fixed prices published upfront. No hidden fees, ever."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "What Our Students Say",
+    "items": [
+      {
+        "stars": 5,
+        "quote": "Got a Distinction on my Level 5 HND Business unit thanks to the perfectly structured assignment and detailed criterion mapping. Absolutely worth every penny.",
+        "name": "Sarah M.",
+        "course": "BTEC HND Business Management"
+      },
+      {
+        "stars": 5,
+        "quote": "Submitted my BTEC National Health & Social Care assignment two days early and my assessor praised the depth of analysis. The writer clearly understood Pearson criteria.",
+        "name": "James K.",
+        "course": "BTEC National Health & Social Care"
+      },
+      {
+        "stars": 5,
+        "quote": "The HNC Engineering assignment support was exceptional. Well-structured, technically accurate, and required zero revisions. Highly recommend for any BTEC student.",
+        "name": "Priya T.",
+        "course": "BTEC HNC Engineering"
+      }
+    ]
+  },
+  "howItWorks": {
+    "sectionId": "how-it-works",
+    "heading": "How It Works",
+    "subheading": "Four simple steps from brief to brilliant assignment.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Submit Your Brief",
+        "description": "Share your unit details, word count, deadline, and any guidance from your tutor."
+      },
+      {
+        "number": "02",
+        "title": "Get Matched",
+        "description": "We assign your order to a specialist BTEC writer within 30 minutes."
+      },
+      {
+        "number": "03",
+        "title": "Track Progress",
+        "description": "Monitor your assignment in real-time and message your writer directly."
+      },
+      {
+        "number": "04",
+        "title": "Download & Submit",
+        "description": "Receive your completed, plagiarism-checked assignment before your deadline."
+      }
+    ]
+  },
+  "faq": {
+    "sectionId": "faq",
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Is this service specific to BTEC qualifications?",
+        "answer": "Yes. We specialise exclusively in Pearson BTEC qualifications. Our writers are selected for their specific knowledge of BTEC units, marking criteria, and grade descriptors — not generic academic writing."
+      },
+      {
+        "question": "Will my assignment be plagiarism free?",
+        "answer": "Every assignment is written from scratch and run through Turnitin before delivery. You receive a copy of the originality report alongside your completed work."
+      },
+      {
+        "question": "How quickly can you complete my assignment?",
+        "answer": "Standard turnaround is 5–7 days. For urgent orders we offer 24-hour and 48-hour expedited delivery at an additional cost. Contact us to confirm availability for your deadline."
+      },
+      {
+        "question": "What if I'm not happy with the work?",
+        "answer": "We offer unlimited free revisions within 14 days of delivery. If we cannot meet your requirements after multiple revisions, we offer a full refund — no questions asked."
+      },
+      {
+        "question": "Is my information kept confidential?",
+        "answer": "Absolutely. We never share your personal information or order details with any third party. Payments are processed through secure, encrypted channels."
+      },
+      {
+        "question": "Which BTEC levels and qualifications do you support?",
+        "answer": "We support Level 2 to Level 5 across all Pearson BTEC qualification pathways including BTEC National, HNC, and HND across Business, Health & Social Care, Engineering, IT, Sport, Public Services, and more."
+      }
+    ]
+  },
+  "mission": {
+    "heading": "Our Mission",
+    "text": "To give every BTEC student — from Level 2 to HND — access to expert guidance that makes the difference between a Pass and a Distinction."
+  },
+  "finalCta": {
+    "heading": "Ready to Level Up Your BTEC Grades?",
+    "subtext": "Join 8,000+ BTEC students who've improved their grades with our expert support. Get started in under 2 minutes.",
+    "button": {
+      "label": "Start Your Order Today",
+      "href": "#contact"
+    }
+  },
+  "footer": {
+    "logoText": "BTEC Help",
+    "description": "The UK's trusted specialist in Pearson BTEC assignment support. Helping students reach Merit and Distinction since 2010.",
+    "columns": [
+      {
+        "heading": "Quick Links",
+        "links": [
+          { "label": "Services",     "href": "#services" },
+          { "label": "About Us",     "href": "#about" },
+          { "label": "How It Works", "href": "#how-it-works" },
+          { "label": "FAQ",          "href": "#faq" }
+        ]
+      },
+      {
+        "heading": "BTEC Qualifications",
+        "links": [
+          { "label": "BTEC Assignment Help",         "href": "/btec-assignment-help/" },
+          { "label": "BTEC National Assignment Help", "href": "/btec-national-assignment-help/" },
+          { "label": "BTEC HNC Assignment Help",      "href": "/btec-hnc-assignment-help/" },
+          { "label": "BTEC HND Assignment Help",      "href": "/btec-hnd-assignment-help/" },
+          { "label": "BTEC Business Assignment Help", "href": "/btec-business-assignment-help/" }
+        ]
+      },
+      {
+        "heading": "Contact",
+        "links": [
+          { "label": "support@btec-help.co.uk", "href": "mailto:support@btec-help.co.uk" },
+          { "label": "WhatsApp Us",              "href": "https://wa.me/447700900000" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 BTEC Assignment Help. All rights reserved."
+  }
+}

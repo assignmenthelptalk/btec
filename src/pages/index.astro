@@ -1,0 +1,115 @@
+---
+import config from '../../site-config.json';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import StatsBar from '../components/StatsBar.astro';
+import About from '../components/About.astro';
+import QualificationsGrid from '../components/QualificationsGrid.astro';
+import FeaturesGrid from '../components/FeaturesGrid.astro';
+import WhyChooseUs from '../components/WhyChooseUs.astro';
+import Testimonials from '../components/Testimonials.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import FAQ from '../components/FAQ.astro';
+import Mission from '../components/Mission.astro';
+import FinalCTA from '../components/FinalCTA.astro';
+import Footer from '../components/Footer.astro';
+
+const {
+  meta,
+  colors,
+  typography,
+  header,
+  hero,
+  stats,
+  about,
+  qualifications,
+  features,
+  whyChooseUs,
+  testimonials,
+  howItWorks,
+  faq,
+  mission,
+  finalCta,
+  footer,
+} = config;
+---
+
+<Layout
+  title={meta.siteTitle}
+  description={meta.siteDescription}
+  faviconPath={meta.faviconPath}
+  googleFontsUrl={meta.googleFontsUrl}
+  fontFamily={typography.fontFamily}
+  colors={colors}
+>
+  <Header
+    logoText={header.logoText}
+    logoHref={header.logoHref}
+    navLinks={header.navLinks}
+    ctaButton={header.ctaButton}
+  />
+  <main>
+    <Hero
+      headingLine1={hero.headingLine1}
+      headingHighlight={hero.headingHighlight}
+      headingLine3={hero.headingLine3}
+      subtext={hero.subtext}
+      primaryCta={hero.primaryCta}
+      secondaryCta={hero.secondaryCta}
+      badges={hero.badges}
+    />
+    <StatsBar stats={stats} />
+    <About
+      sectionId={about.sectionId}
+      heading={about.heading}
+      paragraphs={about.paragraphs}
+      highlights={about.highlights}
+      imagePlaceholderAlt={about.imagePlaceholderAlt}
+    />
+    <QualificationsGrid
+      sectionId={qualifications.sectionId}
+      heading={qualifications.heading}
+      subheading={qualifications.subheading}
+      cards={qualifications.cards}
+    />
+    <FeaturesGrid
+      heading={features.heading}
+      cards={features.cards}
+    />
+    <WhyChooseUs
+      heading={whyChooseUs.heading}
+      items={whyChooseUs.items}
+    />
+    <Testimonials
+      heading={testimonials.heading}
+      items={testimonials.items}
+    />
+    <HowItWorks
+      sectionId={howItWorks.sectionId}
+      heading={howItWorks.heading}
+      subheading={howItWorks.subheading}
+      steps={howItWorks.steps}
+    />
+    <FAQ
+      sectionId={faq.sectionId}
+      heading={faq.heading}
+      items={faq.items}
+    />
+    <Mission
+      heading={mission.heading}
+      text={mission.text}
+    />
+    <FinalCTA
+      heading={finalCta.heading}
+      subtext={finalCta.subtext}
+      button={finalCta.button}
+    />
+  </main>
+  <Footer
+    logoText={footer.logoText}
+    description={footer.description}
+    columns={footer.columns}
+    copyright={footer.copyright}
+  />
+</Layout>

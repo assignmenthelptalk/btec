@@ -1,0 +1,121 @@
+---
+/**
+ * [...slug].astro
+ * Dynamic route for all inner service/qualification pages.
+ * Pages are generated from content.json (populated by generate-content.sh).
+ * HTML content for Phase 1 pages is loaded from src/content/pages/*.html
+ */
+
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import config from '../../site-config.json';
+import ServicePage from '../components/ServicePage.astro';
+
+interface H2Section {
+  heading: string;
+  body: string;
+}
+
+interface RelatedPage {
+  title: string;
+  slug: string;
+}
+
+export interface PageEntry {
+  slug: string;
+  tier: number;
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  h1: string;
+  intro: string;
+  h2Sections: H2Section[];
+  relatedPages: RelatedPage[];
+  contextualQuestion: string;
+}
+
+interface ContentData {
+  pages: PageEntry[];
+}
+
+export async function getStaticPaths() {
+  // Load all content HTML files eagerly at build time
+  // import.meta.glob must have a literal pattern — this is fine inside a function
+  const contentFiles = import.meta.glob<string>('../content/pages/*.html', { query: '?raw', import: 'default', eager: true });
+
+  let pages: PageEntry[] = [];
+  try {
+    // Use readFileSync to bypass Vite's module cache — ensures fresh data in dev and build
+    const raw = readFileSync(resolve(process.cwd(), 'content.json'), 'utf-8');
+    const data: ContentData = JSON.parse(raw);
+    pages = data.pages ?? [];
+  } catch {
+    // content.json not yet generated — skip inner pages for this build
+  }
+
+  return pages.map((page) => {
+    const contentKey = `../content/pages/${page.slug}.html`;
+    const rawHtml: string = contentFiles[contentKey] ?? '';
+    return {
+      params: { slug: page.slug },
+      props:  { page, rawHtml },
+    };
+  });
+}
+
+const { page, rawHtml } = Astro.props;
+
+const { meta, colors, typography } = config;
+
+const cssVars = Object.entries(colors)
+  .map(([k, v]: [string, string]) => `--color-${k.replace(/([A-Z])/g, '-$1').toLowerCase()}: ${v}`)
+  .join('; ');
+const allVars = `${cssVars}; --font-family: ${typography.fontFamily}`;
+
+const canonicalUrl = `${meta.siteUrl}/${page.slug}/`;
+---
+
+<!DOCTYPE html>
+<html lang="en" style={allVars}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={page.metaDescription} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href={meta.googleFontsUrl} rel="stylesheet" />
+    <title>{page.metaTitle}</title>
+  </head>
+  <body>
+    <ServicePage page={page} config={config} rawHtml={rawHtml} />
+  </body>
+</html>
+
+<style is:global>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-base);
+    background-color: var(--color-bg-white);
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  .section-heading {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+  }
+</style>

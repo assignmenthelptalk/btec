@@ -1,0 +1,117 @@
+---
+interface Step {
+  number: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  sectionId: string;
+  heading: string;
+  subheading: string;
+  steps: Step[];
+}
+
+const { sectionId, heading, subheading, steps } = Astro.props;
+---
+
+<section class="hiw" id={sectionId}>
+  <div class="container">
+    <h2 class="section-heading">{heading}</h2>
+    <p class="section-subheading">{subheading}</p>
+    <div class="hiw__steps">
+      {steps.map((step) => (
+        <div class="hiw__step">
+          <div class="hiw__number" aria-hidden="true">{step.number}</div>
+          <h3 class="hiw__title">{step.title}</h3>
+          <p class="hiw__desc">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .hiw {
+    background-color: var(--color-bg-light);
+    padding: 5rem 0;
+  }
+
+  .hiw__steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+  }
+
+  /* Connector line between steps */
+  .hiw__steps::before {
+    content: '';
+    position: absolute;
+    top: 1.75rem;
+    left: calc(12.5% + 0.5rem);
+    width: calc(75% - 1rem);
+    height: 2px;
+    background-color: var(--color-border-light);
+    z-index: 0;
+  }
+
+  .hiw__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hiw__number {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-size: 1.125rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 4px var(--color-bg-light), 0 0 0 6px var(--color-accent-light);
+  }
+
+  .hiw__title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.3;
+  }
+
+  .hiw__desc {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+  }
+
+  @media (max-width: 900px) {
+    .hiw__steps {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+
+    .hiw__steps::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .hiw {
+      padding: 3rem 0;
+    }
+
+    .hiw__steps {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

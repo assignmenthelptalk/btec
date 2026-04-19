@@ -1,0 +1,173 @@
+---
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  sectionId: string;
+  heading: string;
+  items: FaqItem[];
+}
+
+const { sectionId, heading, items } = Astro.props;
+---
+
+<section class="faq" id={sectionId}>
+  <div class="container">
+    <h2 class="section-heading">{heading}</h2>
+    <div class="faq__list" role="list">
+      {items.map((item) => (
+        <details class="faq__item">
+          <summary class="faq__question">
+            <span class="faq__question-text">{item.question}</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              <p>{item.answer}</p>
+            </div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq {
+    background-color: var(--color-bg-white);
+    padding: 5rem 0;
+  }
+
+  .faq__list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .faq__item {
+    border: 1px solid var(--color-border-light);
+    border-radius: 0.625rem;
+    overflow: hidden;
+    background-color: var(--color-bg-white);
+    transition: border-color 0.2s;
+  }
+
+  .faq__item[open] {
+    border-color: var(--color-accent);
+  }
+
+  .faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    gap: 1rem;
+    /* Remove default disclosure triangle */
+    list-style: none;
+    user-select: none;
+  }
+
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__question-text {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-primary);
+    line-height: 1.4;
+    flex: 1;
+  }
+
+  /* Plus/minus icon */
+  .faq__icon {
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-accent-light);
+    position: relative;
+    transition: background-color 0.2s;
+  }
+
+  .faq__icon::before,
+  .faq__icon::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-accent-dark);
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  /* Horizontal bar */
+  .faq__icon::before {
+    width: 10px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Vertical bar */
+  .faq__icon::after {
+    width: 2px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+  }
+
+  /* When open: collapse vertical bar (minus icon) */
+  .faq__item[open] .faq__icon {
+    background-color: var(--color-accent);
+  }
+
+  .faq__item[open] .faq__icon::before,
+  .faq__item[open] .faq__icon::after {
+    background-color: var(--color-white);
+  }
+
+  .faq__item[open] .faq__icon::after {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  /* Answer with smooth height animation using grid trick */
+  .faq__answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.25s ease;
+  }
+
+  .faq__item[open] .faq__answer {
+    grid-template-rows: 1fr;
+  }
+
+  .faq__answer-inner {
+    overflow: hidden;
+  }
+
+  .faq__answer-inner p {
+    padding: 0 1.5rem 1.25rem;
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+    line-height: 1.75;
+  }
+
+  @media (max-width: 540px) {
+    .faq {
+      padding: 3rem 0;
+    }
+
+    .faq__question {
+      padding: 1rem 1.25rem;
+    }
+
+    .faq__answer-inner p {
+      padding: 0 1.25rem 1rem;
+    }
+  }
+</style>
