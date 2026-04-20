@@ -1,53 +1,188 @@
 ---
-interface NavLink {
-  label: string;
-  href: string;
-}
+const WA_NUMBER = "447916696894";
+const WA_HREF   = `https://wa.me/${WA_NUMBER}`;
+const WA_DISPLAY = "+44 7916 696894";
 
-interface CtaButton {
-  label: string;
-  href: string;
-}
+interface NavLink  { label: string; href: string; }
+interface CtaButton { label: string; href: string; }
 
 interface Props {
-  logoText: string;
-  logoHref: string;
-  navLinks: NavLink[];
+  logoText:  string;
+  logoHref:  string;
+  navLinks:  NavLink[];
   ctaButton: CtaButton;
 }
 
 const { logoText, logoHref, navLinks, ctaButton } = Astro.props;
 ---
 
+<!-- WhatsApp top bar -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <span class="topbar__left">
+      <svg class="topbar__wa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.112 1.528 5.837L0 24l6.335-1.508A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.733.888.936-3.618-.235-.372A9.818 9.818 0 1112 21.818z"/>
+      </svg>
+      WhatsApp us: <a href={WA_HREF} class="topbar__wa-link">{WA_DISPLAY}</a>
+    </span>
+    <a href={WA_HREF} class="topbar__right" target="_blank" rel="noopener noreferrer">
+      Chat Now &rarr;
+    </a>
+  </div>
+</div>
+
+<!-- Main header -->
 <header class="header">
   <div class="container header__inner">
+
+    <!-- Logo -->
     <a href={logoHref} class="header__logo">{logoText}</a>
+
+    <!-- Desktop nav -->
     <nav class="header__nav" aria-label="Main navigation">
       <ul class="header__nav-list">
         {navLinks.map((link) => (
-          <li>
-            <a href={link.href} class="header__nav-link">{link.label}</a>
-          </li>
+          <li><a href={link.href} class="header__nav-link">{link.label}</a></li>
         ))}
       </ul>
     </nav>
-    <a href={ctaButton.href} class="header__cta">{ctaButton.label}</a>
+
+    <!-- Desktop action buttons -->
+    <div class="header__actions">
+      <a href={WA_HREF} class="header__wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.112 1.528 5.837L0 24l6.335-1.508A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.733.888.936-3.618-.235-.372A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a href={ctaButton.href} class="header__cta">{ctaButton.label}</a>
+    </div>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="header__hamburger" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+
   </div>
 </header>
 
+<!-- Mobile drawer -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__overlay" id="menu-overlay"></div>
+  <div class="mobile-menu__panel">
+    <div class="mobile-menu__top">
+      <span class="mobile-menu__logo">{logoText}</span>
+      <button class="mobile-menu__close" id="menu-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <ul>
+        {navLinks.map((link) => (
+          <li><a href={link.href} class="mobile-menu__link">{link.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <div class="mobile-menu__ctas">
+      <a href={WA_HREF} class="mobile-menu__wa" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.112 1.528 5.837L0 24l6.335-1.508A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.733.888.936-3.618-.235-.372A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        WhatsApp: {WA_DISPLAY}
+      </a>
+      <a href={ctaButton.href} class="mobile-menu__cta">{ctaButton.label}</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const toggle   = document.getElementById('menu-toggle')!;
+  const close    = document.getElementById('menu-close')!;
+  const overlay  = document.getElementById('menu-overlay')!;
+  const menu     = document.getElementById('mobile-menu')!;
+
+  function open() {
+    menu.setAttribute('aria-hidden', 'false');
+    menu.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    menu.setAttribute('aria-hidden', 'true');
+    menu.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  toggle.addEventListener('click', open);
+  close.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+
+  // Close on nav link click
+  menu.querySelectorAll('.mobile-menu__link, .mobile-menu__wa, .mobile-menu__cta').forEach(el => {
+    el.addEventListener('click', closeMenu);
+  });
+</script>
+
 <style>
+  /* ── Top bar ──────────────────────────────────────────────────── */
+  .topbar {
+    background-color: #051230;
+    border-bottom: 1px solid rgba(249, 115, 22, 0.3);
+    padding: 0.45rem 0;
+  }
+
+  .topbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.8125rem;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .topbar__left {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .topbar__wa-icon {
+    width: 14px;
+    height: 14px;
+    color: #25D366;
+    flex-shrink: 0;
+  }
+
+  .topbar__wa-link {
+    color: #25D366;
+    font-weight: 600;
+  }
+
+  .topbar__right {
+    color: #25D366;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .topbar__right:hover, .topbar__wa-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ── Main header ──────────────────────────────────────────────── */
   .header {
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: var(--color-primary);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
   }
 
   .header__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 1.5rem;
     height: 4rem;
   }
@@ -58,60 +193,225 @@ const { logoText, logoHref, navLinks, ctaButton } = Astro.props;
     color: var(--color-white);
     white-space: nowrap;
     letter-spacing: -0.02em;
+    flex-shrink: 0;
   }
 
-  .header__nav {
-    flex: 1;
-  }
+  /* Nav */
+  .header__nav { flex: 1; }
 
   .header__nav-list {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.125rem;
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .header__nav-link {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.9rem;
     font-weight: 500;
-    padding: 0.375rem 0.75rem;
+    padding: 0.375rem 0.7rem;
     border-radius: 0.25rem;
     transition: color 0.15s, background-color 0.15s;
+    white-space: nowrap;
   }
 
   .header__nav-link:hover {
-    color: var(--color-white);
+    color: #fff;
     background-color: rgba(255, 255, 255, 0.1);
   }
+
+  /* Action buttons */
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex-shrink: 0;
+  }
+
+  .header__wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    white-space: nowrap;
+    transition: background-color 0.15s;
+  }
+
+  .header__wa-btn:hover { background-color: #1da851; }
 
   .header__cta {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 1.125rem;
     background-color: var(--color-accent);
     color: var(--color-white);
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: 0.9rem;
     border-radius: 0.375rem;
     white-space: nowrap;
     transition: background-color 0.15s;
+  }
+
+  .header__cta:hover { background-color: var(--color-accent-dark); }
+
+  /* Hamburger */
+  .header__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0.25rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0.375rem;
+    cursor: pointer;
     flex-shrink: 0;
   }
 
-  .header__cta:hover {
-    background-color: var(--color-accent-dark);
+  .header__hamburger span {
+    display: block;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.2s, opacity 0.2s;
   }
 
-  @media (max-width: 768px) {
-    .header__nav {
-      display: none;
-    }
+  /* ── Mobile drawer ─────────────────────────────────────────────── */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+  }
 
-    .header__inner {
-      justify-content: space-between;
-    }
+  .mobile-menu.is-open { display: flex; }
+
+  .mobile-menu__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+  }
+
+  .mobile-menu__panel {
+    position: relative;
+    margin-left: auto;
+    width: min(320px, 85vw);
+    height: 100%;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.35);
+    animation: slideIn 0.22s ease;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0); }
+  }
+
+  .mobile-menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mobile-menu__logo {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .mobile-menu__close {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.375rem;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-menu__nav { padding: 1rem 0; flex: 1; }
+
+  .mobile-menu__nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu__link {
+    display: block;
+    padding: 0.875rem 1.25rem;
+    color: rgba(255,255,255,0.85);
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .mobile-menu__link:hover {
+    background-color: rgba(255,255,255,0.08);
+    color: #fff;
+  }
+
+  .mobile-menu__ctas {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .mobile-menu__wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1rem;
+    background-color: #25D366;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  .mobile-menu__cta {
+    display: block;
+    padding: 0.875rem 1rem;
+    background-color: var(--color-accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+
+  /* ── Responsive ──────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .header__nav    { display: none; }
+    .header__actions { display: none; }
+    .header__hamburger { display: flex; }
+    .topbar__right  { display: none; }
+  }
+
+  @media (max-width: 480px) {
+    .topbar__left { font-size: 0.75rem; }
   }
 </style>
