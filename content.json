@@ -131,7 +131,14 @@
           "slug": "btec-business-assignment-help"
         }
       ],
-      "contextualQuestion": "How does BTEC's criterion-referenced grading system shape what students need to include in every assignment?"
+      "contextualQuestion": "How does BTEC's criterion-referenced grading system shape what students need to include in every assignment?",
+      "headerImage": {
+        "src": "/images/header_btec-assignment-help.webp",
+        "alt": "BTEC Assignment Help \u2014 expert guidance for Pass, Merit and Distinction grades",
+        "title": "BTEC Assignment Help",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "btec-national-assignment-help",
@@ -193,7 +200,14 @@
           "slug": "btec-public-services-assignment-help"
         }
       ],
-      "contextualQuestion": "How do BTEC National UCAS tariff points connect the assignment grading system to university admissions outcomes?"
+      "contextualQuestion": "How do BTEC National UCAS tariff points connect the assignment grading system to university admissions outcomes?",
+      "headerImage": {
+        "src": "/images/header_btec-national-assignment-help.webp",
+        "alt": "BTEC National Assignment Help \u2014 Level 3 unit guidance for all subjects",
+        "title": "BTEC National Assignment Help",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "btec-hnc-assignment-help",
@@ -251,7 +265,14 @@
           "slug": "btec-it-assignment-help"
         }
       ],
-      "contextualQuestion": "How does Level 4 critical thinking expectation in BTEC HNC assignments connect to academic standards required for university top-up degree progression?"
+      "contextualQuestion": "How does Level 4 critical thinking expectation in BTEC HNC assignments connect to academic standards required for university top-up degree progression?",
+      "headerImage": {
+        "src": "/images/header_btec-hnc-assignment-help.webp",
+        "alt": "BTEC HNC Assignment Help \u2014 Level 4 Higher National Certificate guidance",
+        "title": "BTEC HNC Assignment Help",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "btec-hnd-assignment-help",
@@ -309,7 +330,14 @@
           "slug": "btec-it-assignment-help"
         }
       ],
-      "contextualQuestion": "How do professional body recognition standards for BTEC HND qualifications shape the evidence and depth requirements in Level 5 assignments?"
+      "contextualQuestion": "How do professional body recognition standards for BTEC HND qualifications shape the evidence and depth requirements in Level 5 assignments?",
+      "headerImage": {
+        "src": "/images/header_btec-hnd-assignment-help.webp",
+        "alt": "BTEC HND Assignment Help \u2014 Level 5 Higher National Diploma guidance",
+        "title": "BTEC HND Assignment Help",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "btec-business-assignment-help",
@@ -367,7 +395,14 @@
           "slug": "btec-assignment-grading-criteria-explained"
         }
       ],
-      "contextualQuestion": "How do real-world business case study applications distinguish distinction-grade BTEC Business assignments from pass-level work?"
+      "contextualQuestion": "How do real-world business case study applications distinguish distinction-grade BTEC Business assignments from pass-level work?",
+      "headerImage": {
+        "src": "/images/header_btec-business-assignment-help.webp",
+        "alt": "BTEC Business Assignment Help \u2014 National, HNC and HND unit guidance",
+        "title": "BTEC Business Assignment Help",
+        "width": 1200,
+        "height": 420
+      }
     },
     {
       "slug": "btec-health-and-social-care-assignment-help",
