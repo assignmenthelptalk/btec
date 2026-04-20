@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" width="100%" role="img" aria-labelledby="grading-title">
+  <title id="grading-title">BTEC Assignment Grading Criteria Explained: Pass Merit Distinction Criterion Codes, Verb Taxonomy, Referral Rules, and Evidence Requirements</title>
+
+  <rect width="800" height="580" fill="#F4F7FB" rx="14"/>
+  <rect width="800" height="64" fill="#1B3A6B" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#1B3A6B"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC Grading Criteria: Complete Reference Framework</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#A8C4E0">Pass · Merit · Distinction · Criterion Codes · Command Verbs · Evidence Standards · Referral Rules</text>
+
+  <!-- Criterion hierarchy -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">CRITERION CODE STRUCTURE — HOW P, M, D CODES WORK IN ASSIGNMENT BRIEFS</text>
+
+  <!-- Criterion code visual -->
+  <rect x="28" y="108" width="744" height="90" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+
+  <!-- P codes -->
+  <rect x="44" y="122" width="80" height="62" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="84" y="140" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#16A34A">P1</text>
+  <text x="84" y="156" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">First Pass</text>
+  <text x="84" y="169" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">criterion</text>
+  <text x="84" y="179" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#16A34A">Required</text>
+
+  <rect x="136" y="122" width="80" height="62" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="176" y="140" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#16A34A">P2</text>
+  <text x="176" y="156" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">Second Pass</text>
+  <text x="176" y="169" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">criterion</text>
+  <text x="176" y="179" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#16A34A">Required</text>
+
+  <text x="238" y="155" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" fill="#9CA3AF">→</text>
+
+  <!-- M codes -->
+  <rect x="258" y="122" width="80" height="62" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="298" y="140" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#2563EB">M1</text>
+  <text x="298" y="156" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">First Merit</text>
+  <text x="298" y="169" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">criterion</text>
+  <text x="298" y="179" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">All P met first</text>
+
+  <rect x="350" y="122" width="80" height="62" rx="6" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="390" y="140" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#2563EB">M2</text>
+  <text x="390" y="156" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">Second Merit</text>
+  <text x="390" y="169" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">criterion</text>
+  <text x="390" y="179" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">All P met first</text>
+
+  <text x="452" y="155" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" fill="#9CA3AF">→</text>
+
+  <!-- D codes -->
+  <rect x="472" y="122" width="80" height="62" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="512" y="140" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#7C3AED">D1</text>
+  <text x="512" y="156" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">First Distinction</text>
+  <text x="512" y="169" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">criterion</text>
+  <text x="512" y="179" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">All P+M met</text>
+
+  <rect x="564" y="122" width="80" height="62" rx="6" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="604" y="140" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#7C3AED">D2</text>
+  <text x="604" y="156" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">Second Distinction</text>
+  <text x="604" y="169" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#374151">criterion</text>
+  <text x="604" y="179" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">All P+M met</text>
+
+  <!-- Key rule -->
+  <rect x="660" y="122" width="98" height="62" rx="6" fill="#FEF9C3" stroke="#CA8A04" stroke-width="1.5"/>
+  <text x="709" y="140" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#92400E">CRITICAL RULE</text>
+  <text x="709" y="155" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Missing ONE Pass</text>
+  <text x="709" y="168" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">criterion = Referral</text>
+  <text x="709" y="179" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#DC2626">Regardless of M/D</text>
+
+  <!-- Verb taxonomy -->
+  <rect x="28" y="214" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="229" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">CRITERION VERB TAXONOMY — COGNITIVE LEVEL EACH VERB REQUIRES</text>
+
+  <rect x="28" y="244" width="228" height="140" rx="8" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="28" y="244" width="228" height="28" rx="8" fill="#16A34A"/>
+  <rect x="28" y="262" width="228" height="10" fill="#16A34A"/>
+  <text x="142" y="263" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Pass Verbs</text>
+  <text x="44" y="289" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#374151">describe · identify · outline · state</text>
+  <text x="44" y="305" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#374151">explain · list · produce · demonstrate</text>
+  <text x="44" y="325" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">Cognitive level: Knowledge + Comprehension</text>
+  <text x="44" y="341" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">What: accurate information about the topic</text>
+  <text x="44" y="357" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#16A34A">No analysis required — correctness is key</text>
+  <text x="44" y="372" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#6B7280">Bloom's levels 1–2 (Remember/Understand)</text>
+
+  <rect x="286" y="244" width="228" height="140" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <rect x="286" y="244" width="228" height="28" rx="8" fill="#2563EB"/>
+  <rect x="286" y="262" width="228" height="10" fill="#2563EB"/>
+  <text x="400" y="263" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Merit Verbs</text>
+  <text x="302" y="289" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#374151">analyse · compare · discuss · assess</text>
+  <text x="302" y="305" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#374151">justify · contrast · examine · investigate</text>
+  <text x="302" y="325" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">Cognitive level: Analysis + Justification</text>
+  <text x="302" y="341" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">How/why: cause, effect, comparison</text>
+  <text x="302" y="357" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#2563EB">Structured argument required, not just facts</text>
+  <text x="302" y="372" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#6B7280">Bloom's levels 3–4 (Apply/Analyse)</text>
+
+  <rect x="544" y="244" width="228" height="140" rx="8" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <rect x="544" y="244" width="228" height="28" rx="8" fill="#7C3AED"/>
+  <rect x="544" y="262" width="228" height="10" fill="#7C3AED"/>
+  <text x="658" y="263" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Distinction Verbs</text>
+  <text x="560" y="289" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#374151">evaluate · critically evaluate · appraise</text>
+  <text x="560" y="305" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#374151">synthesise · recommend · critically assess</text>
+  <text x="560" y="325" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">Cognitive level: Synthesis + Evaluation</text>
+  <text x="560" y="341" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">Weigh evidence, reach justified conclusion</text>
+  <text x="560" y="357" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#7C3AED">Independent academic judgement required</text>
+  <text x="560" y="372" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#6B7280">Bloom's levels 5–6 (Evaluate/Create)</text>
+
+  <!-- Referral rules -->
+  <rect x="28" y="400" width="744" height="22" rx="4" fill="#DC2626"/>
+  <text x="400" y="415" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">REFERRAL RULES — WHAT HAPPENS WHEN CRITERIA ARE NOT MET</text>
+
+  <rect x="28" y="430" width="232" height="132" rx="6" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <text x="44" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#DC2626">What is a Referral?</text>
+  <text x="44" y="468" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Failing to meet one or more Pass</text>
+  <text x="44" y="482" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">criteria. No partial pass exists —</text>
+  <text x="44" y="496" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">the unit is not achieved at any grade</text>
+  <text x="44" y="514" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">unless all P criteria are met.</text>
+  <text x="44" y="550" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#DC2626">Distinction writing cannot substitute</text>
+
+  <rect x="284" y="430" width="232" height="132" rx="6" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <text x="300" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#92400E">Internal Assessment</text>
+  <text x="300" y="468" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">One resubmission allowed.</text>
+  <text x="300" y="482" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">New/amended brief targeting</text>
+  <text x="300" y="496" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">only unmet criteria.</text>
+  <text x="300" y="514" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">If resubmission also referred:</text>
+  <text x="300" y="528" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">no further attempt permitted.</text>
+  <text x="300" y="550" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#92400E">Targeted resubmission only</text>
+
+  <rect x="540" y="430" width="232" height="132" rx="6" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <text x="556" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#DC2626">External Assessment</text>
+  <text x="556" y="468" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">No resubmission route.</text>
+  <text x="556" y="482" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Must resit in next Pearson</text>
+  <text x="556" y="496" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">assessment window.</text>
+  <text x="556" y="514" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Typically offered 1–2× per year</text>
+  <text x="556" y="528" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">by Pearson on scheduled dates.</text>
+  <text x="556" y="550" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#DC2626">Preparation is critical — no safety net</text>
+</svg>

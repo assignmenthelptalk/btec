@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" role="img" aria-labelledby="brief-title">
+  <title id="brief-title">BTEC Assignment Brief: How to Read and Interpret It — Structure, Learning Outcomes, Criteria Codes, Task Instructions, and Submission Requirements</title>
+
+  <rect width="800" height="560" fill="#F4F7FB" rx="14"/>
+  <rect width="800" height="64" fill="#1B3A6B" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#1B3A6B"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC Assignment Brief: Reading and Interpreting Every Section</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#A8C4E0">Unit Information · Learning Outcomes · Criterion Codes · Task Instructions · Submission Requirements</text>
+
+  <!-- Brief anatomy -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">ANATOMY OF A BTEC ASSIGNMENT BRIEF — WHAT EACH SECTION TELLS YOU</text>
+
+  <!-- Section 1 -->
+  <rect x="28" y="108" width="360" height="90" rx="6" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="28" y="108" width="360" height="24" rx="6" fill="#0369A1"/>
+  <rect x="28" y="122" width="360" height="10" fill="#0369A1"/>
+  <text x="208" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Section 1: Unit Header Information</text>
+  <text x="44" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Unit number and title (e.g., "Unit 3: Personal and Business Finance")</text>
+  <text x="44" y="163" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Qualification level (National / HNC / HND) and credit value</text>
+  <text x="44" y="178" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Assessment type: Internal or External</text>
+  <text x="44" y="188" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#0369A1">Key: Internal = resubmission possible. External = no resubmission.</text>
+
+  <rect x="412" y="108" width="360" height="90" rx="6" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5"/>
+  <rect x="412" y="108" width="360" height="24" rx="6" fill="#059669"/>
+  <rect x="412" y="122" width="360" height="10" fill="#059669"/>
+  <text x="592" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Section 2: Learning Outcomes (LOs)</text>
+  <text x="428" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· States what the student must know/do by end of unit</text>
+  <text x="428" y="163" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Each task maps to specific learning outcomes</text>
+  <text x="428" y="178" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· LOs are broader than criteria — criteria are the evidence standard</text>
+  <text x="428" y="188" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#059669">Use LOs to understand scope; use criteria for grade target</text>
+
+  <!-- Section 2 -->
+  <rect x="28" y="214" width="360" height="90" rx="6" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <rect x="28" y="214" width="360" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="28" y="228" width="360" height="10" fill="#7C3AED"/>
+  <text x="208" y="229" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Section 3: Assessment Criteria Grid</text>
+  <text x="44" y="253" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Lists every P, M, D criterion with its code (P1, M1, D1, etc.)</text>
+  <text x="44" y="268" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Each criterion has its own verb and requirement statement</text>
+  <text x="44" y="283" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· This grid is what the tutor uses when marking — match it exactly</text>
+  <text x="44" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">This grid is the most important page of the brief</text>
+
+  <rect x="412" y="214" width="360" height="90" rx="6" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <rect x="412" y="214" width="360" height="24" rx="6" fill="#DC2626"/>
+  <rect x="412" y="228" width="360" height="10" fill="#DC2626"/>
+  <text x="592" y="229" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Section 4: Task Instructions</text>
+  <text x="428" y="253" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Describes each task (report, presentation, case study, etc.)</text>
+  <text x="428" y="268" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Specifies which criteria each task is assessed against</text>
+  <text x="428" y="283" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Word counts, formats, and any specific requirements stated here</text>
+  <text x="428" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#DC2626">Follow task format exactly — format deviation risks criteria coverage</text>
+
+  <!-- Reading strategy -->
+  <rect x="28" y="320" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="335" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">5-STEP STRATEGY: HOW TO READ AN ASSIGNMENT BRIEF BEFORE WRITING</text>
+
+  <rect x="28" y="350" width="138" height="170" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="28" y="350" width="138" height="28" rx="6" fill="#1B3A6B"/>
+  <rect x="28" y="366" width="138" height="12" fill="#1B3A6B"/>
+  <text x="97" y="367" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Step 1</text>
+  <text x="38" y="393" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Read the criteria</text>
+  <text x="38" y="407" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">grid first — not</text>
+  <text x="38" y="421" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">the task page.</text>
+  <text x="38" y="437" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Understand what</text>
+  <text x="38" y="451" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">is being marked</text>
+  <text x="38" y="465" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">before reading</text>
+  <text x="38" y="479" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">what to do.</text>
+  <text x="38" y="506" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#1B3A6B">Criteria = target</text>
+
+  <rect x="182" y="350" width="138" height="170" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="182" y="350" width="138" height="28" rx="6" fill="#2563EB"/>
+  <rect x="182" y="366" width="138" height="12" fill="#2563EB"/>
+  <text x="251" y="367" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Step 2</text>
+  <text x="192" y="393" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Highlight the</text>
+  <text x="192" y="407" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">command verb in</text>
+  <text x="192" y="421" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">every criterion.</text>
+  <text x="192" y="437" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Describe, Analyse,</text>
+  <text x="192" y="451" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Evaluate — each</text>
+  <text x="192" y="465" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">demands different</text>
+  <text x="192" y="479" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">evidence depth.</text>
+  <text x="192" y="506" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">Verb = depth signal</text>
+
+  <rect x="336" y="350" width="138" height="170" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="336" y="350" width="138" height="28" rx="6" fill="#059669"/>
+  <rect x="336" y="366" width="138" height="12" fill="#059669"/>
+  <text x="405" y="367" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Step 3</text>
+  <text x="346" y="393" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Count all criteria</text>
+  <text x="346" y="407" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">and create a</text>
+  <text x="346" y="421" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">checklist (P1 ✓,</text>
+  <text x="346" y="435" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">P2 ✓, M1 ✓...).</text>
+  <text x="346" y="451" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Tick each off as</text>
+  <text x="346" y="465" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">you write to avoid</text>
+  <text x="346" y="479" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">missed criteria.</text>
+  <text x="346" y="506" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#059669">Checklist = safety</text>
+
+  <rect x="490" y="350" width="138" height="170" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="490" y="350" width="138" height="28" rx="6" fill="#7C3AED"/>
+  <rect x="490" y="366" width="138" height="12" fill="#7C3AED"/>
+  <text x="559" y="367" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Step 4</text>
+  <text x="500" y="393" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Map criteria to</text>
+  <text x="500" y="407" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">task: which task</text>
+  <text x="500" y="421" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">covers which</text>
+  <text x="500" y="435" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">criteria. Allocate</text>
+  <text x="500" y="449" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">writing space to</text>
+  <text x="500" y="463" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">each criterion</text>
+  <text x="500" y="477" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">proportionally.</text>
+  <text x="500" y="506" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Map before writing</text>
+
+  <rect x="644" y="350" width="128" height="170" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="644" y="350" width="128" height="28" rx="6" fill="#D97706"/>
+  <rect x="644" y="366" width="128" height="12" fill="#D97706"/>
+  <text x="708" y="367" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Step 5</text>
+  <text x="654" y="393" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">After writing,</text>
+  <text x="654" y="407" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">review each</text>
+  <text x="654" y="421" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">criterion — can</text>
+  <text x="654" y="435" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">you point to the</text>
+  <text x="654" y="449" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">exact evidence</text>
+  <text x="654" y="463" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">for each in your</text>
+  <text x="654" y="477" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">submission?</text>
+  <text x="654" y="506" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#D97706">If not — add it</text>
+</svg>

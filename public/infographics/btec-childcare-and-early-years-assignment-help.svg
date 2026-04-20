@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" role="img" aria-labelledby="child-title">
+  <title id="child-title">BTEC Childcare and Early Years Assignment Help: Unit Structure, Child Development Theories, Safeguarding, and EYFS Framework Evidence Standards</title>
+
+  <rect width="800" height="520" fill="#F4F7FB" rx="14"/>
+  <rect width="800" height="64" fill="#1B3A6B" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#1B3A6B"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC Childcare and Early Years: Assignment Evidence Framework</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#A8C4E0">Level 3 National Children's Play Learning and Development · EYFS · Child Development · Safeguarding</text>
+
+  <!-- Key units -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#EC4899"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">CORE UNITS — NATIONAL CHILDREN'S PLAY LEARNING AND DEVELOPMENT</text>
+
+  <rect x="28" y="108" width="224" height="100" rx="6" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="1.5"/>
+  <rect x="28" y="108" width="224" height="24" rx="6" fill="#EC4899"/>
+  <rect x="28" y="122" width="224" height="10" fill="#EC4899"/>
+  <text x="140" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Child Development</text>
+  <text x="40" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Physical, cognitive, language, emotional,</text>
+  <text x="40" y="161" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">social development milestones 0–8 years</text>
+  <text x="40" y="174" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Theories: Piaget, Vygotsky, Bronfenbrenner</text>
+  <text x="40" y="187" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Normative vs holistic development</text>
+  <text x="40" y="198" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#EC4899">Internal · P/M/D · Case studies used</text>
+
+  <rect x="268" y="108" width="224" height="100" rx="6" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="1.5"/>
+  <rect x="268" y="108" width="224" height="24" rx="6" fill="#1B3A6B"/>
+  <rect x="268" y="122" width="224" height="10" fill="#1B3A6B"/>
+  <text x="380" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Safeguarding Children</text>
+  <text x="280" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Children Act 1989, 2004 · Every Child Matters</text>
+  <text x="280" y="161" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Types of abuse: physical, emotional, sexual,</text>
+  <text x="280" y="174" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">neglect, domestic violence</text>
+  <text x="280" y="187" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Disclosure procedures, LADO referral</text>
+  <text x="280" y="198" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#1B3A6B">Internal · P/M/D</text>
+
+  <rect x="508" y="108" width="264" height="100" rx="6" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="1.5"/>
+  <rect x="508" y="108" width="264" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="508" y="122" width="264" height="10" fill="#7C3AED"/>
+  <text x="640" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Early Years Foundation Stage (EYFS)</text>
+  <text x="520" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Statutory framework 2021: seven areas of learning</text>
+  <text x="520" y="161" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Three prime areas: PSED, Communication, PD</text>
+  <text x="520" y="174" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Assessment: formative observation, summaries</text>
+  <text x="520" y="187" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Characteristics of Effective Learning (COEL)</text>
+  <text x="520" y="198" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#7C3AED">Internal · P/M/D</text>
+
+  <!-- Theory application -->
+  <rect x="28" y="224" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="239" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">CHILD DEVELOPMENT THEORY — HOW TO APPLY AT EACH GRADE LEVEL</text>
+
+  <rect x="28" y="254" width="228" height="120" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="28" y="254" width="228" height="24" rx="6" fill="#16A34A"/>
+  <rect x="28" y="268" width="228" height="10" fill="#16A34A"/>
+  <text x="142" y="269" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Pass — Name and Describe</text>
+  <text x="40" y="293" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">"Piaget proposed four stages of cognitive</text>
+  <text x="40" y="307" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">development. The sensorimotor stage</text>
+  <text x="40" y="321" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">(0–2 years) involves learning through</text>
+  <text x="40" y="335" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">senses and motor activity."</text>
+  <text x="40" y="361" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#16A34A">Accurate theory description = Pass</text>
+
+  <rect x="286" y="254" width="228" height="120" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="286" y="254" width="228" height="24" rx="6" fill="#2563EB"/>
+  <rect x="286" y="268" width="228" height="10" fill="#2563EB"/>
+  <text x="400" y="269" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Merit — Apply to Child</text>
+  <text x="298" y="293" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">"Applying Piaget's preoperational stage</text>
+  <text x="298" y="307" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">(2–7 years), Amara's (age 4) symbolic</text>
+  <text x="298" y="321" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">play with building blocks demonstrates</text>
+  <text x="298" y="335" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">egocentric thinking, as she..."</text>
+  <text x="298" y="361" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">Theory + child observation + link = Merit</text>
+
+  <rect x="544" y="254" width="228" height="120" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="544" y="254" width="228" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="544" y="268" width="228" height="10" fill="#7C3AED"/>
+  <text x="658" y="269" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Distinction — Evaluate Theory</text>
+  <text x="556" y="293" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">"While Piaget's stage theory accounts for</text>
+  <text x="556" y="307" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Amara's observed egocentrism, Vygotsky's</text>
+  <text x="556" y="321" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">ZPD framework better explains her rapid</text>
+  <text x="556" y="335" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">progress when scaffolded by her key person..."</text>
+  <text x="556" y="361" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Compare theories + evaluate which fits = D</text>
+
+  <!-- Play and observation -->
+  <rect x="28" y="390" width="744" height="22" rx="4" fill="#EC4899"/>
+  <text x="400" y="405" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">OBSERVATION AND PLAY — PRACTICAL EVIDENCE FOR CHILDCARE ASSIGNMENTS</text>
+
+  <rect x="28" y="420" width="356" height="82" rx="6" fill="#FFFFFF" stroke="#FBCFE8" stroke-width="1.5"/>
+  <text x="44" y="440" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#EC4899">Observation Types (must know)</text>
+  <text x="44" y="457" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Narrative/running record · Time sampling · Event sampling</text>
+  <text x="44" y="472" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Sociogram · Checklist · Target child observation</text>
+  <text x="44" y="487" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Each has different purpose — justify choice in assignment</text>
+  <text x="44" y="494" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#EC4899">Distinction: evaluate which method is most appropriate and why</text>
+
+  <rect x="416" y="420" width="356" height="82" rx="6" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <text x="432" y="440" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#7C3AED">Types of Play (Parten's Social Stages)</text>
+  <text x="432" y="457" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Solitary → Onlooker → Parallel → Associative → Cooperative</text>
+  <text x="432" y="472" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Link play type observed to developmental stage and theory</text>
+  <text x="432" y="487" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Heuristic play, treasure basket play for under-2s</text>
+  <text x="432" y="494" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Distinction: evaluate play provision against EYFS learning goals</text>
+</svg>

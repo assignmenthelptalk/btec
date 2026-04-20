@@ -15,6 +15,14 @@ interface RelatedPage {
   slug: string;
 }
 
+interface HeaderImage {
+  src: string;
+  alt: string;
+  title: string;
+  width: number;
+  height: number;
+}
+
 interface PageData {
   slug: string;
   tier: number;
@@ -26,6 +34,7 @@ interface PageData {
   h2Sections: H2Section[];
   relatedPages: RelatedPage[];
   contextualQuestion: string;
+  headerImage?: HeaderImage;
 }
 
 interface Props {
@@ -95,6 +104,20 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
         {page.tier === 1 ? 'Core Service' : 'Expert Guide'}
       </span>
       <h1 class="page-hero__h1">{page.h1}</h1>
+      {page.headerImage && (
+        <div class="page-hero__header-image">
+          <img
+            src={page.headerImage.src}
+            alt={page.headerImage.alt}
+            title={page.headerImage.title}
+            width={page.headerImage.width}
+            height={page.headerImage.height}
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </div>
+      )}
       <p class="page-hero__intro">{page.intro}</p>
       <a href={header.ctaButton.href} class="page-hero__cta">{header.ctaButton.label} →</a>
     </div>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="100%" role="img" aria-labelledby="resub-title">
+  <title id="resub-title">BTEC Assignment Resubmission Guide: Referral Process, One Resubmission Rule, Targeted Brief, External Assessment Resit, and Timeline</title>
+
+  <rect width="800" height="540" fill="#F4F7FB" rx="14"/>
+  <rect width="800" height="64" fill="#DC2626" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#DC2626"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC Assignment Resubmission: Complete Process Guide</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#FECACA">Referral Rules · One-Attempt Rule · Targeted Resubmission · External Resit Process</text>
+
+  <!-- Process flow -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">INTERNAL ASSESSMENT RESUBMISSION PROCESS — STEP BY STEP</text>
+
+  <!-- Flow boxes -->
+  <rect x="28" y="108" width="130" height="100" rx="8" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <rect x="28" y="108" width="130" height="28" rx="8" fill="#DC2626"/>
+  <rect x="28" y="126" width="130" height="10" fill="#DC2626"/>
+  <text x="93" y="126" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Step 1</text>
+  <text x="40" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Submission</text>
+  <text x="40" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">referred by tutor</text>
+  <text x="40" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Unmet P criteria</text>
+  <text x="40" y="196" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#DC2626">Referral issued</text>
+
+  <text x="176" y="163" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" fill="#6B7280">→</text>
+
+  <rect x="192" y="108" width="130" height="100" rx="8" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <rect x="192" y="108" width="130" height="28" rx="8" fill="#D97706"/>
+  <rect x="192" y="126" width="130" height="10" fill="#D97706"/>
+  <text x="257" y="126" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Step 2</text>
+  <text x="204" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Tutor identifies</text>
+  <text x="204" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">unmet criteria</text>
+  <text x="204" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Issues targeted</text>
+  <text x="204" y="196" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#D97706">New/amended brief</text>
+
+  <text x="340" y="163" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" fill="#6B7280">→</text>
+
+  <rect x="356" y="108" width="130" height="100" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <rect x="356" y="108" width="130" height="28" rx="8" fill="#2563EB"/>
+  <rect x="356" y="126" width="130" height="10" fill="#2563EB"/>
+  <text x="421" y="126" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Step 3</text>
+  <text x="368" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Student responds</text>
+  <text x="368" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">to targeted brief</text>
+  <text x="368" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Unmet criteria only</text>
+  <text x="368" y="196" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">One attempt only</text>
+
+  <text x="504" y="163" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" fill="#6B7280">→</text>
+
+  <rect x="520" y="108" width="130" height="100" rx="8" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="520" y="108" width="130" height="28" rx="8" fill="#16A34A"/>
+  <rect x="520" y="126" width="130" height="10" fill="#16A34A"/>
+  <text x="585" y="126" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Step 4a — Pass</text>
+  <text x="532" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Resubmission meets</text>
+  <text x="532" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">all outstanding P</text>
+  <text x="532" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">criteria → grade</text>
+  <text x="532" y="196" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#16A34A">Unit achieved ✓</text>
+
+  <rect x="666" y="108" width="106" height="100" rx="8" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <rect x="666" y="108" width="106" height="28" rx="8" fill="#DC2626"/>
+  <rect x="666" y="126" width="106" height="10" fill="#DC2626"/>
+  <text x="719" y="126" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Step 4b — Fail</text>
+  <text x="678" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Resubmission</text>
+  <text x="678" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">also referred</text>
+  <text x="678" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">No further</text>
+  <text x="678" y="196" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#DC2626">attempt allowed</text>
+
+  <!-- Critical rules -->
+  <rect x="28" y="226" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="241" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">CRITICAL RESUBMISSION RULES — WHAT STUDENTS FREQUENTLY MISUNDERSTAND</text>
+
+  <rect x="28" y="256" width="356" height="130" rx="8" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <text x="44" y="276" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#D97706">Rule 1: Targeted brief — partial resubmission only</text>
+  <text x="44" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">The resubmission Assignment Brief must target</text>
+  <text x="44" y="309" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">only the criteria that were not met. The student</text>
+  <text x="44" y="324" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">does not resubmit work that already met its</text>
+  <text x="44" y="339" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">criteria. Only the outstanding evidence gap</text>
+  <text x="44" y="354" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">needs to be addressed.</text>
+  <text x="44" y="374" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#D97706">Do not rewrite the whole assignment</text>
+
+  <rect x="416" y="256" width="356" height="130" rx="8" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <text x="432" y="276" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#DC2626">Rule 2: Resubmission cannot raise grade band</text>
+  <text x="432" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">At most centres, a resubmission can only raise</text>
+  <text x="432" y="309" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">the grade to Pass (not Merit or Distinction) if the</text>
+  <text x="432" y="324" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">original submission failed at Pass level. Check</text>
+  <text x="432" y="339" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">your centre's policy — some allow resubmission</text>
+  <text x="432" y="354" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">to achieve Merit/Distinction on referred criteria.</text>
+  <text x="432" y="374" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#DC2626">Always clarify grade ceiling with tutor</text>
+
+  <!-- External resit -->
+  <rect x="28" y="402" width="744" height="22" rx="4" fill="#7C3AED"/>
+  <text x="400" y="417" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">EXTERNAL ASSESSMENT — NO RESUBMISSION ROUTE, RESIT ONLY</text>
+
+  <rect x="28" y="430" width="356" height="92" rx="8" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <text x="44" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#7C3AED">External units: what to do after a fail</text>
+  <text x="44" y="467" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Identify the next Pearson assessment window</text>
+  <text x="44" y="482" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Check the unit specification for exam format</text>
+  <text x="44" y="497" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Register for resit at your centre (centre registers)</text>
+  <text x="44" y="512" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Prepare: command words, timed practice, stimulus analysis</text>
+
+  <rect x="416" y="430" width="356" height="92" rx="8" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <text x="432" y="450" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#7C3AED">External assessment windows (typical)</text>
+  <text x="432" y="467" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· January/February window — sit in Jan/Feb</text>
+  <text x="432" y="482" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· May/June window — sit in May/June</text>
+  <text x="432" y="497" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Check Pearson qualifications website for dates</text>
+  <text x="432" y="512" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Confirm with centre — windows vary by unit</text>
+</svg>

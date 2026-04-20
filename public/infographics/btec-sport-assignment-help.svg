@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" role="img" aria-labelledby="sport-title">
+  <title id="sport-title">BTEC Sport Assignment Help: Anatomy, Physiology, Coaching, Performance Analysis Units and Grading Standards</title>
+
+  <rect width="800" height="520" fill="#F4F7FB" rx="14"/>
+  <rect width="800" height="64" fill="#1B3A6B" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#1B3A6B"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC Sport Assignment Help: Unit Framework and Evidence Standards</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#A8C4E0">Level 3 National Sport · Level 4 HNC Sport and Exercise Science · Internal and External Units</text>
+
+  <!-- Core units -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#16A34A"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">BTEC NATIONAL SPORT — CORE UNIT REQUIREMENTS AND EVIDENCE TYPES</text>
+
+  <rect x="28" y="108" width="220" height="100" rx="6" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="28" y="108" width="220" height="24" rx="6" fill="#16A34A"/>
+  <rect x="28" y="122" width="220" height="10" fill="#16A34A"/>
+  <text x="138" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Anatomy and Physiology</text>
+  <text x="40" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Skeletal + muscular systems</text>
+  <text x="40" y="161" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Cardiovascular + respiratory systems</text>
+  <text x="40" y="174" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Energy systems: ATP-PC, glycolytic, aerobic</text>
+  <text x="40" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#DC2626">EXTERNAL — No resubmission</text>
+
+  <rect x="264" y="108" width="220" height="100" rx="6" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="264" y="108" width="220" height="24" rx="6" fill="#1B3A6B"/>
+  <rect x="264" y="122" width="220" height="10" fill="#1B3A6B"/>
+  <text x="374" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Fitness Training and Programming</text>
+  <text x="276" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">FITT principles, training methods</text>
+  <text x="276" y="161" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Periodisation, fitness testing</text>
+  <text x="276" y="174" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Training programme design</text>
+  <text x="276" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#1B3A6B">Internal · P/M/D</text>
+
+  <rect x="500" y="108" width="272" height="100" rx="6" fill="#FFFFFF" stroke="#BBF7D0" stroke-width="1.5"/>
+  <rect x="500" y="108" width="272" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="500" y="122" width="272" height="10" fill="#7C3AED"/>
+  <text x="636" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Sports Coaching and Development</text>
+  <text x="512" y="148" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Coaching styles, session planning</text>
+  <text x="512" y="161" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">UKCC framework, safeguarding in sport</text>
+  <text x="512" y="174" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Observation, feedback, reflection</text>
+  <text x="512" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#7C3AED">Internal — practical + written evidence</text>
+
+  <!-- Grade evidence -->
+  <rect x="28" y="224" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="239" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">ANATOMY AND PHYSIOLOGY EXTERNAL EXAM — COMMAND WORD RESPONSE GUIDE</text>
+
+  <rect x="28" y="254" width="228" height="120" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="28" y="254" width="228" height="24" rx="6" fill="#16A34A"/>
+  <rect x="28" y="268" width="228" height="10" fill="#16A34A"/>
+  <text x="142" y="269" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Describe (Pass level)</text>
+  <text x="40" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">State facts about structure/function</text>
+  <text x="40" y="309" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">"The biceps brachii is a two-headed</text>
+  <text x="40" y="323" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">muscle located in the anterior</text>
+  <text x="40" y="337" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">compartment of the upper arm."</text>
+  <text x="40" y="360" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#16A34A">Anatomical accuracy = Pass</text>
+
+  <rect x="286" y="254" width="228" height="120" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="286" y="254" width="228" height="24" rx="6" fill="#2563EB"/>
+  <rect x="286" y="268" width="228" height="10" fill="#2563EB"/>
+  <text x="400" y="269" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Analyse (Merit level)</text>
+  <text x="298" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Explain how system responds to exercise</text>
+  <text x="298" y="309" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">"During sub-maximal exercise, stroke</text>
+  <text x="298" y="323" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">volume increases due to Starling's law</text>
+  <text x="298" y="337" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">as venous return increases, causing..."</text>
+  <text x="298" y="360" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">Cause-and-effect reasoning = Merit</text>
+
+  <rect x="544" y="254" width="228" height="120" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="544" y="254" width="228" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="544" y="268" width="228" height="10" fill="#7C3AED"/>
+  <text x="658" y="269" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Evaluate (Distinction level)</text>
+  <text x="556" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">Weigh evidence, reach justified conclusion</text>
+  <text x="556" y="309" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">"HIIT training maximises VO2 max</text>
+  <text x="556" y="323" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">adaptation over steady-state methods;</text>
+  <text x="556" y="337" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">however, for untrained populations..."</text>
+  <text x="556" y="360" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Balanced judgement = Distinction</text>
+
+  <!-- Performance analysis section -->
+  <rect x="28" y="392" width="744" height="22" rx="4" fill="#16A34A"/>
+  <text x="400" y="407" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">SPORT PERFORMANCE ANALYSIS — KEY ASSIGNMENT COMPONENTS</text>
+
+  <rect x="28" y="422" width="356" height="80" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="44" y="442" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#1B3A6B">Fitness Testing Component</text>
+  <text x="44" y="458" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Select appropriate tests for sport (VO2 max, 1RM, agility)</text>
+  <text x="44" y="473" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Record results vs normative data tables</text>
+  <text x="44" y="488" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#16A34A">Distinction: evaluate test validity and reliability for athlete</text>
+
+  <rect x="416" y="422" width="356" height="80" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="432" y="442" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#1B3A6B">Coaching Session Plan Component</text>
+  <text x="432" y="458" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· SMARTER objectives, warm-up/main/cool-down structure</text>
+  <text x="432" y="473" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Health and safety, differentiation for ability levels</text>
+  <text x="432" y="488" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Distinction: justify session design vs alternatives</text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="100%" role="img" aria-labelledby="it-title">
+  <title id="it-title">BTEC IT Assignment Help: Programming, Networking, Systems, Database Units, Internal vs External Assessment, and Distinction Evidence Standards</title>
+
+  <rect width="800" height="540" fill="#F4F7FB" rx="14"/>
+  <rect width="800" height="64" fill="#1B3A6B" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#1B3A6B"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC IT Assignment Help: Unit Coverage and Evidence Framework</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#A8C4E0">Level 3 National IT · Level 4 HNC Computing · Level 5 HND Computing · Internal + External Units</text>
+
+  <!-- Unit grid header -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#0369A1"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">BTEC NATIONAL IT — CORE UNITS AND ASSESSMENT TYPES</text>
+
+  <!-- Units -->
+  <rect x="28" y="108" width="175" height="90" rx="6" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="28" y="108" width="175" height="24" rx="6" fill="#0369A1"/>
+  <rect x="28" y="122" width="175" height="10" fill="#0369A1"/>
+  <text x="115" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Principles of IT</text>
+  <text x="40" y="147" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Hardware, software, networks</text>
+  <text x="40" y="160" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Security, data legislation</text>
+  <text x="40" y="173" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">GDPR, cyber threats</text>
+  <text x="40" y="188" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#DC2626">EXTERNAL — No resubmission</text>
+
+  <rect x="219" y="108" width="175" height="90" rx="6" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="219" y="108" width="175" height="24" rx="6" fill="#1B3A6B"/>
+  <rect x="219" y="122" width="175" height="10" fill="#1B3A6B"/>
+  <text x="306" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Programming</text>
+  <text x="231" y="147" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Python/Java code + pseudocode</text>
+  <text x="231" y="160" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Algorithms, testing evidence</text>
+  <text x="231" y="173" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Flowcharts, trace tables</text>
+  <text x="231" y="188" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#0369A1">Internal · P/M/D</text>
+
+  <rect x="410" y="108" width="175" height="90" rx="6" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="410" y="108" width="175" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="410" y="122" width="175" height="10" fill="#7C3AED"/>
+  <text x="497" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Networking</text>
+  <text x="422" y="147" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Network topologies, protocols</text>
+  <text x="422" y="160" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">TCP/IP, OSI model, subnetting</text>
+  <text x="422" y="173" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Network security config</text>
+  <text x="422" y="188" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#7C3AED">Internal · P/M/D</text>
+
+  <rect x="601" y="108" width="171" height="90" rx="6" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <rect x="601" y="108" width="171" height="24" rx="6" fill="#2563EB"/>
+  <rect x="601" y="122" width="171" height="10" fill="#2563EB"/>
+  <text x="686" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Database Systems</text>
+  <text x="613" y="147" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">ER diagrams, normalisation</text>
+  <text x="613" y="160" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">SQL queries (SELECT/JOIN)</text>
+  <text x="613" y="173" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Data integrity, forms/reports</text>
+  <text x="613" y="188" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#2563EB">Internal · P/M/D</text>
+
+  <!-- Programming evidence standard -->
+  <rect x="28" y="216" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="231" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">PROGRAMMING ASSIGNMENT — EVIDENCE STANDARD BY GRADE</text>
+
+  <rect x="28" y="246" width="228" height="110" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="28" y="246" width="228" height="24" rx="6" fill="#059669"/>
+  <rect x="28" y="260" width="228" height="10" fill="#059669"/>
+  <text x="142" y="261" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Pass — Working Code</text>
+  <text x="40" y="285" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Code runs without critical errors</text>
+  <text x="40" y="299" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Meets functional requirements</text>
+  <text x="40" y="313" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Basic test evidence (screenshots)</text>
+  <text x="40" y="327" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Comments in code explaining logic</text>
+  <text x="40" y="344" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#059669">All criteria met = Pass awarded</text>
+
+  <rect x="286" y="246" width="228" height="110" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="286" y="246" width="228" height="24" rx="6" fill="#2563EB"/>
+  <rect x="286" y="260" width="228" height="10" fill="#2563EB"/>
+  <text x="400" y="261" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Merit — Optimised Code</text>
+  <text x="298" y="285" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Structured with functions/methods</text>
+  <text x="298" y="299" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Error handling implemented</text>
+  <text x="298" y="313" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Test plan with expected vs actual</text>
+  <text x="298" y="327" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Analysis of code efficiency choices</text>
+  <text x="298" y="344" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">Justify design decisions made</text>
+
+  <rect x="544" y="246" width="228" height="110" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="544" y="246" width="228" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="544" y="260" width="228" height="10" fill="#7C3AED"/>
+  <text x="658" y="261" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Distinction — Evaluated Code</text>
+  <text x="556" y="285" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Evaluate against alternative approaches</text>
+  <text x="556" y="299" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· OOP principles applied and evaluated</text>
+  <text x="556" y="313" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Comprehensive test strategy evaluated</text>
+  <text x="556" y="327" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Improvements justified with reasoning</text>
+  <text x="556" y="344" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Critical evaluation of own solution</text>
+
+  <!-- HNC/HND -->
+  <rect x="28" y="374" width="744" height="22" rx="4" fill="#0369A1"/>
+  <text x="400" y="389" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">HNC/HND COMPUTING — ADDITIONAL REQUIREMENTS AT HIGHER NATIONAL LEVEL</text>
+
+  <rect x="28" y="404" width="356" height="108" rx="8" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5"/>
+  <text x="44" y="424" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#0369A1">HNC Level 4 — Computing Units</text>
+  <text x="44" y="442" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Programming paradigms (OOP, functional)</text>
+  <text x="44" y="457" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Networking infrastructure and security</text>
+  <text x="44" y="472" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Database design and management</text>
+  <text x="44" y="487" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Systems analysis and professional context</text>
+  <text x="44" y="500" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#0369A1">Harvard referencing mandatory at Level 4</text>
+
+  <rect x="416" y="404" width="356" height="108" rx="8" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <text x="432" y="424" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#7C3AED">HND Level 5 — Advanced Computing Units</text>
+  <text x="432" y="442" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Software engineering methodologies (Agile/Scrum)</text>
+  <text x="432" y="457" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Cloud computing architecture and services</text>
+  <text x="432" y="472" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Cybersecurity frameworks (ISO 27001, NIST)</text>
+  <text x="432" y="487" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Research project: 5,000–6,000 words</text>
+  <text x="432" y="500" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Peer-reviewed journals required at Distinction</text>
+</svg>

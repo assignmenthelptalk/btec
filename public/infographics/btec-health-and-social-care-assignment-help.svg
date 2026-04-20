@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" role="img" aria-labelledby="hsc-title">
+  <title id="hsc-title">BTEC Health and Social Care Assignment Help: Unit Map, Grading Requirements, Reflective Practice, and Case Study Evidence Standards</title>
+
+  <!-- Background -->
+  <rect width="800" height="560" fill="#F4F7FB" rx="14"/>
+
+  <!-- Header -->
+  <rect width="800" height="64" fill="#1B3A6B" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#1B3A6B"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC Health and Social Care: Assignment Evidence Framework</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#A8C4E0">Level 3 National · Level 4 HNC · Level 5 HND · Pearson Criterion-Referenced Assessment</text>
+
+  <!-- Grade band header -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#0F766E"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">GRADE BAND REQUIREMENTS — HEALTH AND SOCIAL CARE CONTEXT</text>
+
+  <!-- Pass -->
+  <rect x="28" y="108" width="228" height="120" rx="8" fill="#FFFFFF" stroke="#99F6E4" stroke-width="1.5"/>
+  <rect x="28" y="108" width="228" height="30" rx="8" fill="#0F766E"/>
+  <rect x="28" y="128" width="228" height="10" fill="#0F766E"/>
+  <text x="142" y="127" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">PASS</text>
+  <text x="42" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#374151">Describe, identify, explain</text>
+  <text x="42" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Describe lifespan development stages</text>
+  <text x="42" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Identify safeguarding procedures</text>
+  <text x="42" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Explain care values in practice</text>
+  <text x="42" y="215" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#0F766E">Accurate knowledge + correct application</text>
+
+  <!-- Merit -->
+  <rect x="286" y="108" width="228" height="120" rx="8" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+  <rect x="286" y="108" width="228" height="30" rx="8" fill="#2563EB"/>
+  <rect x="286" y="128" width="228" height="10" fill="#2563EB"/>
+  <text x="400" y="127" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">MERIT</text>
+  <text x="300" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#374151">Analyse, compare, discuss</text>
+  <text x="300" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Analyse impact of social factors on health</text>
+  <text x="300" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Compare theories of development (Piaget/Erikson)</text>
+  <text x="300" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Discuss communication barriers in care</text>
+  <text x="300" y="215" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">Theory linked to service user scenario</text>
+
+  <!-- Distinction -->
+  <rect x="544" y="108" width="228" height="120" rx="8" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <rect x="544" y="108" width="228" height="30" rx="8" fill="#7C3AED"/>
+  <rect x="544" y="128" width="228" height="10" fill="#7C3AED"/>
+  <text x="658" y="127" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">DISTINCTION</text>
+  <text x="558" y="153" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#374151">Evaluate, critically assess, justify</text>
+  <text x="558" y="167" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Evaluate effectiveness of care provision</text>
+  <text x="558" y="181" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Critically assess safeguarding legislation</text>
+  <text x="558" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Justify recommendations for practice</text>
+  <text x="558" y="215" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Reflective synthesis + professional judgement</text>
+
+  <!-- Key Units Section -->
+  <rect x="28" y="246" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="261" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">KEY UNITS — NATIONAL LEVEL 3 H&amp;SC ASSIGNMENT FRAMEWORK</text>
+
+  <!-- Unit boxes -->
+  <rect x="28" y="276" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="28" y="276" width="170" height="22" rx="6" fill="#0F766E"/>
+  <rect x="28" y="290" width="170" height="8" fill="#0F766E"/>
+  <text x="113" y="290" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Unit 1</text>
+  <text x="38" y="311" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#111827">Human Lifespan Development</text>
+  <text x="38" y="325" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">PIES model (Physical, Intellectual,</text>
+  <text x="38" y="337" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">Emotional, Social) · Life stages</text>
+  <text x="38" y="355" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#0F766E">Internal · P/M/D</text>
+
+  <rect x="212" y="276" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="212" y="276" width="170" height="22" rx="6" fill="#1B3A6B"/>
+  <rect x="212" y="290" width="170" height="8" fill="#1B3A6B"/>
+  <text x="297" y="290" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Unit 2</text>
+  <text x="222" y="311" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#111827">Working in Health and Social Care</text>
+  <text x="222" y="325" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">Care values · Communication</text>
+  <text x="222" y="337" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">Legislation · Person-centred care</text>
+  <text x="222" y="355" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#1B3A6B">Internal · P/M/D</text>
+
+  <rect x="396" y="276" width="170" height="90" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="396" y="276" width="170" height="22" rx="6" fill="#7C3AED"/>
+  <rect x="396" y="290" width="170" height="8" fill="#7C3AED"/>
+  <text x="481" y="290" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Unit 5</text>
+  <text x="406" y="311" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#111827">Meeting Individual Care Needs</text>
+  <text x="406" y="325" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">Care planning · Case studies</text>
+  <text x="406" y="337" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">Risk assessment · Reflective practice</text>
+  <text x="406" y="355" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#7C3AED">Internal · P/M/D</text>
+
+  <rect x="580" y="276" width="192" height="90" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="580" y="276" width="192" height="22" rx="6" fill="#2563EB"/>
+  <rect x="580" y="290" width="192" height="8" fill="#2563EB"/>
+  <text x="676" y="290" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Unit 10</text>
+  <text x="590" y="311" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#111827">Safeguarding in H&amp;SC</text>
+  <text x="590" y="325" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">Legislation: Care Act 2014, Mental</text>
+  <text x="590" y="337" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#4B5563">Capacity Act · Abuse types</text>
+  <text x="590" y="355" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#2563EB">Internal · P/M/D</text>
+
+  <!-- Reflective Model -->
+  <rect x="28" y="382" width="360" height="150" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="28" y="382" width="360" height="26" rx="8" fill="#0F766E"/>
+  <rect x="28" y="398" width="360" height="10" fill="#0F766E"/>
+  <text x="208" y="399" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Gibbs' Reflective Cycle — Distinction Evidence Model</text>
+  <text x="44" y="425" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">1. Description</text><text x="150" y="425" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">What happened in the care scenario?</text>
+  <text x="44" y="442" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">2. Feelings</text><text x="150" y="442" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">Emotional response to situation</text>
+  <text x="44" y="459" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">3. Evaluation</text><text x="150" y="459" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">What was good/bad about experience?</text>
+  <text x="44" y="476" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">4. Analysis</text><text x="150" y="476" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">What sense can be made of situation?</text>
+  <text x="44" y="493" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">5. Conclusion</text><text x="150" y="493" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">What else could have been done?</text>
+  <text x="44" y="510" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">6. Action Plan</text><text x="150" y="510" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" fill="#4B5563">What would you do differently?</text>
+
+  <!-- Case Study Rules -->
+  <rect x="408" y="382" width="364" height="150" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5"/>
+  <rect x="408" y="382" width="364" height="26" rx="8" fill="#1B3A6B"/>
+  <rect x="408" y="398" width="364" height="10" fill="#1B3A6B"/>
+  <text x="590" y="399" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Case Study Evidence: Pass vs Distinction</text>
+  <text x="424" y="425" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#DC2626">PASS ONLY:</text>
+  <text x="490" y="425" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">"Mrs J has dementia and needs personal care."</text>
+  <text x="424" y="445" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" font-weight="700" fill="#0F766E">DISTINCTION:</text>
+  <text x="490" y="445" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">"Mrs J's cognitive decline (Alzheimer's stage 2)</text>
+  <text x="490" y="458" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">limits capacity; applying MCA 2005 principles</text>
+  <text x="490" y="471" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">and person-centred Kitwood model, the care</text>
+  <text x="490" y="484" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">plan prioritises dignity over risk-aversion..."</text>
+  <text x="424" y="505" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#6B7280">Key: apply theory + legislation + professional judgement</text>
+  <text x="424" y="520" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#6B7280">to real/simulated service user scenario</text>
+</svg>

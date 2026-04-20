@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="100%" role="img" aria-labelledby="eng-title">
+  <title id="eng-title">BTEC Engineering Assignment Help: Unit Structure, Practical vs Written Evidence, Maths Requirements, and Grading Standards</title>
+
+  <rect width="800" height="540" fill="#F4F7FB" rx="14"/>
+  <rect width="800" height="64" fill="#1B3A6B" rx="14"/>
+  <rect y="50" width="800" height="14" fill="#1B3A6B"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">BTEC Engineering: Assignment Evidence and Unit Framework</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" fill="#A8C4E0">Level 3 National · Level 4 HNC · Level 5 HND · Mechanical, Electrical, Civil, Manufacturing</text>
+
+  <!-- Discipline row -->
+  <rect x="28" y="78" width="744" height="22" rx="4" fill="#B45309"/>
+  <text x="400" y="93" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">ENGINEERING DISCIPLINES COVERED — PATHWAY-SPECIFIC ASSESSMENT REQUIREMENTS</text>
+
+  <rect x="28" y="108" width="168" height="80" rx="6" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <rect x="28" y="108" width="168" height="24" rx="6" fill="#B45309"/>
+  <rect x="28" y="122" width="168" height="10" fill="#B45309"/>
+  <text x="112" y="123" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Mechanical</text>
+  <text x="40" y="145" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Statics, dynamics, materials</text>
+  <text x="40" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Thermodynamics, fluid mechanics</text>
+  <text x="40" y="175" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#B45309">Lab reports + calculations</text>
+
+  <rect x="212" y="108" width="168" height="80" rx="6" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <rect x="212" y="108" width="168" height="24" rx="6" fill="#2563EB"/>
+  <rect x="212" y="122" width="168" height="10" fill="#2563EB"/>
+  <text x="296" y="123" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Electrical</text>
+  <text x="224" y="145" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Circuit theory, AC/DC systems</text>
+  <text x="224" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Power systems, instrumentation</text>
+  <text x="224" y="175" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#2563EB">Circuit calculations + reports</text>
+
+  <rect x="396" y="108" width="168" height="80" rx="6" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5"/>
+  <rect x="396" y="108" width="168" height="24" rx="6" fill="#059669"/>
+  <rect x="396" y="122" width="168" height="10" fill="#059669"/>
+  <text x="480" y="123" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Civil</text>
+  <text x="408" y="145" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Structural analysis, site surveying</text>
+  <text x="408" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Construction materials, CAD</text>
+  <text x="408" y="175" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#059669">Technical drawings + reports</text>
+
+  <rect x="580" y="108" width="192" height="80" rx="6" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <rect x="580" y="108" width="192" height="24" rx="6" fill="#7C3AED"/>
+  <rect x="580" y="122" width="192" height="10" fill="#7C3AED"/>
+  <text x="676" y="123" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Manufacturing</text>
+  <text x="592" y="145" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">CNC, quality control, lean mfg</text>
+  <text x="592" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" fill="#374151">Process planning, tolerances</text>
+  <text x="592" y="175" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="7.5" font-weight="700" fill="#7C3AED">Process sheets + calculations</text>
+
+  <!-- Evidence types -->
+  <rect x="28" y="204" width="744" height="22" rx="4" fill="#1B3A6B"/>
+  <text x="400" y="219" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">EVIDENCE TYPES — PRACTICAL vs WRITTEN ASSESSMENT</text>
+
+  <rect x="28" y="234" width="356" height="130" rx="8" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <rect x="28" y="234" width="356" height="26" rx="8" fill="#B45309"/>
+  <rect x="28" y="250" width="356" height="10" fill="#B45309"/>
+  <text x="206" y="251" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Practical / Laboratory Evidence</text>
+  <text x="44" y="277" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Lab report with method, observations, results tables</text>
+  <text x="44" y="292" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Engineering calculations with working shown step-by-step</text>
+  <text x="44" y="307" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Technical drawings to BS/ISO standard</text>
+  <text x="44" y="322" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Photographic evidence of practical work</text>
+  <text x="44" y="348" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#B45309">Merit/Distinction: analyse results, explain discrepancies, evaluate method</text>
+
+  <rect x="416" y="234" width="356" height="130" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <rect x="416" y="234" width="356" height="26" rx="8" fill="#2563EB"/>
+  <rect x="416" y="250" width="356" height="10" fill="#2563EB"/>
+  <text x="594" y="251" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Written / Report Evidence</text>
+  <text x="432" y="277" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Technical report: introduction, theory, analysis, conclusion</text>
+  <text x="432" y="292" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Research assignment on engineering systems/processes</text>
+  <text x="432" y="307" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Reflective log / logbook entries</text>
+  <text x="432" y="322" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#374151">· Design justification with specification analysis</text>
+  <text x="432" y="348" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">Distinction: evaluate design choices vs alternatives</text>
+
+  <!-- Maths requirement row -->
+  <rect x="28" y="382" width="744" height="22" rx="4" fill="#059669"/>
+  <text x="400" y="397" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">MATHEMATICS IN BTEC ENGINEERING ASSIGNMENTS — WHAT EXAMINERS REQUIRE</text>
+
+  <rect x="28" y="412" width="220" height="100" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="38" y="433" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">Pass Standard</text>
+  <text x="38" y="449" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">Correct numerical answer</text>
+  <text x="38" y="463" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">with working shown</text>
+  <text x="38" y="477" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">Correct formula applied</text>
+  <text x="38" y="499" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#059669">Units must be correct</text>
+
+  <rect x="268" y="412" width="250" height="100" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="278" y="433" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">Merit Standard</text>
+  <text x="278" y="449" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">Interpret numerical results in context</text>
+  <text x="278" y="463" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">("The stress of 45 MPa exceeds the yield</text>
+  <text x="278" y="477" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">strength of mild steel at 250 MPa by...")</text>
+  <text x="278" y="499" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#2563EB">Analysis, not just arithmetic</text>
+
+  <rect x="538" y="412" width="234" height="100" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="548" y="433" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#111827">Distinction Standard</text>
+  <text x="548" y="449" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">Evaluate results vs theory, identify</text>
+  <text x="548" y="463" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">sources of error, justify modifications,</text>
+  <text x="548" y="477" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8.5" fill="#4B5563">recommend design improvements</text>
+  <text x="548" y="499" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#7C3AED">Critical evaluation of methodology</text>
+</svg>
