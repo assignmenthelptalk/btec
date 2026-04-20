@@ -104,25 +104,29 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
         {page.tier === 1 ? 'Core Service' : 'Expert Guide'}
       </span>
       <h1 class="page-hero__h1">{page.h1}</h1>
-      {page.headerImage && (
-        <div class="page-hero__header-image">
-          <img
-            src={page.headerImage.src}
-            alt={page.headerImage.alt}
-            title={page.headerImage.title}
-            width={page.headerImage.width}
-            height={page.headerImage.height}
-            loading="eager"
-            decoding="async"
-            fetchpriority="high"
-          />
-        </div>
-      )}
       <p class="page-hero__intro">{page.intro}</p>
       <a href={header.ctaButton.href} class="page-hero__cta">{header.ctaButton.label} →</a>
     </div>
   </div>
 </section>
+
+{page.headerImage && (
+  <div class="page-header-image">
+    <div class="container">
+      <img
+        src={page.headerImage.src}
+        alt={page.headerImage.alt}
+        title={page.headerImage.title}
+        width={page.headerImage.width}
+        height={page.headerImage.height}
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        class="page-header-image__img"
+      />
+    </div>
+  </div>
+)}
 
 <!-- Main content -->
 <main class="page-content">
@@ -335,19 +339,18 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
 
   .page-hero__content { max-width: 900px; }
 
-  .page-hero__header-image {
-    margin: 1.5rem 0;
-    border-radius: 0.875rem;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    max-width: 860px;
+  /* ── Page header image (below hero, above article) ─────────── */
+  .page-header-image {
+    background-color: var(--color-bg-white);
+    padding: 2rem 0 0;
   }
 
-  .page-hero__header-image img {
+  .page-header-image__img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 0.875rem;
+    box-shadow: 0 6px 28px rgba(27, 43, 75, 0.14);
   }
   .page-hero__badge {
     display: inline-block;
