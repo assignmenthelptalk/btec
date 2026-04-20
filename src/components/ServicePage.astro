@@ -342,7 +342,7 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
   /* ── Page header image (below hero, above article) ─────────── */
   .page-header-image {
     background-color: var(--color-bg-white);
-    padding: 2rem 0 0;
+    padding: 1.25rem 0 0;
   }
 
   .page-header-image__img {
@@ -351,6 +351,22 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
     height: auto;
     border-radius: 0.875rem;
     box-shadow: 0 6px 28px rgba(27, 43, 75, 0.14);
+  }
+
+  @media (max-width: 640px) {
+    .page-header-image {
+      padding: 0;
+    }
+
+    .page-header-image .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .page-header-image__img {
+      border-radius: 0;
+      box-shadow: none;
+    }
   }
   .page-hero__badge {
     display: inline-block;
