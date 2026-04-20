@@ -52,18 +52,33 @@ const {
         ))}
       </div>
     </div>
-    <div class="hero__visual" aria-hidden="true">
-      <div class="hero__card hero__card--1">
-        <span class="hero__card-icon">🎓</span>
-        <strong>Distinction Grade</strong>
-        <span>ATHE Level 5 CX</span>
+    <div class="hero__visual">
+      <div class="hero__image-wrap">
+        <img
+          src="/images/header_btec-assignment-grading-criteria-explained.webp"
+          alt="BTEC Assignment Grading Criteria — Pass, Merit and Distinction explained"
+          width="1200"
+          height="400"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+          class="hero__image"
+        />
+        <span class="hero__uk-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="36" height="18" aria-label="UK flag" role="img">
+            <clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath>
+            <clipPath id="b"><path d="M30 15h30v15zM30 15v15H0zM30 15H0V0zM30 15V0h30z"/></clipPath>
+            <g clip-path="url(#a)">
+              <path d="M0 0v30h60V0z" fill="#012169"/>
+              <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+              <path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4" clip-path="url(#b)"/>
+              <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+              <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
+            </g>
+          </svg>
+          UK-Based BTEC Experts
+        </span>
       </div>
-      <div class="hero__card hero__card--2">
-        <span class="hero__card-icon">⭐</span>
-        <strong>4.9/5 Rating</strong>
-        <span>5,000+ students</span>
-      </div>
-      <div class="hero__blob" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -179,57 +194,47 @@ const {
     font-weight: 800;
   }
 
-  /* Visual / decorative right column */
+  /* Visual / image right column */
   .hero__visual {
-    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    align-items: flex-start;
-    padding: 2rem;
+    align-items: center;
+    justify-content: center;
   }
 
-  .hero__blob {
+  .hero__image-wrap {
+    position: relative;
+    width: 100%;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 32px rgba(27, 43, 75, 0.15);
+    display: block;
+  }
+
+  .hero__uk-badge {
     position: absolute;
-    inset: -10% -5%;
-    background: radial-gradient(ellipse at 60% 40%, var(--color-accent-light) 0%, transparent 70%);
-    border-radius: 50%;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .hero__card {
-    position: relative;
-    z-index: 1;
-    background: var(--color-bg-white);
+    bottom: -0.75rem;
+    right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
     border: 1px solid var(--color-border-light);
-    border-radius: 1rem;
-    padding: 1.25rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    box-shadow: 0 4px 24px rgba(27, 43, 75, 0.08);
-    min-width: 200px;
-  }
-
-  .hero__card strong {
-    font-size: 1.125rem;
-    font-weight: 700;
+    border-radius: 2rem;
+    padding: 0.375rem 0.875rem 0.375rem 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
     color: var(--color-primary);
+    box-shadow: 0 4px 16px rgba(27, 43, 75, 0.12);
+    white-space: nowrap;
   }
 
-  .hero__card span:last-child {
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
-  }
-
-  .hero__card-icon {
-    font-size: 1.75rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .hero__card--2 {
-    align-self: flex-end;
+  .hero__uk-badge svg {
+    border-radius: 2px;
+    flex-shrink: 0;
   }
 
   @media (max-width: 900px) {
@@ -239,7 +244,7 @@ const {
     }
 
     .hero__visual {
-      display: none;
+      order: -1;
     }
   }
 
