@@ -1,0 +1,152 @@
+---
+interface Props {
+  rating?: number;
+  reviewCount?: string;
+  label?: string;
+}
+
+const {
+  rating = 4.9,
+  reviewCount = "500+",
+  label = "Student Reviews",
+} = Astro.props;
+
+const fullStars = Math.floor(rating);
+const hasHalf = rating % 1 >= 0.5;
+---
+
+<section class="star-rating-bar">
+  <div class="container srb__inner">
+    <div class="srb__stars" aria-label={`${rating} out of 5 stars`}>
+      {Array.from({ length: 5 }).map((_, i) => (
+        <svg
+          class={`srb__star ${i < fullStars ? 'srb__star--full' : hasHalf && i === fullStars ? 'srb__star--half' : 'srb__star--empty'}`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="28"
+          height="28"
+          aria-hidden="true"
+        >
+          {i < fullStars ? (
+            <path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          ) : hasHalf && i === fullStars ? (
+            <>
+              <defs>
+                <linearGradient id={`half-${i}`} x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="50%" stop-color="currentColor"/>
+                  <stop offset="50%" stop-color="transparent"/>
+                </linearGradient>
+              </defs>
+              <path fill={`url(#half-${i})`} stroke="currentColor" stroke-width="1" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </>
+          ) : (
+            <path fill="none" stroke="currentColor" stroke-width="1.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          )}
+        </svg>
+      ))}
+    </div>
+    <div class="srb__score">
+      <span class="srb__number">{rating}</span>
+      <span class="srb__out-of">/ 5</span>
+    </div>
+    <div class="srb__divider" aria-hidden="true"></div>
+    <div class="srb__label">
+      <span class="srb__excellent">Excellent</span>
+      <span class="srb__count">Based on <strong>{reviewCount}</strong> {label}</span>
+    </div>
+    <div class="srb__badge">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+        <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+      </svg>
+      Verified Reviews
+    </div>
+  </div>
+</section>
+
+<style>
+  .star-rating-bar {
+    background: linear-gradient(135deg, var(--color-accent-light, #f0f7ff) 0%, #fff 100%);
+    border-top: 1px solid var(--color-border-light, #e5e7eb);
+    border-bottom: 1px solid var(--color-border-light, #e5e7eb);
+    padding: 1.25rem 0;
+  }
+
+  .srb__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .srb__stars {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    color: #f59e0b;
+  }
+
+  .srb__star--empty {
+    color: #d1d5db;
+  }
+
+  .srb__score {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+  }
+
+  .srb__number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+  }
+
+  .srb__out-of {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+
+  .srb__divider {
+    width: 1px;
+    height: 2rem;
+    background: var(--color-border-light, #e5e7eb);
+  }
+
+  .srb__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .srb__excellent {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  .srb__count {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+  }
+
+  .srb__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: 2rem;
+  }
+
+  @media (max-width: 540px) {
+    .srb__divider { display: none; }
+    .srb__badge { display: none; }
+    .srb__inner { gap: 0.625rem; }
+  }
+</style>

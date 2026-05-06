@@ -14,6 +14,7 @@ import FAQ from '../components/FAQ.astro';
 import Mission from '../components/Mission.astro';
 import FinalCTA from '../components/FinalCTA.astro';
 import Footer from '../components/Footer.astro';
+import StarRating from '../components/StarRating.astro';
 
 const {
   meta,
@@ -60,6 +61,7 @@ const {
       badges={hero.badges}
     />
     <StatsBar stats={stats} />
+    <StarRating rating={4.9} reviewCount="500+" label="Student Reviews" />
     <About
       sectionId={about.sectionId}
       heading={about.heading}
