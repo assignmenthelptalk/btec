@@ -1,0 +1,212 @@
+---
+import { socialLinks } from '../data/socialLinks';
+
+interface Props {
+  pageUrl?: string;
+  pageTitle?: string;
+  iconWidth?: string;
+  iconHeight?: string;
+  topOffset?: string;
+}
+
+const {
+  pageUrl = Astro.url.href,
+  pageTitle = '',
+  iconWidth = '60px',
+  iconHeight = '60px',
+  topOffset = '50%',
+} = Astro.props;
+
+const shareTitle = pageTitle || 'Check this out';
+---
+
+<aside
+  class="social-share-sidebar"
+  aria-label="Share this page"
+  style={`--share-icon-width:${iconWidth};--share-icon-height:${iconHeight};--share-top-offset:${topOffset};`}
+>
+  {socialLinks.map((link) => (
+    link.type === 'native-share' ? (
+      <button
+        type="button"
+        class="share-block st-btn"
+        data-native-share
+        style={`--share-bg:${link.color};--share-bg-hover:${link.hoverColor};`}
+        aria-label="Share this page"
+        title={link.name}
+      >
+        <span class="share-icon" set:html={link.icon} />
+      </button>
+    ) : (
+      <a
+        href={link.getShareUrl!(pageUrl, shareTitle)}
+        class="share-block st-btn"
+        data-popup-share
+        target="_blank"
+        rel="noopener noreferrer"
+        style={`--share-bg:${link.color};--share-bg-hover:${link.hoverColor};`}
+        aria-label={`Share on ${link.name}`}
+        title={link.name}
+      >
+        <span class="share-icon" set:html={link.icon} />
+      </a>
+    )
+  ))}
+</aside>
+
+<script>
+  function openSharePopup(url: string) {
+    const width = 600;
+    const height = 400;
+    const left = window.screenX + (window.outerWidth - width) / 2;
+    const top = window.screenY + (window.outerHeight - height) / 2;
+    window.open(
+      url,
+      'share-popup',
+      `width=${width},height=${height},left=${left},top=${top},noopener,noreferrer`
+    );
+  }
+
+  document
+    .querySelectorAll<HTMLAnchorElement>('.social-share-sidebar [data-popup-share]')
+    .forEach((el) => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        openSharePopup(el.href);
+      });
+    });
+
+  const nativeShareBtn = document.querySelector<HTMLButtonElement>(
+    '.social-share-sidebar [data-native-share]'
+  );
+
+  if (nativeShareBtn) {
+    nativeShareBtn.addEventListener('click', async () => {
+      const shareData = { title: document.title, url: window.location.href };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch {
+          // user dismissed the native share sheet — nothing to do
+        }
+        return;
+      }
+
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(shareData.url);
+          nativeShareBtn.setAttribute('data-copied', 'true');
+          window.setTimeout(() => nativeShareBtn.removeAttribute('data-copied'), 2000);
+          return;
+        } catch {
+          // fall through to prompt fallback
+        }
+      }
+
+      window.prompt('Copy this link:', shareData.url);
+    });
+  }
+</script>
+
+<style>
+  .social-share-sidebar {
+    position: fixed;
+    top: var(--share-top-offset, 50%);
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .share-block {
+    width: var(--share-icon-width, 60px);
+    height: var(--share-icon-height, 60px);
+    background: var(--share-bg);
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.15s ease;
+  }
+
+  .share-block:hover,
+  .share-block:focus-visible {
+    background: var(--share-bg-hover);
+  }
+
+  .st-btn {
+    transition: background-color 0.15s ease, transform 0.2s ease;
+  }
+
+  .st-btn:hover,
+  .st-btn:focus-visible {
+    transform: translateX(-6px);
+  }
+
+  .share-icon {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    pointer-events: none;
+  }
+
+  .share-icon :global(svg) {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+    display: block;
+  }
+
+  .share-block[data-copied]::after {
+    content: 'Link copied!';
+    position: absolute;
+    right: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: #111;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  @media (max-width: 900px) {
+    .social-share-sidebar {
+      top: auto;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      transform: none;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .share-block {
+      width: auto;
+      height: 44px;
+      flex: 1 1 0;
+    }
+
+    .st-btn:hover,
+    .st-btn:focus-visible {
+      transform: scale(1.08);
+    }
+
+    .share-block[data-copied]::after {
+      right: auto;
+      left: 50%;
+      top: auto;
+      bottom: calc(100% + 8px);
+      transform: translateX(-50%);
+    }
+  }
+</style>

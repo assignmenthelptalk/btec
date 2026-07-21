@@ -1,4 +1,6 @@
 ---
+import SocialShareSidebar from '../components/SocialShareSidebar.astro';
+
 interface Props {
   title: string;
   description: string;
@@ -35,6 +37,8 @@ const allVars = `${cssVars}; --font-family: ${fontFamily}`;
   </head>
   <body>
     <slot />
+
+    <SocialShareSidebar pageTitle={title} />
 
     <!-- Floating WhatsApp button -->
     <a
