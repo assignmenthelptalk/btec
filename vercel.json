@@ -4,5 +4,22 @@
                         "source": "/sitemap.xml",
                         "destination": "/sitemap-index.xml"
               }
+      ],
+      "redirects": [
+              { "source": "/btec-assignment-brief-how-to-read-and-interpret-it", "destination": "/btec-assignment-brief-how-to-read-and-interpret-it/", "permanent": true },
+              { "source": "/btec-assignment-grading-criteria-explained", "destination": "/btec-assignment-grading-criteria-explained/", "permanent": true },
+              { "source": "/btec-assignment-help", "destination": "/btec-assignment-help/", "permanent": true },
+              { "source": "/btec-assignment-resubmission-guide", "destination": "/btec-assignment-resubmission-guide/", "permanent": true },
+              { "source": "/btec-business-assignment-help", "destination": "/btec-business-assignment-help/", "permanent": true },
+              { "source": "/btec-childcare-and-early-years-assignment-help", "destination": "/btec-childcare-and-early-years-assignment-help/", "permanent": true },
+              { "source": "/btec-engineering-assignment-help", "destination": "/btec-engineering-assignment-help/", "permanent": true },
+              { "source": "/btec-health-and-social-care-assignment-help", "destination": "/btec-health-and-social-care-assignment-help/", "permanent": true },
+              { "source": "/btec-hnc-assignment-help", "destination": "/btec-hnc-assignment-help/", "permanent": true },
+              { "source": "/btec-hnd-assignment-help", "destination": "/btec-hnd-assignment-help/", "permanent": true },
+              { "source": "/btec-it-assignment-help", "destination": "/btec-it-assignment-help/", "permanent": true },
+              { "source": "/btec-national-assignment-help", "destination": "/btec-national-assignment-help/", "permanent": true },
+              { "source": "/btec-public-services-assignment-help", "destination": "/btec-public-services-assignment-help/", "permanent": true },
+              { "source": "/btec-sport-assignment-help", "destination": "/btec-sport-assignment-help/", "permanent": true },
+              { "source": "/how-to-achieve-distinction-in-btec-assignments", "destination": "/how-to-achieve-distinction-in-btec-assignments/", "permanent": true }
       ]
 }

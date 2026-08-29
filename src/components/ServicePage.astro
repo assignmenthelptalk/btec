@@ -256,7 +256,7 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
           <ul class="sidebar-card__links">
             {page.relatedPages.map((rp) => (
               <li>
-                <a href={`/${rp.slug}`} class="sidebar-card__link">
+                <a href={`/${rp.slug}/`} class="sidebar-card__link">
                   {rp.title} →
                 </a>
               </li>
