@@ -1,25 +1,185 @@
 {
       "rewrites": [
-              {
-                        "source": "/sitemap.xml",
-                        "destination": "/sitemap-index.xml"
-              }
+            {
+                  "source": "/sitemap.xml",
+                  "destination": "/sitemap-index.xml"
+            }
       ],
       "redirects": [
-              { "source": "/btec-assignment-brief-how-to-read-and-interpret-it", "destination": "/btec-assignment-brief-how-to-read-and-interpret-it/", "permanent": true },
-              { "source": "/btec-assignment-grading-criteria-explained", "destination": "/btec-assignment-grading-criteria-explained/", "permanent": true },
-              { "source": "/btec-assignment-help", "destination": "/btec-assignment-help/", "permanent": true },
-              { "source": "/btec-assignment-resubmission-guide", "destination": "/btec-assignment-resubmission-guide/", "permanent": true },
-              { "source": "/btec-business-assignment-help", "destination": "/btec-business-assignment-help/", "permanent": true },
-              { "source": "/btec-childcare-and-early-years-assignment-help", "destination": "/btec-childcare-and-early-years-assignment-help/", "permanent": true },
-              { "source": "/btec-engineering-assignment-help", "destination": "/btec-engineering-assignment-help/", "permanent": true },
-              { "source": "/btec-health-and-social-care-assignment-help", "destination": "/btec-health-and-social-care-assignment-help/", "permanent": true },
-              { "source": "/btec-hnc-assignment-help", "destination": "/btec-hnc-assignment-help/", "permanent": true },
-              { "source": "/btec-hnd-assignment-help", "destination": "/btec-hnd-assignment-help/", "permanent": true },
-              { "source": "/btec-it-assignment-help", "destination": "/btec-it-assignment-help/", "permanent": true },
-              { "source": "/btec-national-assignment-help", "destination": "/btec-national-assignment-help/", "permanent": true },
-              { "source": "/btec-public-services-assignment-help", "destination": "/btec-public-services-assignment-help/", "permanent": true },
-              { "source": "/btec-sport-assignment-help", "destination": "/btec-sport-assignment-help/", "permanent": true },
-              { "source": "/how-to-achieve-distinction-in-btec-assignments", "destination": "/how-to-achieve-distinction-in-btec-assignments/", "permanent": true }
+            {
+                  "source": "/academic-referencing-for-btec-hnc-hnd",
+                  "destination": "/academic-referencing-for-btec-hnc-hnd/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-academic-malpractice-policy",
+                  "destination": "/btec-academic-malpractice-policy/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-art-and-design-assignment-help",
+                  "destination": "/btec-art-and-design-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-assignment-brief-how-to-read-and-interpret-it",
+                  "destination": "/btec-assignment-brief-how-to-read-and-interpret-it/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-assignment-grading-criteria-explained",
+                  "destination": "/btec-assignment-grading-criteria-explained/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-assignment-help",
+                  "destination": "/btec-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-assignment-help-international-students",
+                  "destination": "/btec-assignment-help-international-students/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-assignment-help-mature-students",
+                  "destination": "/btec-assignment-help-mature-students/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-assignment-resubmission-guide",
+                  "destination": "/btec-assignment-resubmission-guide/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-business-assignment-help",
+                  "destination": "/btec-business-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-childcare-and-early-years-assignment-help",
+                  "destination": "/btec-childcare-and-early-years-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-construction-assignment-help",
+                  "destination": "/btec-construction-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-engineering-assignment-help",
+                  "destination": "/btec-engineering-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-external-assessment-explained",
+                  "destination": "/btec-external-assessment-explained/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-grading-system-explained",
+                  "destination": "/btec-grading-system-explained/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-health-and-social-care-assignment-help",
+                  "destination": "/btec-health-and-social-care-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-higher-national-explained",
+                  "destination": "/btec-higher-national-explained/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-hnc-assignment-help",
+                  "destination": "/btec-hnc-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-hnd-assignment-help",
+                  "destination": "/btec-hnd-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-internal-verification-appeal",
+                  "destination": "/btec-internal-verification-appeal/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-it-assignment-help",
+                  "destination": "/btec-it-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-national-assignment-help",
+                  "destination": "/btec-national-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-public-services-assignment-help",
+                  "destination": "/btec-public-services-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-sport-assignment-help",
+                  "destination": "/btec-sport-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-subjects-list",
+                  "destination": "/btec-subjects-list/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-travel-and-tourism-assignment-help",
+                  "destination": "/btec-travel-and-tourism-assignment-help/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-ucas-points",
+                  "destination": "/btec-ucas-points/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-vs-a-level",
+                  "destination": "/btec-vs-a-level/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-vs-nvq",
+                  "destination": "/btec-vs-nvq/",
+                  "permanent": true
+            },
+            {
+                  "source": "/careers-after-btec",
+                  "destination": "/careers-after-btec/",
+                  "permanent": true
+            },
+            {
+                  "source": "/how-btec-internal-assessment-works",
+                  "destination": "/how-btec-internal-assessment-works/",
+                  "permanent": true
+            },
+            {
+                  "source": "/how-to-achieve-distinction-in-btec-assignments",
+                  "destination": "/how-to-achieve-distinction-in-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/pearson-btec-examiner-feedback-reports",
+                  "destination": "/pearson-btec-examiner-feedback-reports/",
+                  "permanent": true
+            },
+            {
+                  "source": "/universities-that-accept-btec",
+                  "destination": "/universities-that-accept-btec/",
+                  "permanent": true
+            },
+            {
+                  "source": "/what-is-btec",
+                  "destination": "/what-is-btec/",
+                  "permanent": true
+            }
       ]
 }
