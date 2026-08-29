@@ -112,6 +112,11 @@
                   "permanent": true
             },
             {
+                  "source": "/btec-media-production-assignment-help",
+                  "destination": "/btec-media-production-assignment-help/",
+                  "permanent": true
+            },
+            {
                   "source": "/btec-national-assignment-help",
                   "destination": "/btec-national-assignment-help/",
                   "permanent": true
@@ -139,6 +144,11 @@
             {
                   "source": "/btec-ucas-points",
                   "destination": "/btec-ucas-points/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-uniformed-public-services-vs-public-services",
+                  "destination": "/btec-uniformed-public-services-vs-public-services/",
                   "permanent": true
             },
             {

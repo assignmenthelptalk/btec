@@ -718,6 +718,10 @@
         {
           "title": "BTEC Assignment Grading Criteria Explained",
           "slug": "btec-assignment-grading-criteria-explained"
+        },
+        {
+          "slug": "btec-uniformed-public-services-vs-public-services",
+          "title": "BTEC Uniformed Public Services vs Public Services"
         }
       ],
       "contextualQuestion": "How does critical evaluation of government policy and public service structures define distinction-level work in BTEC Public Services assignments?",
@@ -1308,6 +1312,10 @@
         {
           "slug": "btec-travel-and-tourism-assignment-help",
           "title": "BTEC Travel and Tourism Assignment Help"
+        },
+        {
+          "slug": "btec-media-production-assignment-help",
+          "title": "BTEC Media Production Assignment Help"
         }
       ],
       "contextualQuestion": "Which subject and level do you need help with?",
@@ -1349,6 +1357,10 @@
         {
           "slug": "what-is-btec",
           "title": "What Is BTEC?"
+        },
+        {
+          "slug": "btec-uniformed-public-services-vs-public-services",
+          "title": "BTEC Uniformed Public Services vs Public Services"
         }
       ],
       "contextualQuestion": "Studying BTEC and need assignment support?",
@@ -1729,6 +1741,10 @@
         {
           "slug": "btec-assignment-grading-criteria-explained",
           "title": "BTEC Assignment Grading Criteria Explained"
+        },
+        {
+          "slug": "btec-media-production-assignment-help",
+          "title": "BTEC Media Production Assignment Help"
         }
       ],
       "contextualQuestion": "Which unit or piece of written evidence do you need help with?",
@@ -2029,6 +2045,82 @@
         "width": 1200,
         "height": 420
       }
+    },
+    {
+      "slug": "btec-media-production-assignment-help",
+      "tier": 2,
+      "title": "BTEC Media Production Assignment Help",
+      "metaTitle": "BTEC Media Production Assignment Help: Unit Guidance",
+      "metaDescription": "BTEC Media Production assignment help for pre-production planning, production logs, and written evaluation, covering Pass, Merit, and Distinction criteria.",
+      "h1": "BTEC Media Production Assignment Help: Pre-Production, Production Logs, and Evaluation",
+      "intro": "Students enrolled in BTEC Media Production at Level 3 needing help with pre-production planning, production logs, and written evaluation alongside their practical media work",
+      "h2Sections": [
+        {
+          "heading": "BTEC Media Production Unit Structure",
+          "body": ""
+        },
+        {
+          "heading": "The Written Component: Pre-Production Documents and Production Logs",
+          "body": ""
+        },
+        {
+          "heading": "What Distinction Requires in BTEC Media Production",
+          "body": ""
+        },
+        {
+          "heading": "How Our BTEC Media Production Assignment Help Service Works",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "btec-art-and-design-assignment-help",
+          "title": "BTEC Art and Design Assignment Help"
+        },
+        {
+          "slug": "btec-national-assignment-help",
+          "title": "BTEC National Assignment Help"
+        },
+        {
+          "slug": "btec-assignment-grading-criteria-explained",
+          "title": "BTEC Assignment Grading Criteria Explained"
+        }
+      ],
+      "contextualQuestion": "Which unit or piece of written evidence do you need help with?"
+    },
+    {
+      "slug": "btec-uniformed-public-services-vs-public-services",
+      "tier": 2,
+      "title": "BTEC Uniformed Public Services vs Public Services",
+      "metaTitle": "BTEC Uniformed Public Services vs Public Services Explained",
+      "metaDescription": "BTEC Uniformed Public Services and BTEC Public Services cause real confusion. Here's what the naming difference actually means for your course.",
+      "h1": "BTEC Uniformed Public Services vs BTEC Public Services: What Is the Difference?",
+      "intro": "Students and parents confused by the two similar-sounding qualification names when researching or enrolling in a BTEC Public Services course",
+      "h2Sections": [
+        {
+          "heading": "Are BTEC Uniformed Public Services and BTEC Public Services the Same Qualification?",
+          "body": ""
+        },
+        {
+          "heading": "Why Does the \"Uniformed\" Naming Exist?",
+          "body": ""
+        },
+        {
+          "heading": "How to Confirm Which Title Applies to Your Course",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "btec-public-services-assignment-help",
+          "title": "BTEC Public Services Assignment Help"
+        },
+        {
+          "slug": "btec-national-assignment-help",
+          "title": "BTEC National Assignment Help"
+        }
+      ],
+      "contextualQuestion": "Whichever title your course uses, what do the assignments actually require?"
     }
   ]
 }
