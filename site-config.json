@@ -30,10 +30,174 @@
     "logoText": "BTEC Help",
     "logoHref": "/",
     "navLinks": [
-      { "label": "Services", "href": "#services" },
-      { "label": "About", "href": "#about" },
-      { "label": "How It Works", "href": "#how-it-works" },
-      { "label": "FAQ", "href": "#faq" }
+      {
+        "label": "Assignment Help",
+        "href": "/btec-assignment-help/"
+      },
+      {
+        "label": "Levels",
+        "children": [
+          {
+            "label": "What Is BTEC?",
+            "href": "/what-is-btec/"
+          },
+          {
+            "label": "BTEC National",
+            "href": "/btec-national-assignment-help/"
+          },
+          {
+            "label": "BTEC HNC",
+            "href": "/btec-hnc-assignment-help/"
+          },
+          {
+            "label": "BTEC HND",
+            "href": "/btec-hnd-assignment-help/"
+          },
+          {
+            "label": "Higher National Explained",
+            "href": "/btec-higher-national-explained/"
+          }
+        ]
+      },
+      {
+        "label": "Subjects",
+        "children": [
+          {
+            "label": "Business",
+            "href": "/btec-business-assignment-help/"
+          },
+          {
+            "label": "Health & Social Care",
+            "href": "/btec-health-and-social-care-assignment-help/"
+          },
+          {
+            "label": "Engineering",
+            "href": "/btec-engineering-assignment-help/"
+          },
+          {
+            "label": "IT",
+            "href": "/btec-it-assignment-help/"
+          },
+          {
+            "label": "Sport",
+            "href": "/btec-sport-assignment-help/"
+          },
+          {
+            "label": "Public Services",
+            "href": "/btec-public-services-assignment-help/"
+          },
+          {
+            "label": "Childcare & Early Years",
+            "href": "/btec-childcare-and-early-years-assignment-help/"
+          },
+          {
+            "label": "Construction",
+            "href": "/btec-construction-assignment-help/"
+          },
+          {
+            "label": "Art & Design",
+            "href": "/btec-art-and-design-assignment-help/"
+          },
+          {
+            "label": "Travel & Tourism",
+            "href": "/btec-travel-and-tourism-assignment-help/"
+          },
+          {
+            "label": "Media Production",
+            "href": "/btec-media-production-assignment-help/"
+          }
+        ]
+      },
+      {
+        "label": "Grading & Assessment",
+        "children": [
+          {
+            "label": "Grading Criteria Explained",
+            "href": "/btec-assignment-grading-criteria-explained/"
+          },
+          {
+            "label": "Grading System Explained",
+            "href": "/btec-grading-system-explained/"
+          },
+          {
+            "label": "How to Achieve Distinction",
+            "href": "/how-to-achieve-distinction-in-btec-assignments/"
+          },
+          {
+            "label": "How Internal Assessment Works",
+            "href": "/how-btec-internal-assessment-works/"
+          },
+          {
+            "label": "External Assessment Explained",
+            "href": "/btec-external-assessment-explained/"
+          },
+          {
+            "label": "Resubmission Guide",
+            "href": "/btec-assignment-resubmission-guide/"
+          },
+          {
+            "label": "Internal Verification Appeal",
+            "href": "/btec-internal-verification-appeal/"
+          },
+          {
+            "label": "Examiner Feedback Reports",
+            "href": "/pearson-btec-examiner-feedback-reports/"
+          },
+          {
+            "label": "How to Read Your Assignment Brief",
+            "href": "/btec-assignment-brief-how-to-read-and-interpret-it/"
+          }
+        ]
+      },
+      {
+        "label": "Guides",
+        "children": [
+          {
+            "label": "BTEC vs A-Level",
+            "href": "/btec-vs-a-level/"
+          },
+          {
+            "label": "BTEC vs NVQ",
+            "href": "/btec-vs-nvq/"
+          },
+          {
+            "label": "BTEC UCAS Points",
+            "href": "/btec-ucas-points/"
+          },
+          {
+            "label": "BTEC Subjects List",
+            "href": "/btec-subjects-list/"
+          },
+          {
+            "label": "Academic Referencing (HNC/HND)",
+            "href": "/academic-referencing-for-btec-hnc-hnd/"
+          },
+          {
+            "label": "Academic Malpractice Policy",
+            "href": "/btec-academic-malpractice-policy/"
+          },
+          {
+            "label": "Universities That Accept BTEC",
+            "href": "/universities-that-accept-btec/"
+          },
+          {
+            "label": "Careers After BTEC",
+            "href": "/careers-after-btec/"
+          },
+          {
+            "label": "Help for Mature Students",
+            "href": "/btec-assignment-help-mature-students/"
+          },
+          {
+            "label": "Help for International Students",
+            "href": "/btec-assignment-help-international-students/"
+          },
+          {
+            "label": "Uniformed Public Services vs Public Services",
+            "href": "/btec-uniformed-public-services-vs-public-services/"
+          }
+        ]
+      }
     ],
     "ctaButton": {
       "label": "Get Help Now",
@@ -54,18 +218,49 @@
       "href": "#how-it-works"
     },
     "badges": [
-      { "icon": "✓", "text": "100% Plagiarism Free" },
-      { "icon": "✓", "text": "On-Time Delivery" },
-      { "icon": "✓", "text": "Expert BTEC Writers" },
-      { "icon": "✓", "text": "Free Revisions" },
-      { "icon": "✓", "text": "Confidential & Secure" }
+      {
+        "icon": "✓",
+        "text": "100% Plagiarism Free"
+      },
+      {
+        "icon": "✓",
+        "text": "On-Time Delivery"
+      },
+      {
+        "icon": "✓",
+        "text": "Expert BTEC Writers"
+      },
+      {
+        "icon": "✓",
+        "text": "Free Revisions"
+      },
+      {
+        "icon": "✓",
+        "text": "Confidential & Secure"
+      }
     ]
   },
   "stats": [
-    { "icon": "🎓", "value": "8,000+", "label": "Assignments Completed" },
-    { "icon": "⭐", "value": "4.8/5",  "label": "Average Rating" },
-    { "icon": "📅", "value": "97%",    "label": "On-Time Delivery" },
-    { "icon": "🏆", "value": "15+",    "label": "Years Experience" }
+    {
+      "icon": "🎓",
+      "value": "8,000+",
+      "label": "Assignments Completed"
+    },
+    {
+      "icon": "⭐",
+      "value": "4.8/5",
+      "label": "Average Rating"
+    },
+    {
+      "icon": "📅",
+      "value": "97%",
+      "label": "On-Time Delivery"
+    },
+    {
+      "icon": "🏆",
+      "value": "15+",
+      "label": "Years Experience"
+    }
   ],
   "about": {
     "sectionId": "about",
@@ -276,29 +471,184 @@
     "description": "The UK's trusted specialist in Pearson BTEC assignment support. Helping students reach Merit and Distinction since 2010.",
     "columns": [
       {
-        "heading": "Quick Links",
+        "heading": "Qualification Levels",
         "links": [
-          { "label": "Services",     "href": "#services" },
-          { "label": "About Us",     "href": "#about" },
-          { "label": "How It Works", "href": "#how-it-works" },
-          { "label": "FAQ",          "href": "#faq" }
+          {
+            "label": "BTEC Assignment Help",
+            "href": "/btec-assignment-help/"
+          },
+          {
+            "label": "What Is BTEC?",
+            "href": "/what-is-btec/"
+          },
+          {
+            "label": "BTEC National",
+            "href": "/btec-national-assignment-help/"
+          },
+          {
+            "label": "BTEC HNC",
+            "href": "/btec-hnc-assignment-help/"
+          },
+          {
+            "label": "BTEC HND",
+            "href": "/btec-hnd-assignment-help/"
+          },
+          {
+            "label": "Higher National Explained",
+            "href": "/btec-higher-national-explained/"
+          }
         ]
       },
       {
-        "heading": "BTEC Qualifications",
+        "heading": "Subjects",
         "links": [
-          { "label": "BTEC Assignment Help",         "href": "/btec-assignment-help/" },
-          { "label": "BTEC National Assignment Help", "href": "/btec-national-assignment-help/" },
-          { "label": "BTEC HNC Assignment Help",      "href": "/btec-hnc-assignment-help/" },
-          { "label": "BTEC HND Assignment Help",      "href": "/btec-hnd-assignment-help/" },
-          { "label": "BTEC Business Assignment Help", "href": "/btec-business-assignment-help/" }
+          {
+            "label": "Business",
+            "href": "/btec-business-assignment-help/"
+          },
+          {
+            "label": "Health & Social Care",
+            "href": "/btec-health-and-social-care-assignment-help/"
+          },
+          {
+            "label": "Engineering",
+            "href": "/btec-engineering-assignment-help/"
+          },
+          {
+            "label": "IT",
+            "href": "/btec-it-assignment-help/"
+          },
+          {
+            "label": "Sport",
+            "href": "/btec-sport-assignment-help/"
+          },
+          {
+            "label": "Public Services",
+            "href": "/btec-public-services-assignment-help/"
+          },
+          {
+            "label": "Childcare & Early Years",
+            "href": "/btec-childcare-and-early-years-assignment-help/"
+          },
+          {
+            "label": "Construction",
+            "href": "/btec-construction-assignment-help/"
+          },
+          {
+            "label": "Art & Design",
+            "href": "/btec-art-and-design-assignment-help/"
+          },
+          {
+            "label": "Travel & Tourism",
+            "href": "/btec-travel-and-tourism-assignment-help/"
+          },
+          {
+            "label": "Media Production",
+            "href": "/btec-media-production-assignment-help/"
+          }
+        ]
+      },
+      {
+        "heading": "Grading & Assessment",
+        "links": [
+          {
+            "label": "Grading Criteria Explained",
+            "href": "/btec-assignment-grading-criteria-explained/"
+          },
+          {
+            "label": "Grading System Explained",
+            "href": "/btec-grading-system-explained/"
+          },
+          {
+            "label": "How to Achieve Distinction",
+            "href": "/how-to-achieve-distinction-in-btec-assignments/"
+          },
+          {
+            "label": "How Internal Assessment Works",
+            "href": "/how-btec-internal-assessment-works/"
+          },
+          {
+            "label": "External Assessment Explained",
+            "href": "/btec-external-assessment-explained/"
+          },
+          {
+            "label": "Resubmission Guide",
+            "href": "/btec-assignment-resubmission-guide/"
+          },
+          {
+            "label": "Internal Verification Appeal",
+            "href": "/btec-internal-verification-appeal/"
+          },
+          {
+            "label": "Examiner Feedback Reports",
+            "href": "/pearson-btec-examiner-feedback-reports/"
+          },
+          {
+            "label": "How to Read Your Assignment Brief",
+            "href": "/btec-assignment-brief-how-to-read-and-interpret-it/"
+          }
+        ]
+      },
+      {
+        "heading": "Guides & Resources",
+        "links": [
+          {
+            "label": "BTEC vs A-Level",
+            "href": "/btec-vs-a-level/"
+          },
+          {
+            "label": "BTEC vs NVQ",
+            "href": "/btec-vs-nvq/"
+          },
+          {
+            "label": "BTEC UCAS Points",
+            "href": "/btec-ucas-points/"
+          },
+          {
+            "label": "BTEC Subjects List",
+            "href": "/btec-subjects-list/"
+          },
+          {
+            "label": "Academic Referencing (HNC/HND)",
+            "href": "/academic-referencing-for-btec-hnc-hnd/"
+          },
+          {
+            "label": "Academic Malpractice Policy",
+            "href": "/btec-academic-malpractice-policy/"
+          },
+          {
+            "label": "Universities That Accept BTEC",
+            "href": "/universities-that-accept-btec/"
+          },
+          {
+            "label": "Careers After BTEC",
+            "href": "/careers-after-btec/"
+          },
+          {
+            "label": "Help for Mature Students",
+            "href": "/btec-assignment-help-mature-students/"
+          },
+          {
+            "label": "Help for International Students",
+            "href": "/btec-assignment-help-international-students/"
+          },
+          {
+            "label": "Uniformed Public Services vs Public Services",
+            "href": "/btec-uniformed-public-services-vs-public-services/"
+          }
         ]
       },
       {
         "heading": "Contact",
         "links": [
-          { "label": "support@btec-help.co.uk", "href": "mailto:support@btec-help.co.uk" },
-          { "label": "WhatsApp Us",              "href": "https://wa.me/447700900000" }
+          {
+            "label": "support@btecassignment.help",
+            "href": "mailto:support@btecassignment.help"
+          },
+          {
+            "label": "WhatsApp Us",
+            "href": "https://wa.me/447916696894"
+          }
         ]
       }
     ],
