@@ -4,6 +4,169 @@
   <img src="/infographics/btec-assignment-brief-how-to-read-and-interpret-it.svg" alt="How to read and interpret a BTEC assignment brief, anatomy of each section and five-step reading strategy" width="800" height="560" loading="lazy" decoding="async" />
 </figure>
 
+<section class="main-content" id="brief-decoder">
+  <h2>BTEC Assignment Brief Decoder</h2>
+  <p>Paste the criteria from your brief, for example lines that start "P1 Describe…", "M1 Analyse…" or "D1 Evaluate…". The decoder turns them into a checklist with one row per criterion, showing its grade band, its command verb and what that verb asks you to do. Your text is processed in your browser and is not sent anywhere.</p>
+  <div class="btec-tool" data-brief-decoder>
+    <div class="btec-tool__field">
+      <label for="brief-input">Paste your criteria or brief text</label>
+      <textarea id="brief-input" rows="8" maxlength="20000" placeholder="P1 Describe …&#10;M1 Analyse …&#10;D1 Evaluate …"></textarea>
+    </div>
+    <div class="btec-tool__actions">
+      <button type="button" id="brief-run">Decode criteria</button>
+      <button type="button" id="brief-sample" class="btec-tool__secondary">Try an example</button>
+      <button type="button" id="brief-clear" class="btec-tool__secondary">Clear</button>
+    </div>
+    <p class="btec-tool__status" id="brief-status" role="status" aria-live="polite"></p>
+    <div id="brief-out"></div>
+  </div>
+  <noscript><p>The decoder needs JavaScript. The table below lists what each command verb asks for.</p></noscript>
+
+  <h3>What the command verbs ask for</h3>
+  <p>These are short summaries of how Pearson's BTEC Nationals glossaries describe each command word. Pearson words a few of them slightly differently from subject to subject, so your unit's own glossary and your tutor take priority over this table.</p>
+  <table id="brief-verbs">
+    <caption>Command verbs and what they ask for</caption>
+    <thead><tr><th scope="col">Verb</th><th scope="col">What it asks you to do</th></tr></thead>
+    <tbody>
+      <tr data-verb="identify"><th scope="row">Identify</th><td>Pick out or name the main features, facts or items. A short answer is usually enough.</td></tr>
+      <tr data-verb="define"><th scope="row">Define</th><td>State what a term or subject means, as an objective fact.</td></tr>
+      <tr data-verb="outline"><th scope="row">Outline</th><td>Give a short summary or overview of something.</td></tr>
+      <tr data-verb="describe"><th scope="row">Describe</th><td>Give a clear, objective account of the key features in your own words. It is an account, not an argument.</td></tr>
+      <tr data-verb="explain"><th scope="row">Explain</th><td>Give reasons. Make linked points that justify or expand on a point, with clear details.</td></tr>
+      <tr data-verb="discuss"><th scope="row">Discuss</th><td>Consider different aspects of a topic, how they connect and how important each one is, showing your reasoning.</td></tr>
+      <tr data-verb="analyse|analyze"><th scope="row">Analyse</th><td>Examine something in detail by breaking it into its parts and showing how those parts relate to each other. Pearson's Computing glossary says no conclusion is required.</td></tr>
+      <tr data-verb="assess"><th scope="row">Assess</th><td>Review the information and bring it together into a judgement or conclusion, after a balanced and reasoned argument.</td></tr>
+      <tr data-verb="evaluate"><th scope="row">Evaluate</th><td>Review and bring the information together to reach a supported judgement. Weigh strengths and weaknesses, advantages and disadvantages, alternatives and significance, and typically finish with a conclusion.</td></tr>
+      <tr data-verb="justify"><th scope="row">Justify</th><td>Give reasons or evidence that show an opinion or choice is right or reasonable.</td></tr>
+      <tr data-verb="compare and contrast|compare"><th scope="row">Compare</th><td>Set out the similarities and differences between two or more things. Pearson's Health and Social Care glossary adds advantages and disadvantages.</td></tr>
+      <tr data-verb="to what extent"><th scope="row">To what extent</th><td>Give clear details, reasons and evidence for a view, showing how you reached your conclusion.</td></tr>
+    </tbody>
+  </table>
+  <p>Source: Pearson's glossaries for the BTEC Nationals in <a href="https://qualifications.pearson.com/content/dam/pdf/BTEC-Nationals/Health-and-Social-Care/2016/external-assessments/Health_Social_Care_glossary.pdf" rel="noopener">Health and Social Care</a>, <a href="https://qualifications.pearson.com/content/dam/pdf/BTEC-Nationals/computing/2016/External-assessments/Computing-glossary.pdf" rel="noopener">Computing</a> and <a href="https://qualifications.pearson.com/content/dam/pdf/BTEC-Nationals/creative-digital-media-production/2016/external-assessment/CDMP-glossary.pdf" rel="noopener">Creative Digital Media Production</a>. A verb that is not in this table is shown as "not defined here", so check your unit's glossary or ask your tutor.</p>
+  <p>Once your checklist is ready, work through the five steps below. Tick a criterion only when you can point to the sentence or paragraph in your work that meets it.</p>
+  <script>
+  (function () {
+    var input = document.getElementById('brief-input');
+    var out = document.getElementById('brief-out');
+    var status = document.getElementById('brief-status');
+    var runBtn = document.getElementById('brief-run');
+    var sampleBtn = document.getElementById('brief-sample');
+    var clearBtn = document.getElementById('brief-clear');
+    var table = document.getElementById('brief-verbs');
+    if (!input || !out || !status || !runBtn || !sampleBtn || !clearBtn || !table) { return; }
+
+    var SAMPLE = 'P1 Describe the main features of a named organisation.\nM1 Analyse how those features affect the way the organisation performs.\nD1 Evaluate how effective the organisation\'s approach is, and justify your conclusion.';
+    var BANDS = { P: 'Pass', M: 'Merit', D: 'Distinction' };
+    var TOKEN = /(^|[\s|;,(\[])((?:[A-Z]{1,2}\.)?([PMD])\d{1,2})(?=$|[\s:.\-–—)|\],;])/g;
+
+    var verbs = [];
+    Array.prototype.forEach.call(table.querySelectorAll('tbody tr'), function (tr) {
+      var key = tr.getAttribute('data-verb');
+      var name = tr.querySelector('th');
+      var meaning = tr.querySelector('td');
+      if (key && name && meaning) {
+        verbs.push({ name: name.textContent.trim(), re: new RegExp('\\b(?:' + key + ')\\b', 'i'), meaning: meaning.textContent.trim() });
+      }
+    });
+
+    function findVerb(text) {
+      var best = null;
+      var bestIndex = -1;
+      verbs.forEach(function (v) {
+        var m = v.re.exec(text);
+        if (m && (best === null || m.index < bestIndex)) { best = v; bestIndex = m.index; }
+      });
+      return best;
+    }
+
+    function parse(text) {
+      var hits = [];
+      var m;
+      TOKEN.lastIndex = 0;
+      while ((m = TOKEN.exec(text)) !== null) {
+        var start = m.index + m[1].length;
+        hits.push({ code: m[2], band: BANDS[m[3]], start: start, end: start + m[2].length });
+      }
+      return hits.map(function (h, i) {
+        var stop = i + 1 < hits.length ? hits[i + 1].start : text.length;
+        var body = text.slice(h.end, stop).replace(/^[\s:.\-–—|]+/, '').replace(/\s+/g, ' ').trim();
+        return { code: h.code, band: h.band, text: body, verb: findVerb(body) };
+      });
+    }
+
+    function cell(row, text, tag) {
+      var c = document.createElement(tag || 'td');
+      c.textContent = text;
+      row.appendChild(c);
+      return c;
+    }
+
+    function updateCount(total) {
+      var done = out.querySelectorAll('input[type="checkbox"]:checked').length;
+      status.textContent = total + (total === 1 ? ' criterion' : ' criteria') + ' found. Covered: ' + done + ' of ' + total + '.';
+    }
+
+    function render(items) {
+      out.textContent = '';
+      if (!items.length) {
+        status.textContent = 'No criteria codes found. Paste the criteria grid from your brief, with codes such as P1, M2, D1 or A.P1 before each criterion.';
+        return;
+      }
+      var counts = { Pass: 0, Merit: 0, Distinction: 0 };
+      var tbl = document.createElement('table');
+      var head = document.createElement('tr');
+      ['Covered', 'Criterion', 'Band', 'Command verb', 'What it asks for', 'Criterion text'].forEach(function (h) { cell(head, h, 'th'); });
+      var thead = document.createElement('thead');
+      thead.appendChild(head);
+      tbl.appendChild(thead);
+      var tbody = document.createElement('tbody');
+      items.forEach(function (it) {
+        counts[it.band] += 1;
+        var tr = document.createElement('tr');
+        var box = document.createElement('input');
+        box.type = 'checkbox';
+        box.setAttribute('aria-label', 'Mark ' + it.code + ' as covered');
+        box.addEventListener('change', function () { updateCount(items.length); });
+        var first = document.createElement('td');
+        first.appendChild(box);
+        tr.appendChild(first);
+        cell(tr, it.code);
+        cell(tr, it.band);
+        if (it.verb) {
+          cell(tr, it.verb.name);
+          cell(tr, it.verb.meaning);
+        } else {
+          var firstWord = (it.text.split(' ')[0] || '').replace(/[^A-Za-z]/g, '');
+          cell(tr, firstWord ? firstWord.charAt(0).toUpperCase() + firstWord.slice(1).toLowerCase() : 'None found');
+          cell(tr, 'Not defined here. Check your unit glossary or ask your tutor.');
+        }
+        cell(tr, it.text || '(no text found after the code)');
+        tbody.appendChild(tr);
+      });
+      tbl.appendChild(tbody);
+      out.appendChild(tbl);
+      var summary = document.createElement('p');
+      summary.textContent = counts.Pass + ' Pass, ' + counts.Merit + ' Merit and ' + counts.Distinction + ' Distinction criteria.';
+      out.appendChild(summary);
+      updateCount(items.length);
+    }
+
+    runBtn.addEventListener('click', function () { render(parse(input.value)); });
+    sampleBtn.addEventListener('click', function () {
+      input.value = SAMPLE;
+      render(parse(SAMPLE));
+      status.textContent = 'Example criteria (made up for this demo, not from a real brief). ' + status.textContent;
+    });
+    clearBtn.addEventListener('click', function () {
+      input.value = '';
+      out.textContent = '';
+      status.textContent = '';
+      input.focus();
+    });
+  })();
+  </script>
+</section>
+
 <section class="main-content">
   <h2>The Structure of a BTEC Assignment Brief: What Each Section Contains</h2>
   <p>A BTEC Assignment Brief is a formal document produced by the centre tutor that sets out the unit being assessed, the tasks the student must complete, and the criteria against which the submission will be marked. Its structure is standardised across Pearson-accredited BTEC centres, though the formatting and presentation vary by centre. Every element of the brief serves a specific purpose in the assessment process, understanding what each section tells you changes how you approach the assignment before writing begins.</p>

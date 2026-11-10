@@ -1,8 +1,170 @@
-<p>A BTEC Referral, the grade awarded when Pass criteria are not met, is not the end of the qualification. For internally assessed units, one resubmission opportunity exists, and a student who understands exactly what went wrong and how to fix it has a clear path to achieving the grade. The resubmission process has specific rules that many students misunderstand: what a targeted brief means, what can and cannot be changed, what the grade ceiling is after resubmission, what authentication requirements apply, and what to do when no resubmission route exists. This guide explains the complete BTEC resubmission process for both internal and external assessment.</p>
+<p>A BTEC Referral, the grade awarded when Pass criteria are not met, is not the end of the qualification. For internally assessed units, Pearson's rules allow one resubmission of evidence for each assignment, if your Lead Internal Verifier authorises it, and a student who understands exactly what went wrong and how to fix it has a clear path to achieving the grade. The resubmission process has specific rules that many students misunderstand: who authorises it, what the conditions are, which criteria you resubmit, whether the grade is capped, what authentication requirements apply, and what to do when no resubmission route exists. This guide explains the BTEC resubmission process for both internal and external assessment.</p>
 
 <figure class="page-infographic">
   <img src="/infographics/btec-assignment-resubmission-guide.svg" alt="BTEC assignment resubmission guide, internal assessment process steps, critical resubmission rules, and external assessment resit process" width="800" height="540" loading="lazy" decoding="async" />
 </figure>
+
+<section class="main-content" id="resubmission-checker">
+  <h2>BTEC Resubmission and Retake Checker</h2>
+  <p><strong>Short answer:</strong> under Pearson's rules a student can have one resubmission of evidence for each assignment, if the Lead Internal Verifier authorises it. After that, the only further chance is a single retake, and only in exceptional circumstances. You cannot resubmit a resubmission. Answer the questions below to see which rules apply to you.</p>
+  <div class="btec-tool" data-resub-checker>
+    <div class="btec-tool__field">
+      <label for="rc-qual">Your qualification</label>
+      <select id="rc-qual">
+        <option value="">Choose…</option>
+        <option value="nat16">BTEC Level 3 National (2016 or 2017 specification)</option>
+        <option value="nat25">BTEC Level 3 National from 2025</option>
+        <option value="hn">BTEC HNC or HND</option>
+        <option value="other">Another BTEC qualification</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-type">Type of assessment</label>
+      <select id="rc-type">
+        <option value="">Choose…</option>
+        <option value="internal">Internal assignment (marked by your centre)</option>
+        <option value="external">External exam or task (marked by Pearson)</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-stage">Where are you now?</label>
+      <select id="rc-stage">
+        <option value="">Choose…</option>
+        <option value="first">I have my result and feedback for my first submission</option>
+        <option value="resub">I already resubmitted and still have unmet pass criteria</option>
+        <option value="retake">I have already had a retake</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-deadline">Did you meet the original deadline, or an agreed extension?</label>
+      <select id="rc-deadline">
+        <option value="">Choose…</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-auth">Did you complete a declaration of authentication (that the work is your own)?</label>
+      <select id="rc-auth">
+        <option value="">Choose…</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-guidance">Does your assessor think you can improve your evidence without further guidance?</label>
+      <select id="rc-guidance">
+        <option value="">Choose…</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="unsure">I do not know yet</option>
+      </select>
+    </div>
+    <p class="btec-tool__status" id="rc-headline" role="status" aria-live="polite"></p>
+    <ul id="rc-result" aria-live="polite"></ul>
+  </div>
+  <noscript><p>The checker needs JavaScript. The rules it uses are listed below.</p></noscript>
+  <p>The checker explains Pearson's rules. It cannot tell you what your own centre's Lead Internal Verifier has decided, so ask your tutor what has been authorised and confirm the deadline in writing. For external assessments, see <a href="/btec-external-assessment-explained/">BTEC external assessment explained</a>.</p>
+
+  <h3>The rules in brief</h3>
+  <ul>
+    <li><strong>One resubmission per assignment.</strong> The Lead Internal Verifier must authorise it, so it is not automatic.</li>
+    <li><strong>Three conditions.</strong> You met the original deadline or an agreed extension, your assessor judges you can improve the evidence without further guidance, and you completed a declaration of authentication.</li>
+    <li><strong>Deadline.</strong> An authorised resubmission is recorded on the assessment record and has a deadline within 15 working days of you receiving your results, in term time and in the same academic year.</li>
+    <li><strong>No cap at Pass.</strong> You can be given the chance to meet the full range of criteria the assignment targets. You only resubmit the criteria your assessor and Lead Internal Verifier identify as needing more work, not the whole assignment.</li>
+    <li><strong>One retake after that.</strong> If you met all the resubmission conditions and still have not achieved the pass criteria, the Lead Internal Verifier may authorise a single retake in exceptional circumstances. It targets only the pass criteria you have not yet met, and no further resubmissions or retakes follow.</li>
+    <li><strong>Missed the deadline.</strong> A student who missed the original deadline, without an agreed extension, has no resubmission and no retake.</li>
+  </ul>
+  <p>Source: Pearson, <a href="https://qualifications.pearson.com/content/dam/pdf/Support/Quality%20Assurance/btec-centre-guide-to-internal-assessment.pdf" rel="noopener">Centre Guide: BTEC Internal Assessment 2026–2027</a> (version 4.1, dated 21 August 2026), sections on resubmission of evidence and retakes. The guide covers BTEC Level 1 to Level 3 qualifications and does not cover Higher Nationals. Pearson reissues it each year, so check the current edition.</p>
+  <script>
+  (function () {
+    var els = {};
+    ['qual', 'type', 'stage', 'deadline', 'auth', 'guidance'].forEach(function (k) { els[k] = document.getElementById('rc-' + k); });
+    var headline = document.getElementById('rc-headline');
+    var result = document.getElementById('rc-result');
+    if (!headline || !result || Object.keys(els).some(function (k) { return !els[k]; })) { return; }
+
+    function show(head, lines) {
+      headline.textContent = head;
+      result.textContent = '';
+      lines.forEach(function (text) {
+        var li = document.createElement('li');
+        li.textContent = text;
+        result.appendChild(li);
+      });
+    }
+
+    function failedConditions(v) {
+      var failed = [];
+      if (v.deadline === 'no') { failed.push("You did not meet the original deadline or an agreed extension. Pearson's rules allow neither a resubmission nor a retake in that case."); }
+      if (v.auth === 'no') { failed.push('There is no completed declaration of authentication. The Lead Internal Verifier can only authorise a resubmission if the student has completed one.'); }
+      if (v.guidance === 'no') { failed.push('Your assessor judges that you cannot improve your evidence without further guidance. The Lead Internal Verifier can only authorise a resubmission if the assessor believes you can.'); }
+      return failed;
+    }
+
+    function check() {
+      var v = {};
+      Object.keys(els).forEach(function (k) { v[k] = els[k].value; });
+
+      if (!v.qual || !v.type || !v.stage) {
+        show('Choose your qualification, type of assessment and stage to see the rules that apply.', []);
+        return;
+      }
+      if (v.qual === 'hn') {
+        show('Higher Nationals are not covered here.', ["Pearson's guide to internal assessment covers BTEC Level 1 to Level 3 and states that it does not cover Higher Nationals (Levels 4 to 7). Ask your centre for its Higher National assessment policy."]);
+        return;
+      }
+      if (v.qual === 'other') {
+        show('This checker is built for Level 3 Nationals.', ["Pearson's guide also covers other BTEC suites, and BTEC Level 1/2 Firsts have no retakes. Ask your tutor or Lead Internal Verifier which rules apply to your qualification."]);
+        return;
+      }
+      if (v.type === 'external') {
+        show('External assessments are not covered here.', ['These rules are for internally assessed assignments. Ask your exams officer or tutor how a resit works for your unit.']);
+        return;
+      }
+      if (v.stage === 'retake') {
+        show('No further attempts are available under Pearson\'s rules.', ['Pearson allows one resubmission and a single retake for each assignment, and a student who has had both is not allowed any further resubmissions or retakes.', 'Ask your tutor or programme leader what this means for your unit.']);
+        return;
+      }
+      if (!v.deadline || !v.auth || !v.guidance) {
+        show('Answer the three questions about your deadline, declaration and assessor to continue.', []);
+        return;
+      }
+
+      var failed = failedConditions(v);
+      var unsure = v.guidance === 'unsure';
+      if (failed.length) {
+        failed.push('A retake needs the same conditions to have been met, so a retake is not available either.');
+        show('Under Pearson\'s rules a resubmission cannot be authorised.', failed);
+        return;
+      }
+
+      var lines = [];
+      if (unsure) { lines.push('Whether you can improve without further guidance is your assessor\'s judgement, so ask them.'); }
+      if (v.stage === 'first') {
+        lines.push('It is not automatic. Your Lead Internal Verifier must authorise the resubmission.');
+        lines.push('If it is authorised, it is recorded on your assessment record with a deadline within 15 working days of you receiving your results, in term time and in the same academic year.');
+        lines.push('You do the work with no further guidance.');
+        lines.push('It is not capped at Pass. You can be given the chance to meet the full range of criteria the assignment targets.');
+        lines.push('You only resubmit the criteria your assessor and Lead Internal Verifier identify as needing more work, not the whole assignment.');
+        show(unsure ? 'You may be eligible, depending on your assessor\'s judgement.' : 'You may be eligible for one resubmission.', lines);
+        return;
+      }
+      lines.push('Pearson allows one resubmission for each assignment, so a second resubmission is not available.');
+      lines.push('The Lead Internal Verifier may authorise a single retake, only in exceptional circumstances where they believe it is necessary, appropriate and fair.');
+      lines.push(v.qual === 'nat25'
+        ? 'On the 2025 Nationals the retake is a third attempt at the same Pearson-set task, aimed only at the pass criteria you have not yet met.'
+        : 'The retake is a new task or assignment aimed only at the pass criteria you have not yet met.');
+      lines.push('Your assessor agrees a clear deadline before you start, within the same academic year, and you and your assessor both sign declarations of authentication.');
+      lines.push('After a retake there are no further resubmissions or retakes.');
+      show('You cannot resubmit again, but one retake may be possible.', lines);
+    }
+
+    Object.keys(els).forEach(function (k) { els[k].addEventListener('change', check); });
+    check();
+  })();
+  </script>
+</section>
 
 <section class="main-content">
   <h2>What Is a BTEC Referral and What Causes It</h2>
@@ -13,15 +175,15 @@
 
 <section class="main-content">
   <h2>The BTEC Resubmission Process for Internally Assessed Units</h2>
-  <p>For internally assessed BTEC units, one resubmission opportunity is available following a Referral. This is guaranteed by Pearson's assessment regulations, the centre cannot deny a resubmission for an internally assessed unit to a student who has received a Referral on their first submission, subject to the student having submitted the original work by the centre's deadline. Late submissions may have different entitlements, check the centre's late submission policy before assuming the resubmission right applies.</p>
-  <p>After the Referral is confirmed, the tutor must issue a new or amended Assignment Brief specifically targeting the criteria that were not met. This is a key regulatory requirement: the resubmission brief must be targeted, not a repeat of the full original brief. A resubmission brief that instructs the student to redo the entire assignment, rather than addressing only the unmet criteria, does not comply with Pearson's regulations. If you receive a resubmission brief that appears to require a full redo, ask the tutor in writing to identify which specific criteria the resubmission is targeting, and keep a copy of the response.</p>
-  <p>The student does not resubmit all of the work, only the evidence addressing the criteria that were not met. Previously submitted evidence that already met its criteria remains part of the portfolio and does not need to be resubmitted. If P1 and P2 were met but P3 was not, the resubmission evidence only needs to address P3 (and any Merit or Distinction criteria that depend on P3 being met first, if the student wishes to achieve those grades).</p>
-  <p>The deadline for resubmission is set by the centre and must be within the same academic year, centres cannot carry resubmissions over to the following year. Confirm the resubmission deadline in writing when you receive the targeted brief. Missing the resubmission deadline has the same consequence as a second Referral: the unit is not achieved and no further attempt is available on that assignment.</p>
+  <p>For internally assessed BTEC units, Pearson's rules allow one resubmission of evidence for each assignment. It is not automatic: your Lead Internal Verifier can authorise it only if three conditions are met. You met the initial deadline in the assignment, or an agreed extension. Your assessor judges that you will be able to produce improved evidence without further guidance. And you have completed a declaration of authentication. If a student has not met these conditions, the Lead Internal Verifier must not authorise a resubmission. A student who missed the original deadline, without an agreed extension, has neither a resubmission nor a retake.</p>
+  <p>If a resubmission is authorised, it must be recorded on the assessment record, and it is done by the student with no further guidance. Pearson's guide does not say a new assignment brief must be written for a resubmission. What it requires is that the criteria needing further work are identified by the assessor and the Lead Internal Verifier. Ask your tutor in writing which criteria your resubmission covers, and keep a copy of the reply, because you resubmit those criteria rather than the whole assignment.</p>
+  <p>The student does not resubmit all of the work, only the evidence for the criteria identified as needing further work. Previously submitted evidence that already met its criteria remains part of the portfolio and does not need to be resubmitted. If P1 and P2 were met but P3 was not, the resubmission evidence needs to address P3. Whether Merit or Distinction criteria that depend on it can also be addressed is covered in the grade section below.</p>
+  <p>The resubmission deadline is stated when the Lead Internal Verifier authorises the resubmission. Pearson requires it to fall within 15 working days of you receiving the results of the assessment, and those 15 working days must be within term time, in the same academic year as the assessment. Confirm the deadline in writing when it is set. Pearson's guide gives no separate rule for a missed resubmission deadline, so if you are at risk of missing it, contact your tutor or programme coordinator before it passes.</p>
 </section>
 
 <section class="main-content">
   <h2>Targeted Resubmission Brief: How to Use It Effectively</h2>
-  <p>The targeted resubmission brief identifies the specific criteria that were not met in the original submission. Your entire preparation and writing effort for the resubmission should focus exclusively on those criteria, other criteria that were already met should not be revisited, as doing so risks inadvertently changing the quality of already-awarded evidence without improving the overall grade outcome.</p>
+  <p>Your centre will identify the criteria that need further work, either in a targeted resubmission brief or in the authorisation for your resubmission. Your entire preparation and writing effort for the resubmission should focus on those criteria. Criteria that were already met should not be revisited, as doing so risks changing the quality of already-awarded evidence without improving the overall grade outcome.</p>
   <p>Before writing the resubmission response, obtain the detailed feedback from the first submission, not just the criteria codes that were not awarded, but the tutor's comments on why those criteria were not met. This feedback is the most important input to a successful resubmission. Common patterns: the criterion was not addressed at all (write the missing content); the criterion was addressed at the wrong cognitive level (rewrite at the correct level, identify the verb and write to it); the criterion was partially addressed but evidence was incomplete (complete the missing element); the criterion was addressed in the wrong task section (place the evidence in the correct location).</p>
   <p>Map the resubmission brief criteria to the feedback comments, and write a specific plan for how each unmet criterion will be addressed in the resubmission. Do not approach the resubmission by writing generally about the unit topic and hoping the new content satisfies the criteria, write directly to each criterion, using the verb in the criterion statement as the guide to the type of evidence required. Annotating the resubmission draft against the criteria codes before submission is the most reliable quality-check technique.</p>
   <p>A practical note on word count: the resubmission is targeting specific criteria, not repeating the full assignment. The resubmission may be considerably shorter than the original submission. This is appropriate, focus on the quality and direct relevance of the new evidence, not on the length of the resubmission document.</p>
@@ -29,9 +191,9 @@
 
 <section class="main-content">
   <h2>Grade Ceiling After Resubmission: What Can and Cannot Be Achieved</h2>
-  <p>Whether a resubmission can achieve Merit or Distinction as well as Pass depends on the centre's policy, the tutor's marking decision, and the original submission outcome. Pearson's regulations allow, but do not require, centres to award Merit and Distinction on resubmissions where the resubmission evidence meets those criteria as well as the Pass criteria that were not originally met.</p>
-  <p>In practice, most centres apply a Pass ceiling to resubmissions: a student who receives a Referral and resubmits successfully can achieve a Pass on the unit, but Merit and Distinction grades are not available through resubmission. The rationale is that resubmission is designed to allow students to demonstrate that they meet the minimum standard, not to upgrade the grade profile. Some centres, particularly at HNC and HND level, allow the full grade range on resubmission. Always clarify the grade ceiling policy in writing with your tutor, specifically, ask: "Is the maximum grade available on this resubmission a Pass, or can Merit and Distinction criteria also be awarded?", before submitting the resubmission, not after.</p>
-  <p>If the unit is one where Merit and Distinction cannot be achieved through resubmission and the original submission was a Referral, the student's strategic decision is: is a Pass on this unit sufficient for the overall qualification grade target? If a Distinction profile across the qualification is required for a specific university entry requirement, and this unit has been capped at Pass after resubmission, understand what qualification grade profile that produces and whether it still meets the progression requirements.</p>
+  <p>Pearson's Centre Guide asks directly whether resubmissions are capped at Pass only, and the answer is no. If a student meets the conditions for a resubmission and one is authorised, the student should be given the opportunity to submit to the full range of the assessment criteria targeted by the assignment. That includes Merit and Distinction criteria as well as Pass criteria.</p>
+  <p>This means you should not assume a Pass ceiling. If your tutor or centre tells you the resubmission is limited to Pass, ask in writing which Pearson rule that is based on, because Pearson's guide for centres does not set a cap. The criteria that your resubmission covers are still decided by your assessor and Lead Internal Verifier, so ask: "Which criteria does this resubmission cover, and can Merit and Distinction criteria be assessed as well as Pass?" before you start work, not after.</p>
+  <p>Because every assignment contributes towards the final qualification grade, it is worth knowing before you start which grades your resubmission can reach. If a Distinction profile across the qualification is required for a specific university entry requirement, ask your tutor to confirm in writing what your resubmission can achieve and what overall grade profile that would produce.</p>
 </section>
 
 <section class="main-content">
@@ -46,12 +208,12 @@
   <h2>Authentication and Academic Integrity on BTEC Resubmissions</h2>
   <p>All resubmitted work requires an authentication declaration: the work submitted is the student's own, complies with the centre's academic integrity policy, and has not been submitted for another assignment at this or any other centre. This declaration applies equally to the original submission and to the resubmission. At HNC and HND level, the authentication requirements also include Harvard referencing, submitting Level 4 or Level 5 resubmission evidence without proper in-text citations is both poor academic practice and an integrity concern where sources have been used without attribution.</p>
   <p>Understanding what legitimate support looks like: using assignment guidance services to develop understanding of the criteria, what cognitive level each criterion verb requires, what evidence structure meets each criterion, what Distinction-level responses look like compared to Merit-level responses, is legitimate preparation. It develops the student's ability to produce their own well-structured, criterion-focused resubmission evidence. What is not legitimate is submitting work written by another person as the student's own; this constitutes academic malpractice under Pearson's assessment regulations and carries the same consequences as plagiarism in the original submission.</p>
-  <p>Pearson's internal verification process samples resubmissions. Internal verifiers check that the resubmission brief was appropriately targeted (not a full-redo brief), that the new evidence addresses only the unmet criteria, and that the authentication declaration is in order. Where malpractice is identified on a resubmission, the consequences are potentially more serious than on the original submission, the student has already received feedback indicating exactly what needed to improve, making the case for deliberate circumvention of the assessment process more straightforward to establish.</p>
+  <p>Pearson's standards verifiers can request resubmissions as part of their sample. The evidence a centre keeps includes the signed authorisation from the Lead Internal Verifier, the resubmission deadline, the resubmitted work with a signed and dated declaration of authentication, the resubmission assessment record, and the internal verification of the assessment decisions. Where malpractice is identified on a resubmission, the consequences are potentially more serious than on the original submission, because the student has already received feedback indicating exactly what needed to improve, which makes the case for deliberate circumvention of the assessment process more straightforward to establish.</p>
   <p>The practical standard: a resubmission that the student can explain in a face-to-face conversation with the tutor, explaining what criterion was not met, why, and what the new evidence does to address it, is a resubmission that reflects genuine learning. A resubmission the student cannot explain is not.</p>
 </section>
 
 <div class="contextual-border">
-  <p><strong>What is the most important thing to do before starting a BTEC resubmission?</strong> Read the tutor's feedback from the original submission in detail, identify the specific reason each criterion was not awarded, not just which criteria were not awarded, and ask for clarification in writing if the feedback is unclear. Resubmissions that do not address the specific reason for the original Referral, and instead add more content of the same type that was already insufficient, risk a second Referral and the end of any further attempts on the unit.</p>
+  <p><strong>What is the most important thing to do before starting a BTEC resubmission?</strong> Read the tutor's feedback from the original submission in detail, identify the specific reason each criterion was not awarded, not just which criteria were not awarded, and ask for clarification in writing if the feedback is unclear. Resubmissions that do not address the specific reason for the original Referral, and instead add more content of the same type that was already insufficient, risk failing to meet the criteria again, and Pearson allows only one resubmission for each assignment.</p>
 </div>
 
 <section class="supplementary">
@@ -67,28 +229,28 @@
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 itemprop="name">How many times can I resubmit a BTEC assignment?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p itemprop="text">For internally assessed BTEC units, one resubmission is permitted following a Referral. If the resubmission also receives a Referral, no further attempt is available on that assignment. The unit has not been achieved, and the student may need to negotiate alternative arrangements with the centre, retake the unit, or in some cases repeat a year of study. There is no automatic right to a third attempt. For externally assessed units, there is no resubmission route, the student must resit in the next Pearson assessment window.</p>
+      <p itemprop="text">For internally assessed BTEC units, Pearson allows one resubmission of evidence for each assignment, if the Lead Internal Verifier authorises it. If you have already resubmitted and still have not met the pass criteria, you cannot resubmit again, but the Lead Internal Verifier may authorise one retake, only in exceptional circumstances, if you met all the conditions for the resubmission. The retake targets only the pass criteria you have not yet met, and no further resubmissions or retakes follow it. For externally assessed units, there is no resubmission route, the student must resit in the next Pearson assessment window.</p>
     </div>
   </div>
 
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 itemprop="name">Can I improve my grade from Pass to Merit or Distinction through resubmission?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p itemprop="text">Resubmission is available only following a Referral, failure to meet Pass criteria. A student who has achieved a Pass grade cannot resubmit to improve to Merit or Distinction; the submission has been completed and graded. If you achieve a Pass but want Merit or Distinction, this is not available through the resubmission process, the Pass grade stands. Resubmission is specifically a mechanism for addressing Referrals, not for grade improvement above the Pass threshold.</p>
+      <p itemprop="text">Possibly. Pearson's guide says resubmissions are not capped at Pass only. If a student meets the conditions and a resubmission is authorised, the student should be given the opportunity to submit to the full range of the assessment criteria targeted by the assignment, and only the criteria identified as needing further work are resubmitted. It is not automatic, so your assessor and Lead Internal Verifier decide whether to authorise it, and you should ask your tutor which criteria your resubmission would cover.</p>
     </div>
   </div>
 
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 itemprop="name">What happens if I miss the resubmission deadline?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p itemprop="text">Missing the resubmission deadline typically means the resubmission opportunity is forfeited, the unit remains unachieved with no further attempt permitted on that assignment. The centre may have specific procedures for exceptional circumstances (illness, bereavement), but these are not automatic entitlements and must be supported by appropriate evidence. Contact your programme coordinator immediately if you are at risk of missing a resubmission deadline, do not wait until after the deadline to explain the circumstances.</p>
+      <p itemprop="text">Pearson says a resubmission deadline is set when the resubmission is authorised, within 15 working days of you receiving your results, in term time. Its guide gives no separate rule for missing that deadline, so ask your centre what it applies. The one rule that is clear is about the original deadline: a student who missed it, without an agreed extension, has no resubmission and no retake. Contact your programme coordinator immediately if you are at risk of missing a deadline, and do not wait until after it has passed to explain the circumstances.</p>
     </div>
   </div>
 
   <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
     <h3 itemprop="name">Do I have to resubmit the entire assignment or just the parts that were referred?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p itemprop="text">You only need to address the criteria that were not met. The resubmission is targeted: Pearson's regulations require the tutor to issue a brief targeting only the unmet criteria, not the full original brief. Evidence that already met its criteria does not need to be resubmitted. If your tutor has issued a resubmission brief that appears to require a full redo of the assignment, ask them in writing to identify which specific criteria the resubmission is targeting. The resubmission is about filling the specific evidence gap, not repeating the whole assignment.</p>
+      <p itemprop="text">You only need to address the criteria identified as needing further work by your assessor and Lead Internal Verifier. Pearson's guide says it is not necessary to resubmit the whole assignment. Evidence that already met its criteria does not need to be resubmitted. If it is unclear which criteria your resubmission covers, ask your tutor in writing to identify them. The resubmission is about filling the specific evidence gap, not repeating the whole assignment.</p>
     </div>
   </div>
 
