@@ -50,6 +50,97 @@
   <p>These figures come from the 2017 UCAS Tariff scale, the system currently used across the sector for comparing qualifications of different types.</p>
 </section>
 
+<section class="main-content" id="ucas-points-calculator">
+  <h2>BTEC UCAS Points Calculator</h2>
+  <p>Pick your qualification size and grade to see its UCAS points, or enter the points a university has asked for to see which grades reach it. The figures are the 2017 UCAS Tariff values from the tables above, so confirm them against the university's own offer.</p>
+  <div class="btec-calc" data-btec-calc>
+    <div class="btec-calc__tool">
+      <h3>What are my grades worth?</h3>
+      <div class="btec-calc__row">
+        <label for="calc-size">Qualification size</label>
+        <select id="calc-size"></select>
+      </div>
+      <div class="btec-calc__row">
+        <label for="calc-grade">Overall grade</label>
+        <select id="calc-grade"></select>
+      </div>
+      <p class="btec-calc__result" id="calc-points-result" role="status" aria-live="polite"></p>
+    </div>
+    <div class="btec-calc__tool">
+      <h3>What grades does my offer need?</h3>
+      <div class="btec-calc__row">
+        <label for="calc-offer">UCAS points in the offer</label>
+        <input id="calc-offer" type="number" inputmode="numeric" min="1" max="168" step="1" value="112">
+      </div>
+      <ul class="btec-calc__list" id="calc-offer-result" aria-live="polite"></ul>
+    </div>
+  </div>
+  <noscript><p>The calculator needs JavaScript. The tables above list the points for every grade combination.</p></noscript>
+  <p>This calculator converts a grade you already have or expect into points. To work out your overall grade from your unit results, use <a href="https://qualifications.pearson.com/en/support/support-topics/results-certification/understanding-marks-and-grades/calculating-your-overall-btec-grade.html" rel="noopener">Pearson's guidance on calculating your overall BTEC grade</a>.</p>
+  <script>
+  (function () {
+    var DATA = [
+      { name: 'Extended Diploma (three A-levels)', short: 'Extended Diploma', grades: [['D*D*D*', 168, 'A*A*A*'], ['D*D*D', 160, 'A*A*A'], ['D*DD', 152, 'A*AA'], ['DDD', 144, 'A*AB'], ['DDM', 128, 'ABB'], ['DMM', 112, 'BBC'], ['MMM', 96, 'CCC'], ['MMP', 80, 'CDD'], ['MPP', 64, 'DDE'], ['PPP', 48, 'EEE']] },
+      { name: 'Diploma (two A-levels)', short: 'Diploma', grades: [['D*D*', 112, 'A*A*'], ['D*D', 104, 'A*A'], ['DD', 96, 'AA'], ['DM', 80, 'BB'], ['MM', 64, 'CC'], ['MP', 48, 'DD'], ['PP', 32, 'EE']] },
+      { name: 'Extended Certificate (one A-level)', short: 'Extended Certificate', grades: [['D*', 56, 'A*'], ['D', 48, 'A'], ['M', 32, 'C'], ['P', 16, 'E']] }
+    ];
+    var size = document.getElementById('calc-size');
+    var grade = document.getElementById('calc-grade');
+    var result = document.getElementById('calc-points-result');
+    var offer = document.getElementById('calc-offer');
+    var offerResult = document.getElementById('calc-offer-result');
+    if (!size || !grade || !result || !offer || !offerResult) { return; }
+
+    function option(value, text) {
+      var o = document.createElement('option');
+      o.value = value;
+      o.textContent = text;
+      return o;
+    }
+    DATA.forEach(function (q, i) { size.appendChild(option(String(i), q.name)); });
+
+    function fillGrades() {
+      var q = DATA[Number(size.value)];
+      grade.textContent = '';
+      q.grades.forEach(function (g, i) { grade.appendChild(option(String(i), g[0])); });
+    }
+    function showPoints() {
+      var q = DATA[Number(size.value)];
+      var g = q.grades[Number(grade.value)];
+      result.textContent = g[0] + ' on the ' + q.short + ' is worth ' + g[1] + ' UCAS points, the same as ' + g[2] + ' at A-level.';
+    }
+    function showOffer() {
+      var need = Number(offer.value);
+      offerResult.textContent = '';
+      if (!isFinite(need) || need < 1) {
+        var li = document.createElement('li');
+        li.textContent = 'Enter the number of UCAS points in your offer.';
+        offerResult.appendChild(li);
+        return;
+      }
+      DATA.forEach(function (q) {
+        var best = null;
+        q.grades.forEach(function (g) { if (g[1] >= need) { best = g; } });
+        var item = document.createElement('li');
+        if (best) {
+          item.textContent = q.short + ': ' + best[0] + ' or higher (' + best[1] + ' points).';
+        } else {
+          item.textContent = q.short + ': the top grade is worth ' + q.grades[0][1] + ' points, so this offer cannot be met on this size alone.';
+        }
+        offerResult.appendChild(item);
+      });
+    }
+
+    size.addEventListener('change', function () { fillGrades(); showPoints(); });
+    grade.addEventListener('change', showPoints);
+    offer.addEventListener('input', showOffer);
+    fillGrades();
+    showPoints();
+    showOffer();
+  })();
+  </script>
+</section>
+
 <section class="main-content">
   <h2>How to Read a University Offer Against Your BTEC Grades</h2>
   <p>Universities usually state offers as a total points figure, such as "112 points," rather than naming a specific BTEC grade combination. To check whether your predicted grades meet an offer, find your qualification size in the table above, locate your predicted combination, and compare its points total directly against the number in the offer.</p>
