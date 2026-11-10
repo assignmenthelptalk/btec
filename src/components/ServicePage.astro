@@ -588,6 +588,40 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
     margin-bottom: 0;
   }
 
+  /* Tables inside article content: scroll sideways on small screens instead of overflowing. */
+  .page-article :global(table) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .page-article :global(caption) {
+    text-align: left;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding-bottom: 0.5rem;
+  }
+
+  .page-article :global(th),
+  .page-article :global(td) {
+    border: 1px solid var(--color-border-light);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  .page-article :global(th) {
+    background-color: var(--color-bg-light);
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
   .page-article :global(ul),
   .page-article :global(ol) {
     margin: 0.75rem 0 1rem 1.25rem;
