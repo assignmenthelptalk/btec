@@ -4,6 +4,168 @@
   <img src="/infographics/btec-assignment-resubmission-guide.svg" alt="BTEC assignment resubmission guide, internal assessment process steps, critical resubmission rules, and external assessment resit process" width="800" height="540" loading="lazy" decoding="async" />
 </figure>
 
+<section class="main-content" id="resubmission-checker">
+  <h2>BTEC Resubmission and Retake Checker</h2>
+  <p><strong>Short answer:</strong> under Pearson's rules a student can have one resubmission of evidence for each assignment, if the Lead Internal Verifier authorises it. After that, the only further chance is a single retake, and only in exceptional circumstances. You cannot resubmit a resubmission. Answer the questions below to see which rules apply to you.</p>
+  <div class="btec-tool" data-resub-checker>
+    <div class="btec-tool__field">
+      <label for="rc-qual">Your qualification</label>
+      <select id="rc-qual">
+        <option value="">Choose…</option>
+        <option value="nat16">BTEC Level 3 National (2016 or 2017 specification)</option>
+        <option value="nat25">BTEC Level 3 National from 2025</option>
+        <option value="hn">BTEC HNC or HND</option>
+        <option value="other">Another BTEC qualification</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-type">Type of assessment</label>
+      <select id="rc-type">
+        <option value="">Choose…</option>
+        <option value="internal">Internal assignment (marked by your centre)</option>
+        <option value="external">External exam or task (marked by Pearson)</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-stage">Where are you now?</label>
+      <select id="rc-stage">
+        <option value="">Choose…</option>
+        <option value="first">I have my result and feedback for my first submission</option>
+        <option value="resub">I already resubmitted and still have unmet pass criteria</option>
+        <option value="retake">I have already had a retake</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-deadline">Did you meet the original deadline, or an agreed extension?</label>
+      <select id="rc-deadline">
+        <option value="">Choose…</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-auth">Did you complete a declaration of authentication (that the work is your own)?</label>
+      <select id="rc-auth">
+        <option value="">Choose…</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+    <div class="btec-tool__field">
+      <label for="rc-guidance">Does your assessor think you can improve your evidence without further guidance?</label>
+      <select id="rc-guidance">
+        <option value="">Choose…</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="unsure">I do not know yet</option>
+      </select>
+    </div>
+    <p class="btec-tool__status" id="rc-headline" role="status" aria-live="polite"></p>
+    <ul id="rc-result" aria-live="polite"></ul>
+  </div>
+  <noscript><p>The checker needs JavaScript. The rules it uses are listed below.</p></noscript>
+  <p>The checker explains Pearson's rules. It cannot tell you what your own centre's Lead Internal Verifier has decided, so ask your tutor what has been authorised and confirm the deadline in writing. For external assessments, see <a href="/btec-external-assessment-explained/">BTEC external assessment explained</a>.</p>
+
+  <h3>The rules in brief</h3>
+  <ul>
+    <li><strong>One resubmission per assignment.</strong> The Lead Internal Verifier must authorise it, so it is not automatic.</li>
+    <li><strong>Three conditions.</strong> You met the original deadline or an agreed extension, your assessor judges you can improve the evidence without further guidance, and you completed a declaration of authentication.</li>
+    <li><strong>Deadline.</strong> An authorised resubmission is recorded on the assessment record and has a deadline within 15 working days of you receiving your results, in term time and in the same academic year.</li>
+    <li><strong>No cap at Pass.</strong> You can be given the chance to meet the full range of criteria the assignment targets. You only resubmit the criteria your assessor and Lead Internal Verifier identify as needing more work, not the whole assignment.</li>
+    <li><strong>One retake after that.</strong> If you met all the resubmission conditions and still have not achieved the pass criteria, the Lead Internal Verifier may authorise a single retake in exceptional circumstances. It targets only the pass criteria you have not yet met, and no further resubmissions or retakes follow.</li>
+    <li><strong>Missed the deadline.</strong> A student who missed the original deadline, without an agreed extension, has no resubmission and no retake.</li>
+  </ul>
+  <p>Source: Pearson, <a href="https://qualifications.pearson.com/content/dam/pdf/Support/Quality%20Assurance/btec-centre-guide-to-internal-assessment.pdf" rel="noopener">Centre Guide: BTEC Internal Assessment 2026–2027</a> (version 4.1, dated 21 August 2026), sections on resubmission of evidence and retakes. The guide covers BTEC Level 1 to Level 3 qualifications and does not cover Higher Nationals. Pearson reissues it each year, so check the current edition.</p>
+  <script>
+  (function () {
+    var els = {};
+    ['qual', 'type', 'stage', 'deadline', 'auth', 'guidance'].forEach(function (k) { els[k] = document.getElementById('rc-' + k); });
+    var headline = document.getElementById('rc-headline');
+    var result = document.getElementById('rc-result');
+    if (!headline || !result || Object.keys(els).some(function (k) { return !els[k]; })) { return; }
+
+    function show(head, lines) {
+      headline.textContent = head;
+      result.textContent = '';
+      lines.forEach(function (text) {
+        var li = document.createElement('li');
+        li.textContent = text;
+        result.appendChild(li);
+      });
+    }
+
+    function failedConditions(v) {
+      var failed = [];
+      if (v.deadline === 'no') { failed.push("You did not meet the original deadline or an agreed extension. Pearson's rules allow neither a resubmission nor a retake in that case."); }
+      if (v.auth === 'no') { failed.push('There is no completed declaration of authentication. The Lead Internal Verifier can only authorise a resubmission if the student has completed one.'); }
+      if (v.guidance === 'no') { failed.push('Your assessor judges that you cannot improve your evidence without further guidance. The Lead Internal Verifier can only authorise a resubmission if the assessor believes you can.'); }
+      return failed;
+    }
+
+    function check() {
+      var v = {};
+      Object.keys(els).forEach(function (k) { v[k] = els[k].value; });
+
+      if (!v.qual || !v.type || !v.stage) {
+        show('Choose your qualification, type of assessment and stage to see the rules that apply.', []);
+        return;
+      }
+      if (v.qual === 'hn') {
+        show('Higher Nationals are not covered here.', ["Pearson's guide to internal assessment covers BTEC Level 1 to Level 3 and states that it does not cover Higher Nationals (Levels 4 to 7). Ask your centre for its Higher National assessment policy."]);
+        return;
+      }
+      if (v.qual === 'other') {
+        show('This checker is built for Level 3 Nationals.', ["Pearson's guide also covers other BTEC suites, and BTEC Level 1/2 Firsts have no retakes. Ask your tutor or Lead Internal Verifier which rules apply to your qualification."]);
+        return;
+      }
+      if (v.type === 'external') {
+        show('External assessments are not covered here.', ['These rules are for internally assessed assignments. Ask your exams officer or tutor how a resit works for your unit.']);
+        return;
+      }
+      if (v.stage === 'retake') {
+        show('No further attempts are available under Pearson\'s rules.', ['Pearson allows one resubmission and a single retake for each assignment, and a student who has had both is not allowed any further resubmissions or retakes.', 'Ask your tutor or programme leader what this means for your unit.']);
+        return;
+      }
+      if (!v.deadline || !v.auth || !v.guidance) {
+        show('Answer the three questions about your deadline, declaration and assessor to continue.', []);
+        return;
+      }
+
+      var failed = failedConditions(v);
+      var unsure = v.guidance === 'unsure';
+      if (failed.length) {
+        failed.push('A retake needs the same conditions to have been met, so a retake is not available either.');
+        show('Under Pearson\'s rules a resubmission cannot be authorised.', failed);
+        return;
+      }
+
+      var lines = [];
+      if (unsure) { lines.push('Whether you can improve without further guidance is your assessor\'s judgement, so ask them.'); }
+      if (v.stage === 'first') {
+        lines.push('It is not automatic. Your Lead Internal Verifier must authorise the resubmission.');
+        lines.push('If it is authorised, it is recorded on your assessment record with a deadline within 15 working days of you receiving your results, in term time and in the same academic year.');
+        lines.push('You do the work with no further guidance.');
+        lines.push('It is not capped at Pass. You can be given the chance to meet the full range of criteria the assignment targets.');
+        lines.push('You only resubmit the criteria your assessor and Lead Internal Verifier identify as needing more work, not the whole assignment.');
+        show(unsure ? 'You may be eligible, depending on your assessor\'s judgement.' : 'You may be eligible for one resubmission.', lines);
+        return;
+      }
+      lines.push('Pearson allows one resubmission for each assignment, so a second resubmission is not available.');
+      lines.push('The Lead Internal Verifier may authorise a single retake, only in exceptional circumstances where they believe it is necessary, appropriate and fair.');
+      lines.push(v.qual === 'nat25'
+        ? 'On the 2025 Nationals the retake is a third attempt at the same Pearson-set task, aimed only at the pass criteria you have not yet met.'
+        : 'The retake is a new task or assignment aimed only at the pass criteria you have not yet met.');
+      lines.push('Your assessor agrees a clear deadline before you start, within the same academic year, and you and your assessor both sign declarations of authentication.');
+      lines.push('After a retake there are no further resubmissions or retakes.');
+      show('You cannot resubmit again, but one retake may be possible.', lines);
+    }
+
+    Object.keys(els).forEach(function (k) { els[k].addEventListener('change', check); });
+    check();
+  })();
+  </script>
+</section>
+
 <section class="main-content">
   <h2>What Is a BTEC Referral and What Causes It</h2>
   <p>A Referral is the BTEC term for a submission that has not met all of the Pass criteria for a unit. It is not a partial pass, a conditional pass, or a low pass, it means the minimum threshold for any grade has not been reached. A Referred unit has not been achieved. This is a non-negotiable binary outcome: Pass criteria are either met or they are not, and a single unmet Pass criterion, however many other criteria the submission satisfies, produces a Referral.</p>
