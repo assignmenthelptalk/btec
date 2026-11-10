@@ -684,6 +684,90 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
     gap: 0.375rem;
   }
 
+  /* Interactive student tools: brief decoder and resubmission checker */
+  /* The article is a grid item: without this, a wide results table stretches the whole page sideways. */
+  .page-article {
+    min-width: 0;
+  }
+
+  .page-article :global(.btec-tool) {
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-border-light);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0 1.25rem;
+  }
+
+  .page-article :global(.btec-tool__field) {
+    margin-bottom: 0.75rem;
+  }
+
+  .page-article :global(.btec-tool label) {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .page-article :global(.btec-tool select),
+  .page-article :global(.btec-tool textarea) {
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--color-border-light);
+    border-radius: 0.375rem;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  .page-article :global(.btec-tool textarea) {
+    resize: vertical;
+  }
+
+  .page-article :global(.btec-tool select:focus-visible),
+  .page-article :global(.btec-tool textarea:focus-visible),
+  .page-article :global(.btec-tool button:focus-visible),
+  .page-article :global(.btec-tool input:focus-visible) {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+  }
+
+  .page-article :global(.btec-tool__actions) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+  }
+
+  .page-article :global(.btec-tool button) {
+    font: inherit;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 0.375rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  .page-article :global(.btec-tool button.btec-tool__secondary) {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+  }
+
+  .page-article :global(.btec-tool__status) {
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+  }
+
+  .page-article :global(.btec-tool input[type="checkbox"]) {
+    width: 1.125rem;
+    height: 1.125rem;
+    accent-color: var(--color-primary);
+  }
+
   .page-article :global(ul),
   .page-article :global(ol) {
     margin: 0.75rem 0 1rem 1.25rem;
