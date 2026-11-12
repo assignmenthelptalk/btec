@@ -921,6 +921,10 @@
         {
           "slug": "btec-internal-verification-appeal",
           "title": "BTEC Internal Verification Appeal"
+        },
+        {
+          "slug": "btec-assignment-submission-rules",
+          "title": "BTEC Assignment Submission Rules"
         }
       ],
       "contextualQuestion": "How do Pearson's restrictions on tutor feedback in the resubmission process create the specific type of independent rework that assessors expect?",
@@ -982,6 +986,10 @@
         {
           "title": "BTEC National Assignment Help",
           "slug": "btec-national-assignment-help"
+        },
+        {
+          "slug": "btec-assignment-submission-rules",
+          "title": "BTEC Assignment Submission Rules"
         }
       ],
       "contextualQuestion": "How does understanding the grading criteria grid within a BTEC assignment brief connect to planning and structuring a distinction-level response?",
@@ -1092,6 +1100,10 @@
         {
           "slug": "btec-assignment-help",
           "title": "BTEC Assignment Help"
+        },
+        {
+          "slug": "btec-level-2-explained",
+          "title": "BTEC Level 2 Explained"
         }
       ],
       "contextualQuestion": "Which BTEC level and subject applies to you?",
@@ -1316,6 +1328,10 @@
         {
           "slug": "btec-media-production-assignment-help",
           "title": "BTEC Media Production Assignment Help"
+        },
+        {
+          "slug": "btec-level-2-explained",
+          "title": "BTEC Level 2 Explained"
         }
       ],
       "contextualQuestion": "Which subject and level do you need help with?",
@@ -1459,6 +1475,10 @@
         {
           "slug": "btec-assignment-grading-criteria-explained",
           "title": "BTEC Assignment Grading Criteria Explained"
+        },
+        {
+          "slug": "btec-assignment-submission-rules",
+          "title": "BTEC Assignment Submission Rules"
         }
       ],
       "contextualQuestion": "What if you disagree with your assessment result?",
@@ -1602,6 +1622,10 @@
         {
           "slug": "btec-assignment-help",
           "title": "BTEC Assignment Help"
+        },
+        {
+          "slug": "btec-assignment-submission-rules",
+          "title": "BTEC Assignment Submission Rules"
         }
       ],
       "contextualQuestion": "What does responsible use of assignment help actually look like?",
@@ -1888,6 +1912,10 @@
         {
           "slug": "how-btec-internal-assessment-works",
           "title": "How BTEC Internal Assessment Works"
+        },
+        {
+          "slug": "btec-assignment-submission-rules",
+          "title": "BTEC Assignment Submission Rules"
         }
       ],
       "contextualQuestion": "Appeal in progress: what should you do about your next assignment?",
@@ -2121,6 +2149,98 @@
         }
       ],
       "contextualQuestion": "Whichever title your course uses, what do the assignments actually require?"
+    },
+    {
+      "slug": "btec-level-2-explained",
+      "tier": 2,
+      "title": "BTEC Level 2 Explained",
+      "metaTitle": "BTEC Level 2 Explained: Firsts, Tech Awards, Technicals",
+      "metaDescription": "BTEC Level 2 covers Firsts, Tech Awards and Technicals. See how each is assessed, which allow retakes and what to confirm with your centre.",
+      "h1": "BTEC Level 2 Explained: Firsts, Tech Awards and Technicals",
+      "intro": "Students and parents choosing or already studying a BTEC at Level 2",
+      "h2Sections": [
+        {
+          "heading": "What Counts as a BTEC Level 2?",
+          "body": ""
+        },
+        {
+          "heading": "How BTEC Level 2 Is Assessed",
+          "body": ""
+        },
+        {
+          "heading": "Resubmissions and Retakes at Level 2",
+          "body": ""
+        },
+        {
+          "heading": "Which Level 2 Qualifications Are Still Running?",
+          "body": ""
+        },
+        {
+          "heading": "Where Does Level 2 Lead?",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "btec-assignment-help",
+          "title": "BTEC Assignment Help"
+        },
+        {
+          "slug": "what-is-btec",
+          "title": "What Is BTEC?"
+        },
+        {
+          "slug": "btec-assignment-resubmission-guide",
+          "title": "BTEC Assignment Resubmission Guide"
+        }
+      ],
+      "contextualQuestion": "Working on a Level 2 assignment?"
+    },
+    {
+      "slug": "btec-assignment-submission-rules",
+      "tier": 2,
+      "title": "BTEC Assignment Submission Rules",
+      "metaTitle": "BTEC Assignment Submission Rules: Deadlines, Late Work, AI",
+      "metaDescription": "What Pearson requires when you submit a BTEC assignment: one submission, signed declaration, extensions, late work, AI use and word count.",
+      "h1": "BTEC Assignment Submission Rules: Deadlines, Late Work, AI and Word Count",
+      "intro": "Students about to hand in a BTEC assignment who want to know the rules",
+      "h2Sections": [
+        {
+          "heading": "What Pearson Requires You to Submit",
+          "body": ""
+        },
+        {
+          "heading": "Deadlines and Extensions",
+          "body": ""
+        },
+        {
+          "heading": "The Declaration of Authenticity and AI",
+          "body": ""
+        },
+        {
+          "heading": "Word Count, Format and Length",
+          "body": ""
+        },
+        {
+          "heading": "A Pre-Submission Checklist",
+          "body": ""
+        }
+      ],
+      "relatedPages": [
+        {
+          "slug": "btec-assignment-resubmission-guide",
+          "title": "BTEC Assignment Resubmission Guide"
+        },
+        {
+          "slug": "btec-academic-malpractice-policy",
+          "title": "BTEC Academic Malpractice Policy"
+        },
+        {
+          "slug": "how-btec-internal-assessment-works",
+          "title": "How BTEC Internal Assessment Works"
+        }
+      ],
+      "contextualQuestion": "Not sure what your brief expects?"
     }
   ]
 }
