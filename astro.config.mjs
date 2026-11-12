@@ -33,6 +33,7 @@ function getSlug(url) {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.btecassignment.help',
+  trailingSlash: 'always',
   integrations: [
     sitemap({
       serialize(item) {

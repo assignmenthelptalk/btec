@@ -1,7 +1,7 @@
 {
   "meta": {
     "siteTitle": "BTEC Assignment Help | Pass, Merit & Distinction Support",
-    "siteDescription": "Professional BTEC assignment help for Level 2–5 students. Pearson-aligned experts, plagiarism-free work, guaranteed grades. Trusted by 8,000+ students.",
+    "siteDescription": "BTEC assignment help for Level 2–5 students. Guides on Pearson grading criteria, assignment briefs, resubmissions and referencing across every BTEC subject.",
     "siteUrl": "https://www.btecassignment.help",
     "faviconPath": "/favicon.ico",
     "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
@@ -243,23 +243,18 @@
   "stats": [
     {
       "icon": "🎓",
-      "value": "8,000+",
-      "label": "Assignments Completed"
+      "value": "L2–L5",
+      "label": "Levels Covered"
     },
     {
-      "icon": "⭐",
-      "value": "4.8/5",
-      "label": "Average Rating"
+      "icon": "📚",
+      "value": "11",
+      "label": "Subject Areas"
     },
     {
-      "icon": "📅",
-      "value": "97%",
-      "label": "On-Time Delivery"
-    },
-    {
-      "icon": "🏆",
-      "value": "15+",
-      "label": "Years Experience"
+      "icon": "📝",
+      "value": "Pearson",
+      "label": "Criteria-Based Guidance"
     }
   ],
   "about": {
@@ -442,7 +437,7 @@
       },
       {
         "question": "What if I'm not happy with the work?",
-        "answer": "If the work does not match the brief you gave us, contact us and tell us what needs to change. We will review your request and agree the next step with you. Ask us for our revision and refund terms before you order."
+        "answer": "Tell us what needs changing and we will revise within the agreed scope. Contact us before you order to confirm the revision terms for your project."
       },
       {
         "question": "Is my information kept confidential?",
@@ -460,7 +455,7 @@
   },
   "finalCta": {
     "heading": "Ready to Level Up Your BTEC Grades?",
-    "subtext": "Join 8,000+ BTEC students who've improved their grades with our expert support. Get started in under 2 minutes.",
+    "subtext": "Get BTEC support matched to your unit criteria. Get started in under 2 minutes.",
     "button": {
       "label": "Start Your Order Today",
       "href": "#contact"
@@ -468,7 +463,7 @@
   },
   "footer": {
     "logoText": "BTEC Help",
-    "description": "The UK's trusted specialist in Pearson BTEC assignment support. Helping students reach Merit and Distinction since 2010.",
+    "description": "Specialist Pearson BTEC assignment support and study guides for Level 2 to Level 5 students.",
     "columns": [
       {
         "heading": "Qualification Levels",
