@@ -1,4 +1,5 @@
 {
+      "trailingSlash": true,
       "rewrites": [
             {
                   "source": "/sitemap.xml",
@@ -6,6 +7,17 @@
             }
       ],
       "redirects": [
+            {
+                  "source": "/(.*)",
+                  "has": [
+                        {
+                              "type": "host",
+                              "value": "btecassignment.help"
+                        }
+                  ],
+                  "destination": "https://www.btecassignment.help/$1",
+                  "permanent": true
+            },
             {
                   "source": "/academic-referencing-for-btec-hnc-hnd",
                   "destination": "/academic-referencing-for-btec-hnc-hnd/",
