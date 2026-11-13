@@ -1270,37 +1270,25 @@
       "slug": "btec-subjects-list",
       "tier": 2,
       "title": "BTEC Subjects List",
-      "metaTitle": "BTEC Subjects List: Every Available BTEC Course",
-      "metaDescription": "Every BTEC subject explained in one place, including Business, Health and Social Care, Engineering, IT, and Sport, with what each course covers.",
-      "h1": "BTEC Subjects List: Every Available BTEC Course and What Each One Covers",
-      "intro": "Students and parents exploring what BTEC subjects are available and what each course involves",
+      "metaTitle": "BTEC Subjects List: Pearson's BTEC Nationals by Subject",
+      "metaDescription": "The BTEC subjects Pearson lists for Nationals, the 2025 qualifications and Higher Nationals, grouped by subject, with links to our subject guides.",
+      "h1": "BTEC Subjects List: Pearson's BTEC Courses Grouped by Subject",
+      "intro": "Students and parents exploring which BTEC subjects Pearson offers",
       "h2Sections": [
         {
-          "heading": "BTEC Business",
+          "heading": "BTEC Nationals by Subject (Pearson's 2016 to 2020 Listing)",
           "body": ""
         },
         {
-          "heading": "BTEC Health and Social Care",
+          "heading": "BTEC Nationals from 2025",
           "body": ""
         },
         {
-          "heading": "BTEC Engineering",
+          "heading": "BTEC Higher Nationals",
           "body": ""
         },
         {
-          "heading": "BTEC IT",
-          "body": ""
-        },
-        {
-          "heading": "BTEC Sport",
-          "body": ""
-        },
-        {
-          "heading": "BTEC Public Services",
-          "body": ""
-        },
-        {
-          "heading": "BTEC Childcare and Early Years",
+          "heading": "Our Subject Guides",
           "body": ""
         }
       ],
