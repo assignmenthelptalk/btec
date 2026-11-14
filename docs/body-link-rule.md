@@ -16,7 +16,7 @@ The header and footer already send every page to every other page. Body links ar
 
 ## How it is enforced
 
-Existing pages were not trimmed when the rule was introduced, so a baseline records how many links each over-limit page had on that day.
+Every page is now within the limit, so the baseline in `scripts/body-links-baseline.json` is empty. It remains as an allowance list: if a page ever needs to go over 4, the check records how many links it had and blocks any further increase.
 
 ```bash
 npm run build
