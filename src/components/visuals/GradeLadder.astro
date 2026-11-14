@@ -1,0 +1,63 @@
+---
+/**
+ * GradeLadder: the three-step Pass, Merit, Distinction ladder.
+ * The artwork has no text. Every label is real HTML, positioned over the empty panels as percentages
+ * of the image, and falls back to a text list below the image when the figure is narrow.
+ *
+ * The typical command words come from the site's own wording:
+ *  - /btec-assignment-grading-criteria-explained/: "Pass criteria often ask for descriptions or
+ *    explanations, Merit criteria for analysis or comparison, and Distinction criteria for evaluation."
+ *  - /how-to-achieve-distinction-in-btec-assignments/: "Distinction criteria often start with verbs
+ *    such as evaluate, assess or justify".
+ */
+import '../../styles/btec-visuals.css';
+
+interface Props {
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+const { loading = 'lazy', fetchpriority = 'auto' } = Astro.props;
+
+const steps = [
+  { key: 'pass', label: 'Pass (P criteria)', words: 'Describe, explain', letter: 'P', box: { x: 4.73, y: 60.08, w: 26.5, h: 25.22 }, badge: { x: 13.16, y: 44.98, w: 9.69, h: 13.65 } },
+  { key: 'merit', label: 'Merit (M criteria)', words: 'Analyse, compare', letter: 'M', box: { x: 36.7, y: 38.63, w: 26.5, h: 46.67 }, badge: { x: 45.07, y: 23.53, w: 9.69, h: 13.65 } },
+  { key: 'distinction', label: 'Distinction (D criteria)', words: 'Evaluate, assess, justify', letter: 'D', box: { x: 68.6, y: 17.19, w: 26.5, h: 68.11 }, badge: { x: 77.04, y: 2.09, w: 9.69, h: 13.65 } },
+];
+---
+
+<figure class="viz viz--ladder">
+  <div class="viz__stage">
+    <img
+      class="viz__img"
+      src="/images/btec/btec-grade-ladder-pass-merit-distinction.webp"
+      width="1200"
+      height="851"
+      alt="Three-step BTEC grade ladder from Pass to Merit to Distinction, with the criteria letters P, M and D and typical command words for each step."
+      loading={loading}
+      fetchpriority={fetchpriority}
+      decoding="async"
+    />
+    {steps.map((s) => (
+      <span
+        class={`viz__badge viz__label--${s.key}`}
+        aria-hidden="true"
+        style={`--x:${s.badge.x};--y:${s.badge.y};--w:${s.badge.w};--h:${s.badge.h}`}
+      ><span class={`viz__label--${s.key}`}><strong>{s.letter}</strong></span></span>
+    ))}
+    <ol class="viz__labels">
+      {steps.map((s) => (
+        <li
+          class={`viz__label viz__label--${s.key}`}
+          style={`--x:${s.box.x};--y:${s.box.y};--w:${s.box.w};--h:${s.box.h}`}
+        >
+          <strong>{s.label}</strong>
+          <span class="viz__words">{s.words}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+  <figcaption class="viz__caption">
+    BTEC grades build step by step: meet every Pass criterion before Merit and Distinction.
+    <span class="viz__note">Typical pattern: check your unit's criteria.</span>
+  </figcaption>
+</figure>

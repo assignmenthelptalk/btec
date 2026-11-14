@@ -1,0 +1,236 @@
+/*
+ * Shared styles for the BTEC visuals (GradeLadder, LevelPathway, AssessmentFlow, CriteriaMatrix, SubjectIcons).
+ *
+ * Grade colour tokens. Reuse these everywhere a grade band is coloured. Colour never carries the meaning
+ * on its own: every use sits next to the words Pass, Merit or Distinction.
+ *   teal   #0F766E on white 5.5:1
+ *   amber  #B45309 on white 5.0:1
+ *   indigo #4338CA on white 7.5:1
+ */
+:root {
+  --grade-pass: #0f766e;
+  --grade-merit: #b45309;
+  --grade-distinction: #4338ca;
+  --viz-ink: #1b2b4b;
+  --viz-muted: #475569;
+  --viz-line: #d5dae3;
+}
+
+.viz {
+  margin: 1.25rem 0 1.75rem;
+}
+
+/* The stage is the container the label layout reacts to. */
+.viz__stage {
+  position: relative;
+  container-type: inline-size;
+}
+
+.viz__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--viz-line);
+  border-radius: 0.75rem;
+}
+
+.viz__caption {
+  margin-top: 0.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--viz-muted);
+}
+
+.viz__note {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: 600;
+  color: var(--viz-ink);
+}
+
+/* ── Narrow containers: the image, then the labels as an ordered text list ───────────────────── */
+.viz__labels {
+  margin: 0.75rem 0 0;
+  padding: 0 0 0 1.5rem;
+  color: var(--viz-ink);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.viz__label {
+  margin: 0.375rem 0;
+  padding-left: 0.25rem;
+}
+
+.viz__label strong {
+  font-weight: 700;
+}
+
+.viz__words {
+  display: block;
+  color: var(--viz-muted);
+}
+
+.viz__label--pass strong { color: var(--grade-pass); }
+.viz__label--merit strong { color: var(--grade-merit); }
+.viz__label--distinction strong { color: var(--grade-distinction); }
+
+.viz__label[aria-current='step'] {
+  font-weight: 700;
+  background: var(--viz-ink);
+  color: #fff;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  list-style-position: inside;
+}
+
+.viz__badge {
+  display: none;
+}
+
+/* ── Wide containers: labels sit over the empty spaces in the artwork ────────────────────────── */
+@container (min-width: 480px) {
+  .viz__labels {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: clamp(0.6875rem, 2.1cqw, 0.9375rem);
+    line-height: 1.25;
+  }
+
+  .viz__label {
+    position: absolute;
+    left: calc(var(--x) * 1%);
+    top: calc(var(--y) * 1%);
+    width: calc(var(--w) * 1%);
+    height: calc(var(--h) * 1%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0.125rem 0.25rem;
+    text-align: center;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  .viz__label[aria-current='step'] {
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 0.1875rem #fff, 0 0 0 0.3125rem var(--viz-ink);
+  }
+
+  .viz__words {
+    margin-top: 0.25em;
+    font-size: 0.92em;
+  }
+
+  .viz__badge {
+    position: absolute;
+    left: calc(var(--x) * 1%);
+    top: calc(var(--y) * 1%);
+    width: calc(var(--w) * 1%);
+    height: calc(var(--h) * 1%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.8125rem, 3.4cqw, 1.5rem);
+    font-weight: 800;
+    line-height: 1;
+  }
+}
+
+/* ── Subject icons ─────────────────────────────────────────────────────────────────────────── */
+.subject-icon {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--subject-icon-size, 3.5rem);
+  height: var(--subject-icon-size, 3.5rem);
+  padding: 0.3125rem;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid var(--viz-line);
+  border-radius: 0.75rem;
+}
+
+.subject-icon__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.subject-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subject-icons__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  color: var(--viz-ink);
+}
+
+/* ── Criteria matrix ───────────────────────────────────────────────────────────────────────── */
+.criteria-matrix {
+  margin: 1.25rem 0 1.75rem;
+}
+
+.criteria-matrix__scroll {
+  overflow-x: auto;
+}
+
+.criteria-matrix table {
+  width: 100%;
+  min-width: 34rem;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.criteria-matrix caption {
+  padding-bottom: 0.5rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--viz-ink);
+}
+
+.criteria-matrix th,
+.criteria-matrix td {
+  padding: 0.625rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--viz-line);
+}
+
+.criteria-matrix thead th {
+  background: #f1f4f9;
+  color: var(--viz-ink);
+}
+
+.criteria-matrix tbody th {
+  white-space: nowrap;
+  font-weight: 700;
+  border-left-width: 0.375rem;
+}
+
+.criteria-matrix tbody th.is-pass { color: var(--grade-pass); border-left-color: var(--grade-pass); }
+.criteria-matrix tbody th.is-merit { color: var(--grade-merit); border-left-color: var(--grade-merit); }
+.criteria-matrix tbody th.is-distinction { color: var(--grade-distinction); border-left-color: var(--grade-distinction); }
+
+.criteria-matrix__note {
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+  color: var(--viz-muted);
+}
