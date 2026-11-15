@@ -55,7 +55,7 @@ export const FAQS: Faq[] = [
     category: 'basics',
     metaDescription:
       'Follow your BTEC task sheet: a heading for each Pass, Merit and Distinction criterion, the exact command word under each, real examples and Harvard references.',
-    answer: `Start with your BTEC task sheet, because your structure should follow it. At BTECAssignment.Help, we use a criteria-first approach. Break the brief into the Pearson Pass, Merit and Distinction criteria, then give each one its own heading in the order the task sheet lists them. Open with a short introduction that names the unit and scenario. Under each heading, use the exact command word, such as describe, explain, analyse or evaluate. Support every point with a real example from the scenario and a proper reference, usually Harvard. Finish with a conclusion that links back to the brief, then add your reference list and appendices. Before you submit, tick off each criterion one by one. Our criteria maps and draft feedback make this step simple.`,
+    answer: `Start with your BTEC task sheet, because your structure should follow it. Break the brief into the Pearson Pass, Merit and Distinction criteria, then give each one its own heading in the order the task sheet lists them. Open with a short introduction that names the unit and scenario. Under each heading, use the exact command word, such as describe, explain, analyse or evaluate. Support every point with a real example from the scenario and a proper reference, usually Harvard. Finish with a conclusion that links back to the brief, then add your reference list and appendices. Before you submit, tick off each criterion one by one.`,
     guides: [
       'btec-assignment-brief-how-to-read-and-interpret-it',
       'btec-assignment-grading-criteria-explained',
@@ -67,7 +67,7 @@ export const FAQS: Faq[] = [
     category: 'ai-rules',
     metaDescription:
       'ChatGPT can write text, but it is not a safe way to finish a BTEC assignment. Your centre needs your own work, and unacknowledged AI use can count as malpractice.',
-    answer: `ChatGPT can produce text, but that does not make it a safe way to complete a BTEC assignment. Your centre needs the work to be your own, and JCQ guidance treats unacknowledged AI use as malpractice. AI also tends to miss task-sheet wording, invent references and write in a flat, generic voice that tutors notice quickly. A smarter use is as a study helper. Ask it to explain a theory in plain words, suggest a plan or quiz you on a topic. Then write the answer yourself, using real sources. At BTECAssignment.Help, we offer criteria maps, model answers and draft feedback so you learn the standard and submit your own work. Always check your centre's AI policy first.`,
+    answer: `ChatGPT can produce text, but that does not make it a safe way to complete a BTEC assignment. Your centre needs the work to be your own, and JCQ guidance treats unacknowledged AI use as malpractice. AI also tends to miss task-sheet wording, invent references and write in a flat, generic voice that tutors notice quickly. A smarter use is as a study helper. Ask it to explain a theory in plain words, suggest a plan or quiz you on a topic. Then write the answer yourself, using real sources. Always check your centre's AI policy first.`,
     guides: ['btec-academic-malpractice-policy'],
   },
   {
@@ -76,7 +76,7 @@ export const FAQS: Faq[] = [
     category: 'basics',
     metaDescription:
       'A failed BTEC assignment usually means a Referral. Learn about resubmission, the 15 working day limit on BTEC Nationals, and what to do next.',
-    answer: `Failing a BTEC assignment usually means a Referral, which means at least one Pass criterion was not met. Do not panic. On BTEC Nationals, learners are normally allowed one resubmission, often within 15 working days, but your centre's policy has the final say. At HNC and HND level, you usually get one reassessment, and the grade is capped at Pass. Your tutor will explain which criteria are missing. Read that feedback carefully, then make a short action list: what evidence is missing, which command word you missed, and where you need examples or references. Fix what is needed, keep your own voice and resubmit on time. We offer feedback reviews, resubmission action lists and tutoring to help your next attempt hit the criteria.`,
+    answer: `Failing a BTEC assignment usually means a Referral, which means at least one Pass criterion was not met. Do not panic. On BTEC Nationals, learners are normally allowed one resubmission, often within 15 working days, but your centre's policy has the final say. At HNC and HND level, you usually get one reassessment, and the grade is capped at Pass. Your tutor will explain which criteria are missing. Read that feedback carefully, then make a short action list: what evidence is missing, which command word you missed, and where you need examples or references. Fix what is needed, keep your own voice and resubmit on time.`,
     guides: ['btec-assignment-resubmission-guide', 'btec-higher-national-explained'],
     sources: [PEARSON_RESUB],
   },
@@ -86,7 +86,7 @@ export const FAQS: Faq[] = [
     category: 'ai-rules',
     metaDescription:
       'AI can help you plan, understand and check your work, but it should not do the whole BTEC assignment. Most centres treat copied AI text as malpractice.',
-    answer: `AI can help with parts of the process, but it should not do the whole BTEC assignment for you. It can explain tricky ideas, suggest headings, check grammar and help you plan your time. It does not know your task sheet, your centre's rules or your tutor's expectations unless you tell it, and it often gets facts, dates and references wrong. Most centres also treat copied AI text as malpractice, and tutors can spot work that does not sound like you. The best approach is to use AI for support, then write in your own words, with real sources and correct Harvard referencing. If you are unsure what is allowed, ask your tutor. Our guidance is written by people, so you stay in control of your submission.`,
+    answer: `AI can help with parts of the process, but it should not do the whole BTEC assignment for you. It can explain tricky ideas, suggest headings, check grammar and help you plan your time. It does not know your task sheet, your centre's rules or your tutor's expectations unless you tell it, and it often gets facts, dates and references wrong. Most centres also treat copied AI text as malpractice, and tutors can spot work that does not sound like you. The best approach is to use AI for support, then write in your own words, with real sources and correct Harvard referencing. If you are unsure what is allowed, ask your tutor.`,
     guides: ['btec-academic-malpractice-policy'],
   },
   {
@@ -95,7 +95,7 @@ export const FAQS: Faq[] = [
     category: 'ai-tools',
     metaDescription:
       'No single AI wins every BTEC writing task. Compare Claude, Gemini, Copilot and Perplexity, treat the result as a rough draft, then write your own answer.',
-    answer: `No single AI wins every BTEC writing task, so the best choice depends on what you need. Claude is often liked for natural, careful writing and long documents. Gemini works well if you use Google Docs and Drive. Microsoft Copilot suits students who already work in Word. Perplexity helps you find sources quickly. Features and free limits change often, so test two or three tools on the same prompt and compare the results. Whichever you pick, treat the output as a rough draft, not finished work. Check facts, add your own examples and write the final answer yourself. For BTEC work, the biggest gain comes from matching the Pass, Merit and Distinction criteria, which is what our guidance and draft feedback focus on.`,
+    answer: `No single AI wins every BTEC writing task, so the best choice depends on what you need. Claude is often liked for natural, careful writing and long documents. Gemini works well if you use Google Docs and Drive. Microsoft Copilot suits students who already work in Word. Perplexity helps you find sources quickly. Features and free limits change often, so test two or three tools on the same prompt and compare the results. Whichever you pick, treat the output as a rough draft, not finished work. Check facts, add your own examples and write the final answer yourself. For BTEC work, the biggest gain comes from matching the Pass, Merit and Distinction criteria.`,
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
@@ -104,7 +104,7 @@ export const FAQS: Faq[] = [
     category: 'ai-tools',
     metaDescription:
       'The best AI app for BTEC assignments supports your learning without replacing your effort. See which tools suit brainstorming, sources, grammar and revision.',
-    answer: `The best AI app for BTEC assignments is the one that supports your learning without replacing your effort. For brainstorming and explaining topics, ChatGPT, Claude and Gemini are all popular choices. For finding sources, Perplexity can help, but always open the links and check them yourself. For grammar and clarity, a tool like Grammarly is useful. For revision, NotebookLM can turn your own notes into summaries and practice questions. None of these knows your BTEC task sheet, so paste in the criteria and ask for a plan, not a finished answer. Then write in your own voice and reference properly. If you want human help with criteria, feedback or resubmission planning, BTECAssignment.Help offers criteria maps and tutor support.`,
+    answer: `The best AI app for BTEC assignments is the one that supports your learning without replacing your effort. For brainstorming and explaining topics, ChatGPT, Claude and Gemini are all popular choices. For finding sources, Perplexity can help, but always open the links and check them yourself. For grammar and clarity, a tool like Grammarly is useful. For revision, NotebookLM can turn your own notes into summaries and practice questions. None of these knows your BTEC task sheet, so paste in the criteria and ask for a plan, not a finished answer. Then write in your own voice and reference properly.`,
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
@@ -113,7 +113,7 @@ export const FAQS: Faq[] = [
     category: 'ai-tools',
     metaDescription:
       'BTEC assignments need the right tool for the job: Claude for long writing, Perplexity for sources, Gemini for Google apps, Copilot for Word. Test two apps.',
-    answer: `For BTEC assignments, "better" depends on the job. For writing and editing long text, many students prefer Claude. For searching the web with sources, Perplexity is strong. If you live in Google apps, Gemini connects neatly with Docs, Gmail and Drive. If you work in Word, Copilot sits inside Microsoft apps. ChatGPT is still a solid all-rounder with many features. Instead of looking for one winner, ask the same question in two apps and see which explains it more clearly. Remember that every AI can make mistakes, so check names, dates and references. In BTEC work, the app matters less than following the Pearson criteria and using the right command word. Our criteria maps show what each grade expects.`,
+    answer: `For BTEC assignments, "better" depends on the job. For writing and editing long text, many students prefer Claude. For searching the web with sources, Perplexity is strong. If you live in Google apps, Gemini connects neatly with Docs, Gmail and Drive. If you work in Word, Copilot sits inside Microsoft apps. ChatGPT is still a solid all-rounder with many features. Instead of looking for one winner, ask the same question in two apps and see which explains it more clearly. Remember that every AI can make mistakes, so check names, dates and references. In BTEC work, the app matters less than following the Pearson criteria and using the right command word.`,
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
@@ -122,7 +122,7 @@ export const FAQS: Faq[] = [
     category: 'free-tools',
     metaDescription:
       'BTEC assignment apps, one job each: Word or Google Docs to write, Zotero for Harvard references, Grammarly to check, Notion or Trello for deadlines.',
-    answer: `For BTEC assignments, use a mix of simple apps, each for one job. Write in Microsoft Word or Google Docs, which also let you track changes and keep version history. Use Zotero or Mendeley to save sources and build Harvard references. Use Grammarly or the built-in spell checker to fix mistakes. Use Notion, Trello or a calendar app to plan deadlines for each unit. Use Forest or a similar timer to stay focused. AI chat apps can help you understand a topic or plan a structure, but the final writing should be yours. Always follow the task sheet and your centre's rules. If you get stuck on criteria or feedback, BTECAssignment.Help offers tutoring, draft reviews and referencing checks.`,
+    answer: `For BTEC assignments, use a mix of simple apps, each for one job. Write in Microsoft Word or Google Docs, which also let you track changes and keep version history. Use Zotero or Mendeley to save sources and build Harvard references. Use Grammarly or the built-in spell checker to fix mistakes. Use Notion, Trello or a calendar app to plan deadlines for each unit. Use Forest or a similar timer to stay focused. AI chat apps can help you understand a topic or plan a structure, but the final writing should be yours. Always follow the task sheet and your centre's rules.`,
     guides: ['academic-referencing-for-btec-hnc-hnd'],
   },
   {
@@ -131,7 +131,7 @@ export const FAQS: Faq[] = [
     category: 'ai-tools',
     metaDescription:
       'For BTEC assignments, pick an AI that follows instructions and handles long task sheets. Paste in your criteria and ask for a plan, not a finished answer.',
-    answer: `For BTEC assignments, look for an AI that follows instructions closely, keeps a plain tone and handles long task sheets without losing track. Claude, ChatGPT and Gemini are the common options, and each has strengths, so try the same prompt in two of them and compare. Paste in your assignment criteria and ask for a plan, key points to cover or feedback on your own draft. Do not paste in the output as your final answer. AI can invent facts and references, and it rarely sounds like a student's real voice. Your tutor expects your own understanding, linked to the scenario. Use AI to learn, then write it yourself. For Pearson P, M and D guidance written by people, our tutors can help.`,
+    answer: `For BTEC assignments, look for an AI that follows instructions closely, keeps a plain tone and handles long task sheets without losing track. Claude, ChatGPT and Gemini are the common options, and each has strengths, so try the same prompt in two of them and compare. Paste in your assignment criteria and ask for a plan, key points to cover or feedback on your own draft. Do not paste in the output as your final answer. AI can invent facts and references, and it rarely sounds like a student's real voice. Your tutor expects your own understanding, linked to the scenario. Use AI to learn, then write it yourself.`,
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
@@ -140,7 +140,7 @@ export const FAQS: Faq[] = [
     category: 'free-tools',
     metaDescription:
       'Google Docs, LibreOffice Writer, Zotero and the free version of Grammarly cost nothing and cover writing, referencing and proofreading for BTEC assignments.',
-    answer: `Several free tools can help with BTEC assignment writing. Google Docs and LibreOffice Writer cost nothing and handle essays, reports and reference lists well. Zotero is free and makes Harvard referencing much easier. The free version of Grammarly catches spelling and grammar slips. Free plans of ChatGPT, Claude and Gemini can explain topics and help you plan, though limits change often. NotebookLM can turn your own notes into summaries and quiz questions. A free app helps with tools and ideas, but it cannot replace understanding your task sheet. Keep your wording natural, use real sources and answer each Pass, Merit and Distinction criterion separately. If you want a human check, we offer draft feedback and referencing checks.`,
+    answer: `Several free tools can help with BTEC assignment writing. Google Docs and LibreOffice Writer cost nothing and handle essays, reports and reference lists well. Zotero is free and makes Harvard referencing much easier. The free version of Grammarly catches spelling and grammar slips. Free plans of ChatGPT, Claude and Gemini can explain topics and help you plan, though limits change often. NotebookLM can turn your own notes into summaries and quiz questions. A free app helps with tools and ideas, but it cannot replace understanding your task sheet. Keep your wording natural, use real sources and answer each Pass, Merit and Distinction criterion separately.`,
     guides: ['academic-referencing-for-btec-hnc-hnd'],
   },
   {
@@ -149,7 +149,7 @@ export const FAQS: Faq[] = [
     category: 'ai-tools',
     metaDescription:
       'For BTEC academic writing, use different tools for different jobs: AI chat to plan, Google Scholar to find research, Zotero for references. Check every source.',
-    answer: `For BTEC academic writing, use different tools for different jobs. Claude, ChatGPT and Gemini can help you plan, simplify hard ideas and improve clarity. For finding research, Google Scholar, Elicit and Consensus point you to real papers, but you must open and read them yourself. Zotero keeps your references organised. Grammarly helps with grammar and tone. The biggest risk with AI is made-up sources and confident but wrong claims, so check every fact and link. Academic writing also needs your own argument, which means comparing ideas, weighing strengths and weaknesses and reaching a justified judgement. That is what Distinction criteria ask for. Our criteria maps and draft feedback help you see where your own writing needs more depth.`,
+    answer: `For BTEC academic writing, use different tools for different jobs. Claude, ChatGPT and Gemini can help you plan, simplify hard ideas and improve clarity. For finding research, Google Scholar, Elicit and Consensus point you to real papers, but you must open and read them yourself. Zotero keeps your references organised. Grammarly helps with grammar and tone. The biggest risk with AI is made-up sources and confident but wrong claims, so check every fact and link. Academic writing also needs your own argument, which means comparing ideas, weighing strengths and weaknesses and reaching a justified judgement. That is what Distinction criteria ask for.`,
     guides: ['how-to-achieve-distinction-in-btec-assignments', 'academic-referencing-for-btec-hnc-hnd'],
   },
   {
@@ -158,7 +158,7 @@ export const FAQS: Faq[] = [
     category: 'free-tools',
     metaDescription:
       'For BTEC units, NotebookLM works from your own notes to make summaries and practice questions. Free ChatGPT, Claude and Gemini plans can also quiz you.',
-    answer: `For studying BTEC units, NotebookLM is a strong free option because it works from your own notes and sources, then makes summaries and practice questions. The free plans of ChatGPT, Claude and Gemini are also useful for explaining topics in simple words, creating quizzes and testing your understanding. Quizlet and Anki are good for flashcards and revision. Free limits change often, so check each app's current plan. The best way to study with AI is to ask it to question you, not just give answers. Try to explain a topic back in your own words, then check it against your course notes. For BTEC units, link every idea to the scenario and the criteria. Our tutors can help if you get stuck.`,
+    answer: `For studying BTEC units, NotebookLM is a strong free option because it works from your own notes and sources, then makes summaries and practice questions. The free plans of ChatGPT, Claude and Gemini are also useful for explaining topics in simple words, creating quizzes and testing your understanding. Quizlet and Anki are good for flashcards and revision. Free limits change often, so check each app's current plan. The best way to study with AI is to ask it to question you, not just give answers. Try to explain a topic back in your own words, then check it against your course notes. For BTEC units, link every idea to the scenario and the criteria.`,
     guides: ['how-to-achieve-distinction-in-btec-assignments'],
   },
   {
@@ -167,7 +167,7 @@ export const FAQS: Faq[] = [
     category: 'free-tools',
     metaDescription:
       'BTEC students can try free tiers of ChatGPT, Claude, Gemini, Copilot and Perplexity. Limits and student offers change, so check each official pricing page.',
-    answer: `Most major AI tools offer a free tier that BTEC students can use, including ChatGPT, Claude, Gemini, Microsoft Copilot and Perplexity. Free plans usually have message limits or fewer features, and they change often. Some companies also run student offers or discounts, which may need a verified student email, and these differ by country and time. Check each tool's official pricing page rather than trusting old posts. NotebookLM is another useful free option for revision. Whatever you choose, use it to understand your course, not to replace your own work. Your centre may have rules about AI, so read them first. If you are struggling with a unit, BTECAssignment.Help offers tutoring, criteria maps and feedback that suit your budget, with prices shown before payment.`,
+    answer: `Most major AI tools offer a free tier that BTEC students can use, including ChatGPT, Claude, Gemini, Microsoft Copilot and Perplexity. Free plans usually have message limits or fewer features, and they change often. Some companies also run student offers or discounts, which may need a verified student email, and these differ by country and time. Check each tool's official pricing page rather than trusting old posts. NotebookLM is another useful free option for revision. Whatever you choose, use it to understand your course, not to replace your own work. Your centre may have rules about AI, so read them first.`,
     guides: ['btec-academic-malpractice-policy'],
   },
   {
@@ -185,7 +185,7 @@ export const FAQS: Faq[] = [
     category: 'free-tools',
     metaDescription:
       'Yes, for BTEC study if you use it actively: have it explain ideas, plan revision and quiz you, then check answers against your notes. Beware wrong facts.',
-    answer: `Yes, it can be very good for studying a BTEC course when you use it the right way. It can explain difficult ideas in plain words, give examples, build revision plans and quiz you on a unit. Ask it to test you, then check your answers against your notes. It can also give feedback on a draft you wrote, which helps you improve without handing over the work. The risks are wrong facts, made-up references and answers that sound sure but are false. It also does not know your task sheet unless you paste it in. Always verify against your course materials, and keep your final assignment in your own words. Our criteria maps can show you what Pass, Merit and Distinction look like.`,
+    answer: `Yes, it can be very good for studying a BTEC course when you use it the right way. It can explain difficult ideas in plain words, give examples, build revision plans and quiz you on a unit. Ask it to test you, then check your answers against your notes. It can also give feedback on a draft you wrote, which helps you improve without handing over the work. The risks are wrong facts, made-up references and answers that sound sure but are false. It also does not know your task sheet unless you paste it in. Always verify against your course materials, and keep your final assignment in your own words.`,
     guides: ['how-to-achieve-distinction-in-btec-assignments'],
   },
   {
@@ -194,7 +194,7 @@ export const FAQS: Faq[] = [
     category: 'ai-rules',
     metaDescription:
       'On a BTEC assignment, do not ask ChatGPT to write it all, get around AI checks, or handle private details. Ask it to explain, plan, quiz or review your draft.',
-    answer: `Do not ask it to write your whole BTEC assignment to submit as your own, because your centre needs your work and your own understanding. Do not ask it to get around AI checks, which is dishonest and risky. Do not share private details such as passwords, ID numbers or confidential school or work information. Do not rely on it for final medical, legal or financial decisions. Be careful asking for exact statistics, quotes or references, because it can invent them, so check anything it gives you. Instead, ask it to explain a topic, suggest a structure, test your knowledge or review your own draft. If you need help matching the Pearson criteria, our tutors give human-written guidance.`,
+    answer: `Do not ask it to write your whole BTEC assignment to submit as your own, because your centre needs your work and your own understanding. Do not ask it to get around AI checks, which is dishonest and risky. Do not share private details such as passwords, ID numbers or confidential school or work information. Do not rely on it for final medical, legal or financial decisions. Be careful asking for exact statistics, quotes or references, because it can invent them, so check anything it gives you. Instead, ask it to explain a topic, suggest a structure, test your knowledge or review your own draft.`,
     guides: ['btec-academic-malpractice-policy'],
   },
   {
@@ -203,7 +203,7 @@ export const FAQS: Faq[] = [
     category: 'ai-tools',
     metaDescription:
       'For BTEC assignments, Gemini suits Google Docs, Gmail and Drive; GPT is a flexible all-rounder. Test the same prompt in both, then write your own answer.',
-    answer: `Both are strong for BTEC assignments, and the better one depends on how you work. Gemini fits well if you use Google Docs, Gmail and Drive, and it can bring in current web information. GPT, the model behind ChatGPT, is a flexible all-rounder with many tools for writing, explaining and planning. Results vary by task and change with each update, so test the same prompt in both and compare the clarity, accuracy and tone. Both can make mistakes and invent references, so always check facts. For students, the key point is not the tool but how you use it. Use either one to understand your unit, then write your own answer to the Pearson criteria. We can review your draft for gaps.`,
+    answer: `Both are strong for BTEC assignments, and the better one depends on how you work. Gemini fits well if you use Google Docs, Gmail and Drive, and it can bring in current web information. GPT, the model behind ChatGPT, is a flexible all-rounder with many tools for writing, explaining and planning. Results vary by task and change with each update, so test the same prompt in both and compare the clarity, accuracy and tone. Both can make mistakes and invent references, so always check facts. For students, the key point is not the tool but how you use it. Use either one to understand your unit, then write your own answer to the Pearson criteria.`,
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
@@ -212,7 +212,7 @@ export const FAQS: Faq[] = [
     category: 'ai-rules',
     metaDescription:
       'Often, yes. BTEC tutors know your usual voice, and AI text can feel generic or include fake references. Detection tools are not perfect, so be honest.',
-    answer: `Often, yes. BTEC tutors know your usual voice, so a sudden change in style, vocabulary or depth stands out. AI text can also feel generic, repeat itself, miss the scenario and include references that do not exist. Some centres use detection software, but these tools are not perfect and can be wrong, so never rely on them either way. Your tutor may also ask you to explain your work in person. The safest path is honesty: follow your centre's AI policy, write in your own words and keep notes and drafts. If your work was flagged or you leaned on AI, BTECAssignment.Help offers honest rewrite coaching to help you rebuild it in your own voice.`,
+    answer: `Often, yes. BTEC tutors know your usual voice, so a sudden change in style, vocabulary or depth stands out. AI text can also feel generic, repeat itself, miss the scenario and include references that do not exist. Some centres use detection software, but these tools are not perfect and can be wrong, so never rely on them either way. Your tutor may also ask you to explain your work in person. The safest path is honesty: follow your centre's AI policy, write in your own words and keep notes and drafts.`,
     guides: ['btec-academic-malpractice-policy'],
   },
 ];
