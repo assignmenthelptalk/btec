@@ -1,0 +1,98 @@
+---
+/**
+ * One page per FAQ: /btec-faqs/<slug>/
+ * Content comes from src/data/btecFaqs.ts.
+ */
+
+import config from '../../../site-config.json';
+import FaqDocument from '../../components/FaqDocument.astro';
+import {
+  FAQS,
+  HUB_PATH,
+  HUB_TITLE,
+  escapeHtml,
+  faqPath,
+  relatedFaqs,
+  siteGuideTitle,
+  splitParagraphs,
+  type Faq,
+} from '../../data/btecFaqs';
+
+export function getStaticPaths() {
+  return FAQS.map((faq) => ({ params: { slug: faq.slug }, props: { faq } }));
+}
+
+const { faq } = Astro.props as { faq: Faq };
+const siteUrl = config.meta.siteUrl;
+
+const paragraphs = splitParagraphs(faq.answer)
+  .map((p) => `<p>${escapeHtml(p)}</p>`)
+  .join('\n');
+
+const guideLinks = faq.guides
+  .map((slug) => `<li><a href="/${slug}/">${escapeHtml(siteGuideTitle(slug))}</a></li>`)
+  .join('\n');
+
+const sourceLinks = (faq.sources ?? [])
+  .map((s) => `<li><a href="${s.url}" target="_blank" rel="noopener noreferrer">${escapeHtml(s.label)}</a></li>`)
+  .join('\n');
+
+const rawHtml = `
+<section class="main-content">
+  <h2>Answer</h2>
+  ${paragraphs}
+</section>
+<section class="supplementary">
+  <h2>Keep reading</h2>
+  <ul>
+    <li><a href="/${HUB_PATH}/">All BTEC FAQs</a></li>
+    ${guideLinks}
+  </ul>
+</section>
+${sourceLinks ? `<section class="main-content">\n  <h2>Sources</h2>\n  <ul>\n${sourceLinks}\n  </ul>\n</section>` : ''}
+`;
+
+const page = {
+  slug: `${HUB_PATH}/${faq.slug}`,
+  tier: 2,
+  title: faq.question,
+  metaTitle: faq.question,
+  metaDescription: faq.metaDescription,
+  h1: faq.question,
+  intro: faq.metaDescription,
+  h2Sections: [],
+  relatedPages: relatedFaqs(faq).map((r) => ({ title: r.question, slug: `${HUB_PATH}/${r.slug}` })),
+  contextualQuestion: '',
+};
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: HUB_TITLE, href: `/${HUB_PATH}/` },
+  { label: faq.question },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: HUB_TITLE, item: `${siteUrl}/${HUB_PATH}/` },
+      { '@type': 'ListItem', position: 3, name: faq.question, item: `${siteUrl}${faqPath(faq.slug)}` },
+    ],
+  },
+];
+---
+
+<FaqDocument page={page} rawHtml={rawHtml} crumbs={crumbs} badge="BTEC FAQ" jsonLd={jsonLd} />
