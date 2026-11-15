@@ -24,7 +24,7 @@ The audit was run against a fresh build of that commit. Sections 2 onwards are f
 | All inner pages | Site-wide strip in `ServicePage.astro` lines 236-258: H2 "Common Questions", first 4 items of the home FAQ in `<details>` | H2, questions are `<span>` | None |
 
 - The H3 questions are **not nested under "Higher National Grading"**. That section ends at line 59 and the FAQ section follows it with no heading, so it reads as part of "Higher National Grading". It already is the last thing in the article.
-- All 38 pages that have a hand-written FAQ use the same unheaded `<section class="faq">` with H3 questions and `FAQPage` microdata. This brief only changes the grading criteria page. The other 37 are reported here, not changed.
+- All 39 inner pages have a hand-written FAQ using the same unheaded `<section class="faq">` with H3 questions and `FAQPage` microdata. This brief only changes the grading criteria page. The other 38 are reported here, not changed.
 
 ### 1c. ATHE
 
@@ -91,3 +91,82 @@ Counting the header button, its mobile-menu copy, the header and top-bar WhatsAp
 | Page-body mentions of Turnitin as a fact about centres (not a claim about this service) | academic-referencing, malpractice policy, assignment brief pages |
 
 None of these were changed in this step.
+
+## 2. Changes
+
+| Item | Commit | What changed |
+|---|---|---|
+| 0 Audit | `665c3c3` | This file, section 1. |
+| 1 Contact anchor | `a0b5da1` | New `src/components/ContactSection.astro`: H2 "Contact us", the existing WhatsApp link ("WhatsApp Us", `https://wa.me/447916696894`) and the existing support email, both read from the footer config. It sits after the closing call to action, above the footer, and now carries `id="contact"`. The id is removed from `FinalCTA.astro` (an id must be unique), so the closing button "Start Your Order Today" now scrolls to the new section. The header, hero and closing `#contact` links all resolve to it. No other copy. |
+| 2 FAQ structure | `5eecfa3` | Home: the H2 "Frequently Asked Questions" already existed. Each of the six questions is now an H3 inside its existing `<summary>`; the accordion works as before. Grading criteria: the FAQ section gets the H2 "Frequently Asked Questions". See the detail below about the one bold question that moved. |
+| 3 ATHE banner | `edea97a` | Removed the hard-coded banner block from `ServicePage.astro`. 0 built pages contain "ATHE" now. |
+| 4 Level 2 | none | Report only, section 5. |
+| 5 Calls to action | `c4b8d12` | Sidebar button removed on the 24 informational guide pages (the mid-page banner went with item 3). Grading page: repeated sentence and duplicate link fixed. |
+| 6 Footer | none | No change needed, section 6. |
+| Follow-up | `d9af2e0` | Found in testing: at 375px the `#how-it-works` heading scrolled in behind the sticky header, so the home page gets `scroll-padding-top: 4rem` (it ships only in the home stylesheet). The home FAQ rows get an explicit visible focus ring. |
+
+### Item 2 detail: grading criteria page
+
+- Added the H2 "Frequently Asked Questions" to the existing `<section class="faq">`. That section was already the last block in the article and was not nested under "Higher National Grading". It only looked like part of it because it had no heading.
+- **Moved:** the bold question "What is the single most important rule in BTEC criteria?" was in a boxed callout in the middle of the article (before "Higher National Grading"). It is now the fifth H3 in the FAQ section, with the same wording for question and answer. It was the only bold question on the page.
+- **Structured data:** the section already had `FAQPage` microdata. The moved question has matching `Question`/`Answer` microdata, so the section has 5 questions and the visible text and microdata agree. Nothing was added where there was none (the home FAQ has no structured data and still has none).
+- Nothing was moved out from under "Higher National Grading", because no FAQ question was there.
+
+### Item 5 detail
+
+- **Which pages count as informational guides:** the 24 inner pages that are neither one of the 11 subject pages nor one of the four Core Service pages (`btec-assignment-help`, `-national-`, `-hnc-`, `-hnd-`). On those, the sidebar button is not rendered. They keep the hero call to action ("Get Help Now →") and the closing one ("Start Your Order Today"), with the same text and target. The sidebar card keeps its heading, blurb and trust list.
+- The mid-page banner was the other call to action. It is gone from every inner page (item 3), including the subject and service pages, because it was the ATHE sentence itself and I could not keep the button without changing its text.
+- The floating WhatsApp button is untouched. The header and mobile menu are untouched.
+- **Grading page, repeated sentence:** "Pearson does not tie each verb to one grade band. The unit's own criteria do." now appears once. In document order the first copy is the note under the criteria table (part of the visuals, which I did not edit) and the second was the opening of the paragraph under "What Pearson Says the Command Verbs Mean". I removed the second.
+- **Grading page, external assessment links:** the brief said three. The page has **two** in the article (and none in the sidebar). The first, in "How Criterion-Based Grading Differs from Marks", stays as a link. The second, under "Related reading" in "Higher National Grading", is now plain text.
+
+## 3. Pages that differ from main (`27c9b48`)
+
+Compared page by page, ignoring line endings, whitespace, scoped-style ids and stylesheet file names. For each page, its expected edits were removed from main's HTML first and the rest was compared. 0 unexpected differences.
+
+| Pages | Why |
+|---|---|
+| `/` (home) | Contact section added, `id="contact"` moved onto it, FAQ questions are now H3, scroll padding and FAQ focus style in the stylesheet. |
+| `/btec-assignment-grading-criteria-explained/` | FAQ H2 and fifth H3, callout removed from the middle of the article, repeated sentence removed, duplicate link made plain text, ATHE banner gone, sidebar button gone (guide). |
+| 23 other guide pages | ATHE banner removed; sidebar button removed. |
+| 15 subject and Core Service pages | ATHE banner removed only. |
+
+That is all 40 built pages: the home page and every inner page differ, none is identical. Titles, meta descriptions, canonicals and structured data are unchanged on all 40.
+
+## 4. Link counts before and after
+
+| | Before | After |
+|---|---|---|
+| Home page internal link instances | 37 | 37 |
+| Site-wide internal link instances | 1666 | 1665 |
+| Targets whose number of distinct linking pages changed | | 0 |
+| Targets whose total instances changed | | 1: `/btec-external-assessment-explained/` 7 → 6 (the duplicate link on the grading page) |
+
+No page lost or gained a linking page. The header, mobile menu and footer links are unchanged.
+
+## 5. Level 2 (item 4: report only, nothing changed)
+
+- A Level 2 page **exists**: `/btec-level-2-explained/`. It is linked from the header "Levels" menu ("BTEC Level 2").
+- The home page mentions Level 2 in the hero text, About section, qualifications subheading and overview card, stats bar ("L2–L5"), FAQ answer, mission and footer description (full list in 1d).
+- The home page has **no Level 2 card** in the qualifications grid (overview, National, HNC, HND, Business), and the home page body does not link to the Level 2 page. **Decision for you:** whether to add a Level 2 card or a body link.
+
+## 6. Footer (item 6: no change)
+
+- The footer already has one column, "Contact" (support email and WhatsApp), and **no internal page links**. The Subjects and Grading and Assessment columns were removed in the earlier slim-template change, so the footer has fewer links than the target in the brief.
+- Adding "Qualification Levels" and five guides would add about nine links and reverse that. I left it unchanged. **Decision for you:** if you want those lists back, note that the header "Guides" menu lists only four guides (Grading Criteria Explained, How to Achieve Distinction, Resubmission Guide, BTEC UCAS Points), so there is no fifth to pick without your choice.
+- Every footer link target is also on the page header except the email address.
+
+## 7. Decisions and things to know
+
+1. **`#contact` was not missing, it was a dead end.** The id existed. I moved it onto the new section instead of adding a second id.
+2. **Inner pages still use the old target.** On all 39 inner pages `#contact` is the closing call-to-action section, whose button links to itself. The brief covered only the home page, so I did not add a Contact section there. The footer Contact column sits directly below it. Say if you want the same section on inner pages.
+3. **The moved FAQ question** (item 2 detail above) is a judgement call. If you would rather keep the callout where it was, it is one commit to revert.
+4. **Sidebar card on guides** keeps its heading ("Get Expert Help"), blurb and trust list; only the button is gone. I did not remove the trust list because the brief says not to change trust badges.
+5. **Other FAQ sections:** 38 other pages have the same unheaded FAQ block (H3 questions with microdata and no H2). Not changed here.
+6. **Unused CSS:** the `.inline-cta` rules remain in `ServicePage.astro`, now unused. I removed the markup only.
+
+## 8. Checks run
+
+- Build: 40 pages. Link check across all pages: 984 references, 0 broken, one canonical and one H1 each.
+- Body-link rule: 40 of 40 within 4. The 9 body-link tests pass.
+- Browser, 375px and desktop: all four `#contact` links and `#how-it-works` scroll to their sections with the heading clear of the sticky header; the FAQ has 6 H3 questions in the accordion, Enter on a focused row opens it, with a visible 3px focus ring; the contact links are focusable and 44px tall; no horizontal overflow on any of the 40 pages at 375px; no console errors apart from the existing Tawk.to widget failing its CORS check on localhost.
