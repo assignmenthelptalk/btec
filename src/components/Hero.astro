@@ -43,7 +43,6 @@ const {
     <div class="hero__visual">
       <div class="hero__image-wrap">
         <GradeLadder loading="eager" fetchpriority="high" />
-        <LevelPathway loading="eager" />
         <span class="hero__uk-badge">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="48" height="24" aria-label="UK flag" role="img">
             <clipPath id="uk-a"><path d="M0 0v30h60V0z"/></clipPath>
@@ -74,6 +73,9 @@ const {
           </span>
         ))}
       </div>
+    </div>
+    <div class="hero__pathway">
+      <LevelPathway loading="eager" />
     </div>
   </div>
 </section>
@@ -213,8 +215,15 @@ const {
     width: 100%;
   }
 
-  .hero__image-wrap :global(.viz) {
+  .hero__image-wrap :global(.viz),
+  .hero__pathway :global(.viz) {
     margin: 0;
+  }
+
+  /* LevelPathway: its own block below the buttons and badges */
+  .hero__pathway {
+    width: 100%;
+    max-width: 760px;
   }
 
   .hero__image {
@@ -227,7 +236,7 @@ const {
   }
 
   .hero__uk-badge {
-    align-self: flex-end;
+    align-self: center;
     display: inline-flex;
     align-items: center;
     gap: 0.625rem;
