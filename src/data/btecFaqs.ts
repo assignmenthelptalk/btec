@@ -62,7 +62,7 @@ export const FAQS: Faq[] = [
     ],
   },
   {
-    slug: 'can-chatgpt-do-my-assignment',
+    slug: 'can-chatgpt-do-my-btec-assignment',
     question: 'Can ChatGPT do my BTEC assignment?',
     category: 'ai-rules',
     metaDescription:
@@ -81,7 +81,7 @@ export const FAQS: Faq[] = [
     sources: [PEARSON_RESUB],
   },
   {
-    slug: 'can-ai-do-my-assignments',
+    slug: 'can-ai-do-my-btec-assignments',
     question: 'Can AI do my BTEC assignments?',
     category: 'ai-rules',
     metaDescription:
@@ -90,7 +90,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-academic-malpractice-policy'],
   },
   {
-    slug: 'which-ai-is-better-than-chatgpt-for-writing',
+    slug: 'which-ai-is-better-than-chatgpt-for-btec-writing',
     question: 'Which AI is better than ChatGPT for BTEC writing?',
     category: 'ai-tools',
     metaDescription:
@@ -99,7 +99,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
-    slug: 'which-ai-app-is-best-for-assignments',
+    slug: 'which-ai-app-is-best-for-btec-assignments',
     question: 'Which AI app is best for BTEC assignments?',
     category: 'ai-tools',
     metaDescription:
@@ -108,7 +108,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
-    slug: 'which-ai-app-is-better-than-chatgpt',
+    slug: 'which-ai-app-is-better-than-chatgpt-for-btec-assignments',
     question: 'Which AI app is better than ChatGPT for BTEC assignments?',
     category: 'ai-tools',
     metaDescription:
@@ -117,7 +117,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
-    slug: 'which-app-can-i-use-to-do-my-assignments',
+    slug: 'which-app-can-i-use-to-do-my-btec-assignments',
     question: 'Which app can I use to do my BTEC assignments?',
     category: 'free-tools',
     metaDescription:
@@ -126,7 +126,7 @@ export const FAQS: Faq[] = [
     guides: ['academic-referencing-for-btec-hnc-hnd'],
   },
   {
-    slug: 'which-ai-is-better-for-writing-assignments',
+    slug: 'which-ai-is-better-for-writing-btec-assignments',
     question: 'Which AI is better for writing BTEC assignments?',
     category: 'ai-tools',
     metaDescription:
@@ -135,7 +135,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
-    slug: 'what-is-a-good-free-app-for-assignment-writing',
+    slug: 'what-is-a-good-free-app-for-btec-assignment-writing',
     question: 'What is a good free app for BTEC assignment writing?',
     category: 'free-tools',
     metaDescription:
@@ -144,7 +144,7 @@ export const FAQS: Faq[] = [
     guides: ['academic-referencing-for-btec-hnc-hnd'],
   },
   {
-    slug: 'which-ai-tool-is-best-for-academic-writing',
+    slug: 'which-ai-tool-is-best-for-btec-academic-writing',
     question: 'Which AI tool is best for BTEC academic writing?',
     category: 'ai-tools',
     metaDescription:
@@ -153,7 +153,7 @@ export const FAQS: Faq[] = [
     guides: ['how-to-achieve-distinction-in-btec-assignments', 'academic-referencing-for-btec-hnc-hnd'],
   },
   {
-    slug: 'what-is-the-best-free-ai-tool-for-studying',
+    slug: 'what-is-the-best-free-ai-tool-for-studying-btec-units',
     question: 'What is the best free AI tool for studying BTEC units?',
     category: 'free-tools',
     metaDescription:
@@ -162,7 +162,7 @@ export const FAQS: Faq[] = [
     guides: ['how-to-achieve-distinction-in-btec-assignments'],
   },
   {
-    slug: 'which-ai-has-free-for-students',
+    slug: 'which-ai-has-free-plans-for-btec-students',
     question: 'Which AI has free plans for BTEC students?',
     category: 'free-tools',
     metaDescription:
@@ -171,7 +171,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-academic-malpractice-policy'],
   },
   {
-    slug: 'is-chatgpt-still-the-best-ai',
+    slug: 'is-chatgpt-still-the-best-ai-for-btec-students',
     question: 'Is ChatGPT still the best AI for BTEC students?',
     category: 'ai-tools',
     metaDescription:
@@ -180,7 +180,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
-    slug: 'is-chatgpt-good-for-studying',
+    slug: 'is-chatgpt-good-for-studying-a-btec-course',
     question: 'Is ChatGPT good for studying a BTEC course?',
     category: 'free-tools',
     metaDescription:
@@ -189,7 +189,7 @@ export const FAQS: Faq[] = [
     guides: ['how-to-achieve-distinction-in-btec-assignments'],
   },
   {
-    slug: 'what-should-you-not-ask-chatgpt',
+    slug: 'what-should-you-not-ask-chatgpt-for-a-btec-assignment',
     question: 'What should you not ask ChatGPT for a BTEC assignment?',
     category: 'ai-rules',
     metaDescription:
@@ -198,7 +198,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-academic-malpractice-policy'],
   },
   {
-    slug: 'which-is-better-gemini-or-gpt',
+    slug: 'which-is-better-for-btec-assignments-gemini-or-gpt',
     question: 'Which is better for BTEC assignments, Gemini or GPT?',
     category: 'ai-tools',
     metaDescription:
@@ -207,7 +207,7 @@ export const FAQS: Faq[] = [
     guides: ['btec-assignment-grading-criteria-explained'],
   },
   {
-    slug: 'can-teachers-tell-if-you-use-chatgpt',
+    slug: 'can-btec-teachers-tell-if-you-use-chatgpt',
     question: 'Can BTEC teachers tell if you use ChatGPT?',
     category: 'ai-rules',
     metaDescription:

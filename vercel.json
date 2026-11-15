@@ -202,6 +202,166 @@
                   "source": "/what-is-btec",
                   "destination": "/what-is-btec/",
                   "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/can-chatgpt-do-my-assignment",
+                  "destination": "/btec-faqs/can-chatgpt-do-my-btec-assignment/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/can-chatgpt-do-my-assignment/",
+                  "destination": "/btec-faqs/can-chatgpt-do-my-btec-assignment/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/can-ai-do-my-assignments",
+                  "destination": "/btec-faqs/can-ai-do-my-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/can-ai-do-my-assignments/",
+                  "destination": "/btec-faqs/can-ai-do-my-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-is-better-than-chatgpt-for-writing",
+                  "destination": "/btec-faqs/which-ai-is-better-than-chatgpt-for-btec-writing/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-is-better-than-chatgpt-for-writing/",
+                  "destination": "/btec-faqs/which-ai-is-better-than-chatgpt-for-btec-writing/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-app-is-best-for-assignments",
+                  "destination": "/btec-faqs/which-ai-app-is-best-for-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-app-is-best-for-assignments/",
+                  "destination": "/btec-faqs/which-ai-app-is-best-for-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-app-is-better-than-chatgpt",
+                  "destination": "/btec-faqs/which-ai-app-is-better-than-chatgpt-for-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-app-is-better-than-chatgpt/",
+                  "destination": "/btec-faqs/which-ai-app-is-better-than-chatgpt-for-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-app-can-i-use-to-do-my-assignments",
+                  "destination": "/btec-faqs/which-app-can-i-use-to-do-my-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-app-can-i-use-to-do-my-assignments/",
+                  "destination": "/btec-faqs/which-app-can-i-use-to-do-my-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-is-better-for-writing-assignments",
+                  "destination": "/btec-faqs/which-ai-is-better-for-writing-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-is-better-for-writing-assignments/",
+                  "destination": "/btec-faqs/which-ai-is-better-for-writing-btec-assignments/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/what-is-a-good-free-app-for-assignment-writing",
+                  "destination": "/btec-faqs/what-is-a-good-free-app-for-btec-assignment-writing/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/what-is-a-good-free-app-for-assignment-writing/",
+                  "destination": "/btec-faqs/what-is-a-good-free-app-for-btec-assignment-writing/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-tool-is-best-for-academic-writing",
+                  "destination": "/btec-faqs/which-ai-tool-is-best-for-btec-academic-writing/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-tool-is-best-for-academic-writing/",
+                  "destination": "/btec-faqs/which-ai-tool-is-best-for-btec-academic-writing/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/what-is-the-best-free-ai-tool-for-studying",
+                  "destination": "/btec-faqs/what-is-the-best-free-ai-tool-for-studying-btec-units/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/what-is-the-best-free-ai-tool-for-studying/",
+                  "destination": "/btec-faqs/what-is-the-best-free-ai-tool-for-studying-btec-units/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-has-free-for-students",
+                  "destination": "/btec-faqs/which-ai-has-free-plans-for-btec-students/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-ai-has-free-for-students/",
+                  "destination": "/btec-faqs/which-ai-has-free-plans-for-btec-students/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/is-chatgpt-still-the-best-ai",
+                  "destination": "/btec-faqs/is-chatgpt-still-the-best-ai-for-btec-students/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/is-chatgpt-still-the-best-ai/",
+                  "destination": "/btec-faqs/is-chatgpt-still-the-best-ai-for-btec-students/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/is-chatgpt-good-for-studying",
+                  "destination": "/btec-faqs/is-chatgpt-good-for-studying-a-btec-course/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/is-chatgpt-good-for-studying/",
+                  "destination": "/btec-faqs/is-chatgpt-good-for-studying-a-btec-course/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/what-should-you-not-ask-chatgpt",
+                  "destination": "/btec-faqs/what-should-you-not-ask-chatgpt-for-a-btec-assignment/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/what-should-you-not-ask-chatgpt/",
+                  "destination": "/btec-faqs/what-should-you-not-ask-chatgpt-for-a-btec-assignment/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-is-better-gemini-or-gpt",
+                  "destination": "/btec-faqs/which-is-better-for-btec-assignments-gemini-or-gpt/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/which-is-better-gemini-or-gpt/",
+                  "destination": "/btec-faqs/which-is-better-for-btec-assignments-gemini-or-gpt/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/can-teachers-tell-if-you-use-chatgpt",
+                  "destination": "/btec-faqs/can-btec-teachers-tell-if-you-use-chatgpt/",
+                  "permanent": true
+            },
+            {
+                  "source": "/btec-faqs/can-teachers-tell-if-you-use-chatgpt/",
+                  "destination": "/btec-faqs/can-btec-teachers-tell-if-you-use-chatgpt/",
+                  "permanent": true
             }
       ]
 }
