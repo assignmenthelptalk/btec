@@ -43,11 +43,6 @@ export interface Faq {
   sources?: Source[];
 }
 
-const JCQ_AI: Source = {
-  label: 'JCQ: AI Use in Assessments, Protecting the Integrity of Qualifications',
-  url: 'https://jcq.org.uk/exams-office/malpractice/artificial-intelligence',
-};
-
 const PEARSON_RESUB: Source = {
   label: 'Pearson: Quick Guide to Internal Assessment for BTEC Nationals (resubmission of evidence)',
   url: 'https://qualifications.pearson.com/content/dam/pdf/about/btec/delivering-btec/btec-nationals-quick-guide-internal-assessment.pdf',
@@ -74,7 +69,6 @@ export const FAQS: Faq[] = [
       'ChatGPT can write text, but it is not a safe way to finish a BTEC assignment. Your centre needs your own work, and unacknowledged AI use can count as malpractice.',
     answer: `ChatGPT can produce text, but that does not make it a safe way to complete a BTEC assignment. Your centre needs the work to be your own, and JCQ guidance treats unacknowledged AI use as malpractice. AI also tends to miss task-sheet wording, invent references and write in a flat, generic voice that tutors notice quickly. A smarter use is as a study helper. Ask it to explain a theory in plain words, suggest a plan or quiz you on a topic. Then write the answer yourself, using real sources. At BTECAssignment.Help, we offer criteria maps, model answers and draft feedback so you learn the standard and submit your own work. Always check your centre's AI policy first.`,
     guides: ['btec-academic-malpractice-policy'],
-    sources: [JCQ_AI],
   },
   {
     slug: 'what-happens-if-you-fail-a-btec-assignment',
@@ -94,7 +88,6 @@ export const FAQS: Faq[] = [
       'AI can help you plan, understand and check your work, but it should not do the whole BTEC assignment. Most centres treat copied AI text as malpractice.',
     answer: `AI can help with parts of the process, but it should not do the whole assignment for you. It can explain tricky ideas, suggest headings, check grammar and help you plan your time. It does not know your task sheet, your centre's rules or your tutor's expectations unless you tell it, and it often gets facts, dates and references wrong. Most centres also treat copied AI text as malpractice, and tutors can spot work that does not sound like you. The best approach is to use AI for support, then write in your own words, with real sources and correct Harvard referencing. If you are unsure what is allowed, ask your tutor. Our guidance is written by people, so you stay in control of your submission.`,
     guides: ['btec-academic-malpractice-policy'],
-    sources: [JCQ_AI],
   },
   {
     slug: 'which-ai-is-better-than-chatgpt-for-writing',
@@ -203,7 +196,6 @@ export const FAQS: Faq[] = [
       'Do not ask ChatGPT to write your whole assignment, get around AI checks, or handle passwords and private details. Ask it to explain, plan, quiz or review your draft.',
     answer: `Do not ask it to write your whole assignment to submit as your own, because your centre needs your work and your own understanding. Do not ask it to get around AI checks, which is dishonest and risky. Do not share private details such as passwords, ID numbers or confidential school or work information. Do not rely on it for final medical, legal or financial decisions. Be careful asking for exact statistics, quotes or references, because it can invent them, so check anything it gives you. Instead, ask it to explain a topic, suggest a structure, test your knowledge or review your own draft. If you need help matching the Pearson criteria, our tutors give human-written guidance.`,
     guides: ['btec-academic-malpractice-policy'],
-    sources: [JCQ_AI],
   },
   {
     slug: 'which-is-better-gemini-or-gpt',
@@ -222,7 +214,6 @@ export const FAQS: Faq[] = [
       'Often, yes. Tutors know your usual voice, and AI text can feel generic or include fake references. Detection tools are not perfect, so honesty is the safest path.',
     answer: `Often, yes. Tutors know your usual voice, so a sudden change in style, vocabulary or depth stands out. AI text can also feel generic, repeat itself, miss the scenario and include references that do not exist. Some centres use detection software, but these tools are not perfect and can be wrong, so never rely on them either way. Your tutor may also ask you to explain your work in person. The safest path is honesty: follow your centre's AI policy, write in your own words and keep notes and drafts. If your work was flagged or you leaned on AI, BTECAssignment.Help offers honest rewrite coaching to help you rebuild it in your own voice.`,
     guides: ['btec-academic-malpractice-policy'],
-    sources: [JCQ_AI],
   },
 ];
 
