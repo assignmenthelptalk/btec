@@ -1,0 +1,75 @@
+---
+/**
+ * FAQ hub: /btec-faqs/
+ * Lists every question in src/data/btecFaqs.ts, grouped by topic.
+ * This page links to every FAQ, so it is the one allowed exception to the
+ * 4-body-links rule (see scripts/body-links-baseline.json and docs/body-link-rule.md).
+ */
+
+import config from '../../../site-config.json';
+import FaqDocument from '../../components/FaqDocument.astro';
+import { CATEGORIES, FAQS, HUB_PATH, HUB_TITLE, escapeHtml, faqPath } from '../../data/btecFaqs';
+
+const siteUrl = config.meta.siteUrl;
+
+const groups = CATEGORIES.map((category) => {
+  const items = FAQS.filter((f) => f.category === category.id)
+    .map((f) => `<li><a href="${faqPath(f.slug)}">${escapeHtml(f.question)}</a></li>`)
+    .join('\n');
+  return `<section class="main-content">
+  <h2>${escapeHtml(category.heading)}</h2>
+  <ul>
+${items}
+  </ul>
+</section>`;
+}).join('\n');
+
+const rawHtml = `
+<p>Plain answers to the questions BTEC students ask most about assignments, resubmissions, AI tools and study help. Pick a question to read the full answer.</p>
+${groups}
+`;
+
+const description =
+  'Plain answers to common BTEC assignment questions: how to structure an assignment, what happens if you fail, and which AI tools and apps help you study.';
+
+const page = {
+  slug: HUB_PATH,
+  tier: 2,
+  title: HUB_TITLE,
+  metaTitle: 'BTEC Assignment FAQs: Structure, Resubmissions, AI Tools | BTEC Assignment Help',
+  metaDescription: description,
+  h1: 'BTEC Assignment FAQs',
+  intro: description,
+  h2Sections: [],
+  relatedPages: [
+    { title: 'BTEC Assignment Grading Criteria Explained', slug: 'btec-assignment-grading-criteria-explained' },
+    { title: 'BTEC Assignment Resubmission Guide', slug: 'btec-assignment-resubmission-guide' },
+    { title: 'BTEC Assignment Brief: How to Read and Interpret It', slug: 'btec-assignment-brief-how-to-read-and-interpret-it' },
+    { title: 'BTEC Academic Malpractice Policy', slug: 'btec-academic-malpractice-policy' },
+  ],
+  contextualQuestion: '',
+};
+
+const crumbs = [{ label: 'Home', href: '/' }, { label: HUB_TITLE }];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: page.h1,
+    description,
+    url: `${siteUrl}/${HUB_PATH}/`,
+    hasPart: FAQS.map((f) => ({ '@type': 'WebPage', name: f.question, url: `${siteUrl}${faqPath(f.slug)}` })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: HUB_TITLE, item: `${siteUrl}/${HUB_PATH}/` },
+    ],
+  },
+];
+---
+
+<FaqDocument page={page} rawHtml={rawHtml} crumbs={crumbs} badge="BTEC FAQ" jsonLd={jsonLd} />

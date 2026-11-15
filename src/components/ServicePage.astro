@@ -47,10 +47,19 @@ interface PageData {
   headerImage?: HeaderImage;
 }
 
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
 interface Props {
   page: PageData;
   config: SiteConfig;
   rawHtml?: string;
+  /** Optional full breadcrumb trail. The last item is the current page. Default: Home / page title. */
+  crumbs?: Crumb[];
+  /** Optional badge text above the H1. Default: "Core Service" or "Expert Guide". */
+  badge?: string;
 }
 
 interface SiteConfig {
@@ -77,7 +86,7 @@ interface SiteConfig {
   };
 }
 
-const { page, config, rawHtml } = Astro.props;
+const { page, config, rawHtml, crumbs, badge } = Astro.props;
 const { header, finalCta, footer, faq } = config;
 
 // Show first 4 FAQ items on inner pages
@@ -117,13 +126,25 @@ const isGuide = page.tier !== 1 && !subject;
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <ol class="breadcrumb__list">
-        <li><a href="/">Home</a></li>
-        <li aria-current="page">{page.title}</li>
+        {crumbs ? (
+          crumbs.map((crumb, i) =>
+            i === crumbs.length - 1 || !crumb.href ? (
+              <li aria-current={i === crumbs.length - 1 ? 'page' : undefined}>{crumb.label}</li>
+            ) : (
+              <li><a href={crumb.href}>{crumb.label}</a></li>
+            )
+          )
+        ) : (
+          <>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">{page.title}</li>
+          </>
+        )}
       </ol>
     </nav>
     <div class="page-hero__content">
       <span class="page-hero__badge">
-        {page.tier === 1 ? 'Core Service' : 'Expert Guide'}
+        {badge ?? (page.tier === 1 ? 'Core Service' : 'Expert Guide')}
       </span>
       {subject ? (
         <div class="page-hero__title-row">

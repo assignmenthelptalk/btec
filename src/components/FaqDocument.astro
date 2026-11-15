@@ -1,0 +1,111 @@
+---
+/**
+ * FaqDocument.astro
+ * Full HTML document for the FAQ hub and the FAQ pages (src/pages/btec-faqs/).
+ * Same shell and styles as the inner pages (src/pages/[...slug].astro), plus
+ * JSON-LD and the Google Analytics tag that the home page already loads.
+ */
+
+import config from '../../site-config.json';
+import ServicePage from './ServicePage.astro';
+
+interface Props {
+  page: {
+    slug: string;
+    tier: number;
+    title: string;
+    metaTitle: string;
+    metaDescription: string;
+    h1: string;
+    intro: string;
+    h2Sections: { heading: string; body: string }[];
+    relatedPages: { title: string; slug: string }[];
+    contextualQuestion: string;
+  };
+  rawHtml: string;
+  crumbs: { label: string; href?: string }[];
+  badge?: string;
+  /** Structured data objects, written as JSON-LD. */
+  jsonLd?: Record<string, unknown>[];
+}
+
+const { page, rawHtml, crumbs, badge, jsonLd = [] } = Astro.props;
+const { meta, colors, typography } = config;
+
+const cssVars = Object.entries(colors)
+  .map(([k, v]: [string, string]) => `--color-${k.replace(/([A-Z])/g, '-$1').toLowerCase()}: ${v}`)
+  .join('; ');
+const allVars = `${cssVars}; --font-family: ${typography.fontFamily}`;
+
+const canonicalUrl = `${meta.siteUrl}/${page.slug}/`;
+---
+
+<!DOCTYPE html>
+<html lang="en" style={allVars}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={page.metaDescription} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href={meta.googleFontsUrl} rel="stylesheet" />
+    <title>{page.metaTitle}</title>
+    {jsonLd.map((data) => <script type="application/ld+json" set:html={JSON.stringify(data)} />)}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXFCT2SH23"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-PXFCT2SH23');
+    </script>
+  </head>
+  <body>
+    <!--Start of Tawk.to Script-->
+    <script is:inline>
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/69fb46a47984481c34ee3683/1jnuonsva';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <ServicePage page={page} config={config} rawHtml={rawHtml} crumbs={crumbs} badge={badge} />
+  </body>
+</html>
+
+<style is:global>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+  body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-base);
+    background-color: var(--color-bg-white);
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  /* The breadcrumb is an <ol>; without this the browser shows "1." and "2." beside it. */
+  .breadcrumb__list { list-style: none; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  .section-heading {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+  }
+</style>

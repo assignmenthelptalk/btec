@@ -1,4 +1,6 @@
 {
   "max": 4,
-  "pages": {}
+  "pages": {
+    "/btec-faqs/": 18
+  }
 }
