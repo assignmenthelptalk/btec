@@ -35,26 +35,11 @@ const {
 
 <section class="hero">
   <div class="container hero__inner">
-    <div class="hero__content">
-      <h1 class="hero__heading">
-        {headingLine1 && <span class="hero__heading-line">{headingLine1}</span>}
-        <span class="hero__heading-highlight">{headingHighlight}</span>
-        <span class="hero__heading-line">{headingLine3}</span>
-      </h1>
-      <p class="hero__subtext">{subtext}</p>
-      <div class="hero__ctas">
-        <a href={primaryCta.href} class="btn btn--primary">{primaryCta.label}</a>
-        <a href={secondaryCta.href} class="btn btn--ghost">{secondaryCta.label} →</a>
-      </div>
-      <div class="hero__badges">
-        {badges.map((badge) => (
-          <span class="badge">
-            <span class="badge__icon">{badge.icon}</span>
-            <span class="badge__text">{badge.text}</span>
-          </span>
-        ))}
-      </div>
-    </div>
+    <h1 class="hero__heading">
+      {headingLine1 && <span class="hero__heading-line">{headingLine1}</span>}
+      <span class="hero__heading-highlight">{headingHighlight}</span>
+      <span class="hero__heading-line">{headingLine3}</span>
+    </h1>
     <div class="hero__visual">
       <div class="hero__image-wrap">
         <GradeLadder loading="eager" fetchpriority="high" />
@@ -75,6 +60,21 @@ const {
         </span>
       </div>
     </div>
+    <div class="hero__content">
+      <p class="hero__subtext">{subtext}</p>
+      <div class="hero__ctas">
+        <a href={primaryCta.href} class="btn btn--primary">{primaryCta.label}</a>
+        <a href={secondaryCta.href} class="btn btn--ghost">{secondaryCta.label} →</a>
+      </div>
+      <div class="hero__badges">
+        {badges.map((badge) => (
+          <span class="badge">
+            <span class="badge__icon">{badge.icon}</span>
+            <span class="badge__text">{badge.text}</span>
+          </span>
+        ))}
+      </div>
+    </div>
   </div>
 </section>
 
@@ -86,10 +86,10 @@ const {
   }
 
   .hero__inner {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 2.5rem;
   }
 
   .hero__heading {
@@ -100,8 +100,9 @@ const {
     display: flex;
     flex-direction: column;
     gap: 0.05em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     letter-spacing: -0.02em;
+    text-align: center;
   }
 
   .hero__heading-line {
@@ -113,11 +114,16 @@ const {
     color: var(--color-accent);
   }
 
+  .hero__content {
+    width: 100%;
+    text-align: center;
+  }
+
   .hero__subtext {
     font-size: 1.125rem;
     color: var(--color-text-muted);
-    max-width: 520px;
-    margin-bottom: 2rem;
+    max-width: 640px;
+    margin: 0 auto 2rem;
     line-height: 1.7;
   }
 
@@ -127,6 +133,7 @@ const {
     gap: 1rem;
     margin-bottom: 2.5rem;
     align-items: center;
+    justify-content: center;
   }
 
   .btn {
@@ -170,6 +177,7 @@ const {
     display: flex;
     flex-wrap: wrap;
     gap: 0.625rem;
+    justify-content: center;
   }
 
   .badge {
@@ -189,11 +197,13 @@ const {
     font-weight: 800;
   }
 
-  /* Visual / image right column */
+  /* Image block, centred under the heading */
   .hero__visual {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 760px;
   }
 
   .hero__image-wrap {
@@ -240,10 +250,8 @@ const {
 
   @media (max-width: 900px) {
     .hero__inner {
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
+      gap: 2rem;
     }
-
   }
 
   @media (max-width: 480px) {
