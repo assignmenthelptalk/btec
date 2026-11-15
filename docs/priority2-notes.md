@@ -150,7 +150,7 @@ No page lost or gained a linking page. The header, mobile menu and footer links 
 - The home page mentions Level 2 in the hero text, About section, qualifications subheading and overview card, stats bar ("L2–L5"), FAQ answer, mission and footer description (full list in 1d).
 - The home page has **no Level 2 card** in the qualifications grid (overview, National, HNC, HND, Business), and the home page body does not link to the Level 2 page. **Decision for you:** whether to add a Level 2 card or a body link.
 
-## 6. Footer (item 6: no change)
+## 6. Footer (item 6: no change at first; superseded by section 9, which adds the Qualification Levels column)
 
 - The footer already has one column, "Contact" (support email and WhatsApp), and **no internal page links**. The Subjects and Grading and Assessment columns were removed in the earlier slim-template change, so the footer has fewer links than the target in the brief.
 - Adding "Qualification Levels" and five guides would add about nine links and reverse that. I left it unchanged. **Decision for you:** if you want those lists back, note that the header "Guides" menu lists only four guides (Grading Criteria Explained, How to Achieve Distinction, Resubmission Guide, BTEC UCAS Points), so there is no fifth to pick without your choice.
@@ -159,10 +159,10 @@ No page lost or gained a linking page. The header, mobile menu and footer links 
 ## 7. Decisions and things to know
 
 1. **`#contact` was not missing, it was a dead end.** The id existed. I moved it onto the new section instead of adding a second id.
-2. **Inner pages still use the old target.** On all 39 inner pages `#contact` is the closing call-to-action section, whose button links to itself. The brief covered only the home page, so I did not add a Contact section there. The footer Contact column sits directly below it. Say if you want the same section on inner pages.
+2. **(Resolved in section 9, decision 3.) Inner pages still used the old target.** On all 39 inner pages `#contact` is the closing call-to-action section, whose button links to itself. The brief covered only the home page, so I did not add a Contact section there. The footer Contact column sits directly below it. Say if you want the same section on inner pages.
 3. **The moved FAQ question** (item 2 detail above) is a judgement call. If you would rather keep the callout where it was, it is one commit to revert.
 4. **Sidebar card on guides** keeps its heading ("Get Expert Help"), blurb and trust list; only the button is gone. I did not remove the trust list because the brief says not to change trust badges.
-5. **Other FAQ sections:** 38 other pages have the same unheaded FAQ block (H3 questions with microdata and no H2). Not changed here.
+5. **Other FAQ sections (listed in section 10):** 38 other pages have the same unheaded FAQ block (H3 questions with microdata and no H2). Not changed here.
 6. **Unused CSS:** the `.inline-cta` rules remain in `ServicePage.astro`, now unused. I removed the markup only.
 
 ## 8. Checks run
@@ -170,3 +170,73 @@ No page lost or gained a linking page. The header, mobile menu and footer links 
 - Build: 40 pages. Link check across all pages: 984 references, 0 broken, one canonical and one H1 each.
 - Body-link rule: 40 of 40 within 4. The 9 body-link tests pass.
 - Browser, 375px and desktop: all four `#contact` links and `#how-it-works` scroll to their sections with the heading clear of the sticky header; the FAQ has 6 H3 questions in the accordion, Enter on a focused row opens it, with a visible 3px focus ring; the contact links are focusable and 44px tall; no horizontal overflow on any of the 40 pages at 375px; no console errors apart from the existing Tawk.to widget failing its CORS check on localhost.
+
+## 9. Review decisions (second round)
+
+| Decision | Commit | Result |
+|---|---|---|
+| 1. Footer: add Qualification Levels back, no guides | `4b520ac` | New footer column "Qualification Levels" with the four level pages: BTEC Level 2, BTEC National, BTEC HNC, BTEC HND (the same labels as the header Levels menu). "What Is BTEC?" is in the header Levels menu but is not a level page, so it is not included. No guides were added. The footer is now two columns, Qualification Levels and Contact, and is identical on all 40 pages. |
+| 2. Level 2 | none | No change. No card and no body link were added. The findings in section 5 stand. The one new Level 2 link is the footer link from decision 1 ("all level pages"). |
+| 3. Inner-page `#contact` | `6b5b908` | The footer Contact column (email and WhatsApp) now has `id="contact"` on every inner page, with a scroll margin so it clears the sticky header. The closing call-to-action section on inner pages no longer carries the id (an id must be unique). The home page keeps its own "Contact us" section: its footer is told not to set the id (`contactAnchor={false}` in `index.astro`). Every one of the 40 pages has exactly one `id="contact"`. |
+| 4. Other FAQ blocks | none | Not changed on this branch. Listed in section 10. |
+
+### Footer link counts (decision 1)
+
+- Distinct linking pages: **0 targets changed**. The header already linked the four level pages from every page.
+- Total link instances: Level 2 81 → 120, National 108 → 147, HNC 97 → 136, HND 96 → 135 (+39 each, one from every other page). The external-assessment page is 7 → 6 (the earlier grading-page fix).
+- Home page internal link instances: 37 → 41. Site-wide: 1666 → 1821.
+- The footer is outside `<main>`, so the body-link rule (4 per page) is unaffected: 40 of 40 within the limit.
+
+### Decision 3 behaviour
+
+- On inner pages the header "Get Help Now", hero "Get Help Now →", sidebar button (where still shown) and closing "Start Your Order Today" all scroll to the footer Contact column. The closing button sits directly above it.
+- Tested in a real browser at 375px and 1280px on a guide page, a subject page and the home page: the heading is clear of the sticky header and fully in view, and the page does not scroll sideways at 375px on any of the 40 pages.
+
+## 10. Inner pages with an unheaded FAQ block (for a separate branch)
+
+These 38 pages have a hand-written `<section class="faq">` in their content file with H3 questions and `FAQPage` microdata but **no H2** above the questions, so the questions read as part of whichever section comes before them (last column). The 39th inner page, `/btec-assignment-grading-criteria-explained/`, was fixed on this branch.
+
+**Proposed fix, if you approve it:** add `<h2>Frequently Asked Questions</h2>` as the first child of that section in each of the 38 files in `src/content/pages/`, exactly as on the grading page. Question and answer wording and the microdata would not change. The home page already has this heading and is not in the list.
+
+Unheaded FAQ blocks: 38 of 39 inner pages. Pages with a heading or no block: btec-assignment-grading-criteria-explained (has H2).
+
+| # | Page | Type | H3 questions | `FAQPage` microdata | Heading it currently sits under |
+|---|---|---|---|---|---|
+| 1 | `/academic-referencing-for-btec-hnc-hnd/` | Guide | 4 | yes | Referencing and Academic Integrity |
+| 2 | `/btec-academic-malpractice-policy/` | Guide | 4 | yes | Our Position on Academic Integrity |
+| 3 | `/btec-art-and-design-assignment-help/` | Subject | 4 | yes | BTEC Art and Design Within the Wider BTEC Framework |
+| 4 | `/btec-assignment-brief-how-to-read-and-interpret-it/` | Guide | 4 | yes | When the Assignment Brief Is Unclear: What Students Can Do |
+| 5 | `/btec-assignment-help/` | Core Service | 4 | yes | BTEC vs A-Level: Understanding the Assessment Difference |
+| 6 | `/btec-assignment-help-international-students/` | Guide | 4 | yes | Studying BTEC as an International Student in the UK |
+| 7 | `/btec-assignment-help-mature-students/` | Guide | 4 | yes | Funding Support for Adult BTEC Learners |
+| 8 | `/btec-assignment-resubmission-guide/` | Guide | 4 | yes | BTEC Resubmission and Academic Integrity |
+| 9 | `/btec-assignment-submission-rules/` | Guide | 3 | yes | If Something Goes Wrong After Submission |
+| 10 | `/btec-business-assignment-help/` | Subject | 4 | yes | Progression and Registration Dates |
+| 11 | `/btec-childcare-and-early-years-assignment-help/` | Subject | 4 | yes | Progression and Registration Dates |
+| 12 | `/btec-construction-assignment-help/` | Subject | 4 | yes | BTEC Construction and Related Technical Subjects |
+| 13 | `/btec-engineering-assignment-help/` | Subject | 4 | yes | Progression and Registration Dates |
+| 14 | `/btec-external-assessment-explained/` | Guide | 4 | yes | Preparing for a Pearson-Set External Assessment |
+| 15 | `/btec-grading-system-explained/` | Guide | 4 | yes | BTEC Grade Combinations by Qualification Size |
+| 16 | `/btec-health-and-social-care-assignment-help/` | Subject | 4 | yes | Progression and Registration Dates |
+| 17 | `/btec-higher-national-explained/` | Guide | 4 | yes | Referencing at Higher National Level |
+| 18 | `/btec-hnc-assignment-help/` | Core Service | 4 | yes | Progression from the HNC |
+| 19 | `/btec-hnd-assignment-help/` | Core Service | 4 | yes | Progression from the HND |
+| 20 | `/btec-internal-verification-appeal/` | Guide | 4 | yes | Appeal vs Resubmission: What's the Difference? |
+| 21 | `/btec-it-assignment-help/` | Subject | 4 | yes | Progression and Registration Dates |
+| 22 | `/btec-level-2-explained/` | Guide | 3 | yes | Before You Rely on This Page |
+| 23 | `/btec-media-production-assignment-help/` | Subject | 4 | yes | BTEC Media Production and Related Creative Subjects |
+| 24 | `/btec-national-assignment-help/` | Core Service | 4 | yes | Progressing from BTEC National to Higher Nationals |
+| 25 | `/btec-public-services-assignment-help/` | Subject | 4 | yes | Progression from BTEC National Uniformed Protective Services |
+| 26 | `/btec-sport-assignment-help/` | Subject | 4 | yes | Progression and Registration Dates |
+| 27 | `/btec-subjects-list/` | Guide | 4 | yes | How to Check Your Own Qualification |
+| 28 | `/btec-travel-and-tourism-assignment-help/` | Subject | 4 | yes | BTEC Travel and Tourism and Its Overlap With BTEC Business |
+| 29 | `/btec-ucas-points/` | Guide | 4 | yes | Where BTEC and A-Level Points Diverge in Practice |
+| 30 | `/btec-uniformed-public-services-vs-public-services/` | Guide | 4 | yes | Getting Help With Your Public Services Assignments |
+| 31 | `/btec-vs-a-level/` | Guide | 4 | yes | Subject Availability: What You Can (and Can't) Study on Each Route |
+| 32 | `/btec-vs-nvq/` | Guide | 4 | yes | NVQ Today: Apprenticeship Standards and Vocational Related Qualifications |
+| 33 | `/careers-after-btec/` | Guide | 4 | yes | Grades and Your Options |
+| 34 | `/how-btec-internal-assessment-works/` | Guide | 4 | yes | If You Think Something Went Wrong |
+| 35 | `/how-to-achieve-distinction-in-btec-assignments/` | Guide | 4 | yes | Distinction on External Units and Higher Nationals |
+| 36 | `/pearson-btec-examiner-feedback-reports/` | Guide | 4 | yes | Preparing for BTEC External Assessment With This in Mind |
+| 37 | `/universities-that-accept-btec/` | Guide | 4 | yes | Your BTEC Grades and UCAS Points |
+| 38 | `/what-is-btec/` | Guide | 4 | yes | How BTEC Compares to A-Levels |
