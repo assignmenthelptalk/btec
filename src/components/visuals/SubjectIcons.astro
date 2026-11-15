@@ -1,0 +1,39 @@
+---
+/**
+ * SubjectIcons: the eleven BTEC subject icons.
+ *  - `subject="business"` renders one icon in a white tile (used beside a subject H1 and on a card).
+ *    The subject is already named by the heading or card title next to it, so the image is decorative
+ *    (alt="" and aria-hidden).
+ *  - With no `subject`, it renders all eleven as a list, each with the subject name as visible text.
+ *    The icons are decorative there too, because the name beside each one carries the meaning.
+ * The icons are separate files cut from the artwork sheet (see scripts/optimise-btec-visuals.mjs).
+ */
+import { SUBJECT_NAMES, type SubjectKey } from '../../data/visuals';
+
+interface Props {
+  subject?: SubjectKey;
+  size?: string;
+  loading?: 'lazy' | 'eager';
+}
+const { subject, size, loading = 'lazy' } = Astro.props;
+const SUBJECTS = (Object.entries(SUBJECT_NAMES) as [SubjectKey, string][]).map(([key, name]) => ({ key, name }));
+const src = (key: string) => `/images/btec/btec-subject-icon-${key}.webp`;
+const style = size ? `--subject-icon-size:${size}` : undefined;
+---
+
+{subject ? (
+  <span class="subject-icon" style={style}>
+    <img class="subject-icon__img" src={src(subject)} alt="" aria-hidden="true" width="192" height="192" loading={loading} decoding="async" />
+  </span>
+) : (
+  <ul class="subject-icons">
+    {SUBJECTS.map((s) => (
+      <li class="subject-icons__item">
+        <span class="subject-icon" style={style}>
+          <img class="subject-icon__img" src={src(s.key)} alt="" aria-hidden="true" width="192" height="192" loading={loading} decoding="async" />
+        </span>
+        <span>{s.name}</span>
+      </li>
+    ))}
+  </ul>
+)}

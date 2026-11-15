@@ -1,0 +1,75 @@
+---
+/**
+ * CriteriaMatrix: a real HTML table of the three grade bands. There is no image.
+ * Every cell reuses wording the site already publishes, so nothing here is new content:
+ *
+ *  What it asks (the grade rule)
+ *   - /btec-assignment-grading-criteria-explained/ : "To achieve a Distinction you must satisfy all the
+ *     Distinction criteria and all the Pass and Merit criteria, and to achieve a Merit you must satisfy all
+ *     the Merit criteria and all the Pass criteria. To achieve a Pass you must satisfy all the Pass
+ *     criteria for the learning aims."
+ *  Typical command words
+ *   - same page: "Pass criteria often ask for descriptions or explanations, Merit criteria for analysis or
+ *     comparison, and Distinction criteria for evaluation."
+ *   - /how-to-achieve-distinction-in-btec-assignments/ : "Distinction criteria often start with verbs such
+ *     as evaluate, assess or justify".
+ *  What to show
+ *   - /how-to-achieve-distinction-in-btec-assignments/ : "A Pass answer says what something is. A Merit
+ *     answer says how and why. A Distinction answer usually has to say how far, with what justification,
+ *     and reach a position the evidence supports."
+ *  Note under the table
+ *   - /btec-assignment-grading-criteria-explained/ : "Pearson does not tie each verb to one grade band.
+ *     The unit's own criteria do."
+ */
+
+const rows = [
+  {
+    key: 'pass',
+    head: 'Pass (P)',
+    asks: 'Meet all the Pass criteria for the learning aims.',
+    words: 'Describe, explain',
+    show: 'What something is.',
+  },
+  {
+    key: 'merit',
+    head: 'Merit (M)',
+    asks: 'Meet all the Merit criteria and all the Pass criteria.',
+    words: 'Analyse, compare',
+    show: 'How and why.',
+  },
+  {
+    key: 'distinction',
+    head: 'Distinction (D)',
+    asks: 'Meet all the Distinction criteria and all the Pass and Merit criteria.',
+    words: 'Evaluate, assess, justify',
+    show: 'How far, with what justification, and a position the evidence supports.',
+  },
+];
+---
+
+<div class="criteria-matrix">
+  <div class="criteria-matrix__scroll">
+    <table>
+      <caption>What each BTEC criteria band asks for</caption>
+      <thead>
+        <tr>
+          <th scope="col">Band</th>
+          <th scope="col">What it asks</th>
+          <th scope="col">Typical command words</th>
+          <th scope="col">What to show</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <th scope="row" class={`is-${r.key}`}>{r.head}</th>
+            <td>{r.asks}</td>
+            <td>{r.words}</td>
+            <td>{r.show}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="criteria-matrix__note">Pearson does not tie each verb to one grade band. The unit's own criteria do.</p>
+</div>

@@ -1,0 +1,55 @@
+---
+/**
+ * AssessmentFlow: Brief, Draft, Submit, Assessor grades, Internal verification, Result,
+ * Resubmission or appeal. The artwork has no text, so each box is labelled with real HTML.
+ * The optional `highlight` prop marks one step with aria-current="step", a filled dark label and a
+ * ring (shape and weight, not colour alone), and names it in text under the caption.
+ */
+import type { FlowStep } from '../../data/visuals';
+
+interface Props {
+  highlight?: FlowStep;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+const { highlight, loading = 'lazy', fetchpriority = 'auto' } = Astro.props;
+
+const steps: { key: FlowStep; label: string; box: { x: number; y: number; w: number; h: number } }[] = [
+  { key: 'brief', label: 'Brief', box: { x: 1.97, y: 3.87, w: 17.73, h: 31.52 } },
+  { key: 'draft', label: 'Draft', box: { x: 26.6, y: 3.87, w: 17.73, h: 31.52 } },
+  { key: 'submit', label: 'Submit', box: { x: 51.33, y: 3.87, w: 17.73, h: 31.52 } },
+  { key: 'assessor-grades', label: 'Assessor grades', box: { x: 75.96, y: 3.87, w: 17.73, h: 31.52 } },
+  { key: 'internal-verification', label: 'Internal verification', box: { x: 14.04, y: 65.19, w: 17.73, h: 31.52 } },
+  { key: 'result', label: 'Result', box: { x: 39.16, y: 65.19, w: 17.88, h: 31.52 } },
+  { key: 'resubmission-or-appeal', label: 'Resubmission or appeal', box: { x: 63.94, y: 65.19, w: 17.73, h: 31.52 } },
+];
+const highlighted = steps.find((s) => s.key === highlight);
+---
+
+<figure class="viz viz--flow">
+  <div class="viz__stage">
+    <img
+      class="viz__img"
+      src="/images/btec/btec-assessment-flow-brief-to-resubmission.webp"
+      width="1200"
+      height="718"
+      alt="Flow chart of BTEC assessment from assignment brief to draft, submission, grading, internal verification, result and resubmission or appeal."
+      loading={loading}
+      fetchpriority={fetchpriority}
+      decoding="async"
+    />
+    <ol class="viz__labels">
+      {steps.map((s) => (
+        <li
+          class="viz__label"
+          aria-current={s.key === highlight ? 'step' : undefined}
+          style={`--x:${s.box.x};--y:${s.box.y};--w:${s.box.w};--h:${s.box.h}`}
+        >{s.label}</li>
+      ))}
+    </ol>
+  </div>
+  <figcaption class="viz__caption">
+    Centres and Pearson set the exact rules, so check your centre's policy.
+    {highlighted && <span class="viz__note">Highlighted step: {highlighted.label}.</span>}
+  </figcaption>
+</figure>

@@ -1,5 +1,9 @@
 ---
+import SubjectIcons from './visuals/SubjectIcons.astro';
+import type { SubjectKey } from '../data/visuals';
+
 interface Card {
+  subjectIcon?: SubjectKey;
   icon: string;
   title: string;
   description: string;
@@ -24,14 +28,14 @@ const { sectionId, heading, subheading, cards } = Astro.props;
       {cards.map((card) => (
         card.href ? (
           <a href={card.href} class="quals__card quals__card--link">
-            <span class="quals__icon" aria-hidden="true">{card.icon}</span>
+            {card.subjectIcon ? <SubjectIcons subject={card.subjectIcon} size="2.75rem" /> : <span class="quals__icon" aria-hidden="true">{card.icon}</span>}
             <h3 class="quals__title">{card.title}</h3>
             <p class="quals__desc">{card.description}</p>
             <span class="quals__arrow" aria-hidden="true">→</span>
           </a>
         ) : (
           <div class="quals__card">
-            <span class="quals__icon" aria-hidden="true">{card.icon}</span>
+            {card.subjectIcon ? <SubjectIcons subject={card.subjectIcon} size="2.75rem" /> : <span class="quals__icon" aria-hidden="true">{card.icon}</span>}
             <h3 class="quals__title">{card.title}</h3>
             <p class="quals__desc">{card.description}</p>
           </div>

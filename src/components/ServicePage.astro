@@ -7,6 +7,13 @@
 
 import Header from './Header.astro';
 import Footer from './Footer.astro';
+import GradeLadder from './visuals/GradeLadder.astro';
+import LevelPathway from './visuals/LevelPathway.astro';
+import AssessmentFlow from './visuals/AssessmentFlow.astro';
+import CriteriaMatrix from './visuals/CriteriaMatrix.astro';
+import SubjectIcons from './visuals/SubjectIcons.astro';
+import VizStyles from './visuals/VizStyles.astro';
+import { PAGE_VISUALS, SUBJECT_BY_SLUG } from '../data/visuals';
 
 interface H2Section {
   heading: string;
@@ -75,7 +82,26 @@ const { header, finalCta, footer, faq } = config;
 
 // Show first 4 FAQ items on inner pages
 const faqItems = faq?.items?.slice(0, 4) ?? [];
+
+// A visual can be placed directly under an existing heading of the page body (see src/data/visuals.ts).
+// The body is split after that heading. A missing heading fails the build instead of dropping the visual.
+const visual = PAGE_VISUALS[page.slug];
+let htmlBefore = rawHtml ?? '';
+let htmlAfter = '';
+if (visual && rawHtml) {
+  const marker = `<h2>${visual.afterHeading}</h2>`;
+  const at = rawHtml.indexOf(marker);
+  if (at === -1 || rawHtml.indexOf(marker, at + 1) !== -1) {
+    throw new Error(`Visual for "${page.slug}": expected exactly one ${marker}`);
+  }
+  htmlBefore = rawHtml.slice(0, at + marker.length);
+  htmlAfter = rawHtml.slice(at + marker.length);
+}
+const subject = SUBJECT_BY_SLUG[page.slug as keyof typeof SUBJECT_BY_SLUG];
+
 ---
+
+{(visual || subject) && <VizStyles />}
 
 <Header
   logoText={header.logoText}
@@ -97,7 +123,14 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
       <span class="page-hero__badge">
         {page.tier === 1 ? 'Core Service' : 'Expert Guide'}
       </span>
-      <h1 class="page-hero__h1">{page.h1}</h1>
+      {subject ? (
+        <div class="page-hero__title-row">
+          <SubjectIcons subject={subject} loading="eager" size="3.5rem" />
+          <h1 class="page-hero__h1">{page.h1}</h1>
+        </div>
+      ) : (
+        <h1 class="page-hero__h1">{page.h1}</h1>
+      )}
       <p class="page-hero__intro">{page.intro}</p>
       <a href={header.ctaButton.href} class="page-hero__cta">{header.ctaButton.label} →</a>
     </div>
@@ -129,7 +162,14 @@ const faqItems = faq?.items?.slice(0, 4) ?? [];
     <!-- Article -->
     <article class="page-article">
       {rawHtml ? (
-        <Fragment set:html={rawHtml} />
+        <>
+          <Fragment set:html={htmlBefore} />
+          {visual?.kind === 'ladder' && <GradeLadder />}
+          {visual?.kind === 'pathway' && <LevelPathway />}
+          {visual?.kind === 'flow' && <AssessmentFlow highlight={visual.highlight} />}
+          {visual?.kind === 'matrix' && <CriteriaMatrix />}
+          <Fragment set:html={htmlAfter} />
+        </>
       ) : (
         <>
           {page.h2Sections.map((section) => (

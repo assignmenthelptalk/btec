@@ -1,4 +1,7 @@
 ---
+import GradeLadder from './visuals/GradeLadder.astro';
+import LevelPathway from './visuals/LevelPathway.astro';
+
 interface Badge {
   icon: string;
   text: string;
@@ -54,16 +57,8 @@ const {
     </div>
     <div class="hero__visual">
       <div class="hero__image-wrap">
-        <img
-          src="/images/hero-student.png"
-          alt="BTEC student presenting assignment work at college"
-          width="600"
-          height="480"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-          class="hero__image"
-        />
+        <GradeLadder loading="eager" fetchpriority="high" />
+        <LevelPathway loading="eager" />
         <span class="hero__uk-badge">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="48" height="24" aria-label="UK flag" role="img">
             <clipPath id="uk-a"><path d="M0 0v30h60V0z"/></clipPath>
@@ -92,8 +87,8 @@ const {
 
   .hero__inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 3rem;
     align-items: center;
   }
 
@@ -202,8 +197,14 @@ const {
   }
 
   .hero__image-wrap {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
+  }
+
+  .hero__image-wrap :global(.viz) {
+    margin: 0;
   }
 
   .hero__image {
@@ -216,9 +217,7 @@ const {
   }
 
   .hero__uk-badge {
-    position: absolute;
-    bottom: 1.25rem;
-    right: 1.25rem;
+    align-self: flex-end;
     display: inline-flex;
     align-items: center;
     gap: 0.625rem;
@@ -245,9 +244,6 @@ const {
       gap: 2.5rem;
     }
 
-    .hero__visual {
-      order: -1;
-    }
   }
 
   @media (max-width: 480px) {
