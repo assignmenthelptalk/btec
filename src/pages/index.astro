@@ -13,6 +13,7 @@ import HowItWorks from '../components/HowItWorks.astro';
 import FAQ from '../components/FAQ.astro';
 import Mission from '../components/Mission.astro';
 import FinalCTA from '../components/FinalCTA.astro';
+import ContactSection from '../components/ContactSection.astro';
 import Footer from '../components/Footer.astro';
 
 const {
@@ -32,6 +33,11 @@ const {
   finalCta,
   footer,
 } = config;
+
+// The contact links already in the footer config, reused for the #contact section.
+const contactLinks = footer.columns.find((c) => c.heading === 'Contact')?.links ?? [];
+const whatsappLink = contactLinks.find((l) => l.href.startsWith('https://wa.me/'));
+const emailLink = contactLinks.find((l) => l.href.startsWith('mailto:'));
 ---
 
 <Layout
@@ -101,11 +107,13 @@ const {
       subtext={finalCta.subtext}
       button={finalCta.button}
     />
+    <ContactSection whatsapp={whatsappLink} email={emailLink} />
   </main>
   <Footer
     logoText={footer.logoText}
     description={footer.description}
     columns={footer.columns}
     copyright={footer.copyright}
+    contactAnchor={false}
   />
 </Layout>

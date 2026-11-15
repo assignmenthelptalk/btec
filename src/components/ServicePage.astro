@@ -98,6 +98,8 @@ if (visual && rawHtml) {
   htmlAfter = rawHtml.slice(at + marker.length);
 }
 const subject = SUBJECT_BY_SLUG[page.slug as keyof typeof SUBJECT_BY_SLUG];
+// Informational guides keep two calls to action (hero and closing). Subject pages and the tier-1 service and level pages keep the sidebar button.
+const isGuide = page.tier !== 1 && !subject;
 
 ---
 
@@ -188,12 +190,6 @@ const subject = SUBJECT_BY_SLUG[page.slug as keyof typeof SUBJECT_BY_SLUG];
           ))}
         </>
       )}
-
-      {/* Inline CTA mid-page */}
-      <div class="inline-cta">
-        <p class="inline-cta__text">Need expert help with your ATHE assignment?</p>
-        <a href={header.ctaButton.href} class="inline-cta__btn">{header.ctaButton.label}</a>
-      </div>
     </article>
 
     <!-- Sidebar -->
@@ -204,9 +200,11 @@ const subject = SUBJECT_BY_SLUG[page.slug as keyof typeof SUBJECT_BY_SLUG];
         <p class="sidebar-card__text">
           Specialist {header.logoText} support for Pearson BTEC students.
         </p>
-        <a href={header.ctaButton.href} class="sidebar-card__btn">
-          {header.ctaButton.label}
-        </a>
+        {!isGuide && (
+          <a href={header.ctaButton.href} class="sidebar-card__btn">
+            {header.ctaButton.label}
+          </a>
+        )}
         <ul class="sidebar-card__trust">
           <li>✓ Plagiarism-free</li>
           <li>✓ On-time delivery</li>
@@ -259,7 +257,7 @@ const subject = SUBJECT_BY_SLUG[page.slug as keyof typeof SUBJECT_BY_SLUG];
 </main>
 
 <!-- Final CTA -->
-<section class="final-cta" id="contact">
+<section class="final-cta">
   <div class="container">
     <div class="final-cta__inner">
       <h2 class="final-cta__heading">{finalCta.heading}</h2>

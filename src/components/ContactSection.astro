@@ -1,0 +1,83 @@
+---
+/**
+ * ContactSection: the home page target for every "#contact" link.
+ * It holds the H2 and the two existing contact links (the WhatsApp link and the support email already in the
+ * footer config). No other copy.
+ */
+interface Link {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  whatsapp?: Link;
+  email?: Link;
+}
+
+const { whatsapp, email } = Astro.props;
+const links = [whatsapp, email].filter((l): l is Link => Boolean(l));
+---
+
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <h2 class="section-heading" id="contact-heading">Contact us</h2>
+    <ul class="contact__list">
+      {links.map((link) => (
+        <li>
+          <a
+            class="contact__link"
+            href={link.href}
+            {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+          >{link.label}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .contact {
+    background-color: var(--color-bg-light);
+    padding: 3.5rem 0;
+  }
+
+  .contact__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+  }
+
+  .contact__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    overflow-wrap: anywhere;
+  }
+
+  .contact__link:hover {
+    color: var(--color-accent-dark);
+  }
+
+  .contact__link:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 0.25rem;
+  }
+
+  @media (max-width: 540px) {
+    .contact {
+      padding: 2.5rem 0;
+    }
+
+    .contact__list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>

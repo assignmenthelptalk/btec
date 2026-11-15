@@ -377,6 +377,27 @@
     "description": "Specialist Pearson BTEC assignment support and study guides for Level 2 to Level 5 students.",
     "columns": [
       {
+        "heading": "Qualification Levels",
+        "links": [
+          {
+            "label": "BTEC Level 2",
+            "href": "/btec-level-2-explained/"
+          },
+          {
+            "label": "BTEC National",
+            "href": "/btec-national-assignment-help/"
+          },
+          {
+            "label": "BTEC HNC",
+            "href": "/btec-hnc-assignment-help/"
+          },
+          {
+            "label": "BTEC HND",
+            "href": "/btec-hnd-assignment-help/"
+          }
+        ]
+      },
+      {
         "heading": "Contact",
         "links": [
           {
