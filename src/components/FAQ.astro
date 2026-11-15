@@ -20,7 +20,7 @@ const { sectionId, heading, items } = Astro.props;
       {items.map((item) => (
         <details class="faq__item">
           <summary class="faq__question">
-            <span class="faq__question-text">{item.question}</span>
+            <h3 class="faq__question-text">{item.question}</h3>
             <span class="faq__icon" aria-hidden="true"></span>
           </summary>
           <div class="faq__answer">
