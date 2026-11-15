@@ -27,7 +27,7 @@
     "fontFamily": "'Inter', sans-serif"
   },
   "header": {
-    "logoText": "BTEC Help",
+    "logoText": "BTECAssignment.Help",
     "logoHref": "/",
     "navLinks": [
       {
@@ -373,7 +373,7 @@
     }
   },
   "footer": {
-    "logoText": "BTEC Help",
+    "logoText": "BTECAssignment.Help",
     "description": "Specialist Pearson BTEC assignment support and study guides for Level 2 to Level 5 students.",
     "columns": [
       {
@@ -411,6 +411,6 @@
         ]
       }
     ],
-    "copyright": "© 2026 BTEC Assignment Help. All rights reserved."
+    "copyright": "© 2026 BTECAssignment.Help. All rights reserved."
   }
 }
