@@ -14,9 +14,11 @@ interface Props {
   description: string;
   columns: FooterColumn[];
   copyright: string;
+  /** Give the Contact column id="contact". Off on the home page, which has its own Contact section. */
+  contactAnchor?: boolean;
 }
 
-const { logoText, description, columns, copyright } = Astro.props;
+const { logoText, description, columns, copyright, contactAnchor = true } = Astro.props;
 ---
 
 <footer class="footer">
@@ -26,7 +28,7 @@ const { logoText, description, columns, copyright } = Astro.props;
       <p class="footer__desc">{description}</p>
     </div>
     {columns.map((col) => (
-      <div class="footer__col">
+      <div class="footer__col" id={contactAnchor && col.heading === 'Contact' ? 'contact' : undefined}>
         <h3 class="footer__col-heading">{col.heading}</h3>
         <ul class="footer__links">
           {col.links.map((link) => (
@@ -73,6 +75,11 @@ const { logoText, description, columns, copyright } = Astro.props;
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.7;
     max-width: 320px;
+  }
+
+  /* The header is sticky: keep the Contact column clear of it when a #contact link scrolls here. */
+  .footer__col[id] {
+    scroll-margin-top: 5rem;
   }
 
   .footer__col-heading {
