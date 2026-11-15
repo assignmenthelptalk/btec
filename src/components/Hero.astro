@@ -257,6 +257,21 @@ const {
     box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   }
 
+  /* Desktop only: tighter spacing so the heading, ladder and buttons fit the first screen */
+  @media (min-width: 901px) {
+    .hero {
+      padding: 2.5rem 0 3rem;
+    }
+
+    .hero__inner {
+      gap: 1.5rem;
+    }
+
+    .hero__subtext {
+      margin-bottom: 1.25rem;
+    }
+  }
+
   @media (max-width: 900px) {
     .hero__inner {
       gap: 2rem;
