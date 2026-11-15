@@ -5,10 +5,9 @@
  * "Degree top-up or work" is one label in the list. On a wide figure it is split across the two outcome
  * boxes with "or" between them, and in the text list it reads as a single line.
  * The pathway artwork is a thin strip, so the labels switch to a text list below the image
- * under 600px (see the container query in the component styles).
+ * under 600px (see the container query in src/styles/btec-visuals.css).
+ * Needs <VizStyles /> once on the page.
  */
-import '../../styles/btec-visuals.css';
-
 interface Props {
   loading?: 'lazy' | 'eager';
   fetchpriority?: 'high' | 'low' | 'auto';
@@ -41,7 +40,7 @@ const pos = (b: { x: number; y: number; w: number; h: number }) => `--x:${b.x};-
         <li class="viz__label" style={pos(l.box)}>{l.label}</li>
       ))}
       <li class="viz__outcome">
-        <span class="viz__label viz__outcome-degree" style={pos({ x: 85.24, y: 5.08, w: 12.98, h: 17.7 })}>Degree top-up</span>
+        <span class="viz__label viz__outcome-degree" style={pos({ x: 85.24, y: 5.08, w: 12.98, h: 17.7 })}>Degree <span class="viz__nowrap">top-up</span></span>
         <span class="viz__or" style={pos({ x: 85.24, y: 40, w: 12.98, h: 14 })}>or</span>
         <span class="viz__label viz__outcome-work" style={pos({ x: 85.24, y: 72.95, w: 12.21, h: 17.7 })}>work</span>
       </li>
@@ -49,49 +48,3 @@ const pos = (b: { x: number; y: number; w: number; h: number }) => `--x:${b.x};-
   </div>
   <figcaption class="viz__caption">Where each BTEC level sits and what usually comes next.</figcaption>
 </figure>
-
-<style>
-  /* The outcome item is a single list entry. Narrow: it reads as one line. */
-  .viz__outcome .viz__label {
-    display: inline;
-    position: static;
-    padding: 0;
-  }
-  .viz__outcome .viz__or {
-    display: inline;
-  }
-  .viz__outcome {
-    margin: 0.375rem 0;
-    padding-left: 0.25rem;
-  }
-
-  /* Wide enough for the labels to sit in the artwork's boxes. */
-  @container (min-width: 600px) {
-    .viz__labels--pathway {
-      font-size: clamp(0.6875rem, 1.95cqw, 0.9375rem);
-    }
-    .viz__outcome {
-      display: contents;
-    }
-    .viz__outcome .viz__label {
-      position: absolute;
-      display: flex;
-    }
-    .viz__outcome-work::first-letter,
-    .viz__outcome-degree::first-letter {
-      text-transform: uppercase;
-    }
-    .viz__outcome .viz__or {
-      position: absolute;
-      left: calc(var(--x) * 1%);
-      top: calc(var(--y) * 1%);
-      width: calc(var(--w) * 1%);
-      height: calc(var(--h) * 1%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      color: var(--viz-ink);
-    }
-  }
-</style>

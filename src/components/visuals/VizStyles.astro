@@ -1,0 +1,20 @@
+---
+/**
+ * VizStyles: the CSS for all BTEC visuals, written inline once.
+ *
+ * Render <VizStyles /> exactly once on any page that shows a visual or a subject icon (ServicePage does it
+ * for inner pages, index.astro for the home page). It is inline on purpose: the CSS is only sent on pages
+ * that use a visual, it adds no network request, and it does not change the shared stylesheet that every
+ * other page loads.
+ */
+import css from '../../styles/btec-visuals.css?raw';
+
+const inline = css
+  .replace(/\/\*[\s\S]*?\*\//g, '')
+  .replace(/\s+/g, ' ')
+  .replace(/\s*([{};,>])\s*/g, '$1')
+  .replace(/\s*:\s+/g, ':')
+  .trim();
+---
+
+<style is:inline set:html={inline}></style>

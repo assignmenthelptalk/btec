@@ -3,6 +3,7 @@ import config from '../../site-config.json';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import VizStyles from '../components/visuals/VizStyles.astro';
 import StatsBar from '../components/StatsBar.astro';
 import About from '../components/About.astro';
 import QualificationsGrid from '../components/QualificationsGrid.astro';
@@ -48,6 +49,7 @@ const {
     ctaButton={header.ctaButton}
   />
   <main>
+    <VizStyles />
     <Hero
       headingLine1={hero.headingLine1}
       headingHighlight={hero.headingHighlight}
