@@ -88,6 +88,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
   html {
     scroll-behavior: smooth;
+    /* The header is sticky: keep in-page anchors (#contact, #how-it-works) clear of it. */
+    scroll-padding-top: 4rem;
   }
 
   body {
